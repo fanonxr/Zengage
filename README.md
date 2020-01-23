@@ -1,4 +1,4 @@
-# zengage_learning_platform
+# Zengage Learning Platform
 
 A learning platform application for both web and mobile
 
