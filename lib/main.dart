@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:zengage_learning_platform/routes/route_generator.dart';
+
 import 'app_constants.dart';
-import 'screens/home/home_page.dart';
 
 void main() => runApp(ZengageApp());
 
@@ -12,7 +13,8 @@ class ZengageApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(title: homePageTitle),
+      initialRoute: RouteGenerator.HOME_ROUTE,
+      onGenerateRoute: RouteGenerator.generateRoute,
     );
   }
 }
