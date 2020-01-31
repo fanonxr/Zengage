@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/routes/route_generator.dart';
 import 'package:zengage_learning_platform/styles/style.dart';
 
-import 'app_constants.dart';
+import 'constants/app_constants.dart';
 
 void main() => runApp(ZengageApp());
 
