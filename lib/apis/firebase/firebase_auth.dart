@@ -5,38 +5,42 @@ class FireBaseAuth implements BaseEmailPasswordAuth {
   final FirebaseAuth _fireBaseAuth = FirebaseAuth.instance;
 
   @override
-  Future<FirebaseUser> getCurrentUser() {
-    // TODO: implement getCurrentUser
-    return null;
+  Future<FirebaseUser> getCurrentUser() async {
+    FirebaseUser _user = await _fireBaseAuth.currentUser();
+//    TODO: Maybe add custom logger here while in development
+    return _user;
   }
 
   @override
-  Future<bool> isEmailVerified() {
-    // TODO: implement isEmailVerified
-    return null;
+  Future<String> signUpWithEmailPassword(String email, String password) async {
+    FirebaseUser _user = await _fireBaseAuth.createUserWithEmailAndPassword(
+        email: email, password: password);
+    return _user.uid;
   }
 
   @override
-  Future<bool> sendEmailVerification() {
-    // TODO: implement sendEmailVerification
-    return null;
-  }
-
-  @override
-  Future<String> signInWithEmailPassword(String email, String password) {
-    // TODO: implement signInWithEmailPassword
-    return null;
+  Future<String> signInWithEmailPassword(String email, String password) async {
+    FirebaseUser _user = await _fireBaseAuth.signInWithEmailAndPassword(
+        email: email, password: password);
+    return _user.uid;
   }
 
   @override
   Future<void> signOutUser() {
-    // TODO: implement signOutUser
-    return null;
+    // TODO: Might need to add async to the method if it doesn't work
+    return _fireBaseAuth.signOut();
   }
 
   @override
-  Future<String> signUpWithEmailPassword(String email, String password) {
-    // TODO: implement signUpWithEmailPassword
-    return null;
+  Future<void> sendEmailVerification() async {
+    FirebaseUser _user = await getCurrentUser();
+    _user.sendEmailVerification();
+  }
+
+  @override
+  Future<bool> isEmailVerified() async {
+    FirebaseUser _user = await getCurrentUser();
+//    TODO: Maybe add custom logger here while in development
+    return _user.isEmailVerified;
   }
 }

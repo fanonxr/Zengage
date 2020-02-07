@@ -10,7 +10,7 @@ abstract class BaseEmailPasswordAuth {
   Future<FirebaseUser> getCurrentUser();
 
   ///Send an email to verify their email address
-  Future<bool> sendEmailVerification();
+  Future<void> sendEmailVerification();
 
   Future<void> signOutUser();
 
