@@ -24,25 +24,33 @@ class _HomePageState extends State<HomePage> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
+          leading: Icon(Icons.accessibility_new),
+          actions: <Widget>[
+            MaterialButton(onPressed: () {}, child: Text('Home')),
+            MaterialButton(onPressed: () {}, child: Text('About')),
+            MaterialButton(onPressed: () {}, child: Text('Contact Us')),
+          ],
           title: Text(
             widget.title,
             style: Theme.of(context).appBarTheme.textTheme.title,
           ),
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'You have pushed the button this many times:',
-              style: Theme.of(context).textTheme.title,
-              textAlign: TextAlign.center,
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.display1,
-            ),
-          ],
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Text(
+                'You have pushed the button this many times:',
+                style: Theme.of(context).textTheme.title,
+                textAlign: TextAlign.center,
+              ),
+              Text(
+                '$_counter',
+                style: Theme.of(context).textTheme.display1,
+              ),
+            ],
+          ),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: _incrementCounter,
