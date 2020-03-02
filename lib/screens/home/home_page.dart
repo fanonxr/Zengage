@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zengage_learning_platform/screens/home/widgets/social_banner.dart';
 
 /// Home page placeholder
 class HomePage extends StatefulWidget {
@@ -40,6 +41,7 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
+              SocialBanner(),
               Text(
                 'You have pushed the button this many times:',
                 style: Theme.of(context).textTheme.title,
