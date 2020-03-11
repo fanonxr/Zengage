@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zengage_learning_platform/widgets/header/sign_in_sign_up.dart';
 
 /// Home page placeholder
 class HomePage extends StatefulWidget {
@@ -29,6 +30,7 @@ class _HomePageState extends State<HomePage> {
             MaterialButton(onPressed: () {}, child: Text('Home')),
             MaterialButton(onPressed: () {}, child: Text('About')),
             MaterialButton(onPressed: () {}, child: Text('Contact Us')),
+            SignInSignUp()
           ],
           title: Text(
             widget.title,
