@@ -1,40 +1,55 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:zengage_learning_platform/constants/app_constants.dart';
 import 'package:zengage_learning_platform/styles/style.dart';
 
 class SignInSignUp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Row(
-        children: <Widget>[
-          BlueHeaderText(text: signUp),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(8.0, 10.0, 8.0, 10.0),
-            child: Container(
-              width: 2,
-              height: 12,
-              color: AppBarStyle.color,
-            ),
+    return Row(
+      children: <Widget>[
+        BlueHeaderText(
+          text: signUp,
+          onPressed: () {
+            print("$signUp clicked");
+          },
+        ),
+        Padding(
+          padding: const EdgeInsets.fromLTRB(4.0, 10.0, 4.0, 10.0),
+          child: Container(
+            width: 3,
+            height: 12,
+            color: AppBarStyle.color,
           ),
-          BlueHeaderText(text: signIn),
-        ],
-      ),
+        ),
+        BlueHeaderText(
+          text: signIn,
+          onPressed: () {
+            print("$signIn clicked");
+          },
+        ),
+      ],
     );
   }
 }
 
 class BlueHeaderText extends StatelessWidget {
   final String text;
+  final VoidCallback onPressed;
 
-  BlueHeaderText({this.text});
+  BlueHeaderText({this.text, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      text,
-      style: TextStyle(color: AppBarStyle.color, fontSize: 16),
+    return MaterialButton(
+      hoverColor: Colors.black,
+      textColor: AppBarStyle.color,
+      textTheme: ButtonTextTheme.normal,
+      onPressed: onPressed,
+      child: Text(
+        text,
+        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+      ),
     );
   }
 }
