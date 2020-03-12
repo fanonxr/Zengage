@@ -15,7 +15,7 @@ jobs:
       fail-fast: false
     runs-on: macos-latest
     #Identifies any jobs that must complete successfully before this job will run.
-    needs: test
+    needs: ./.github/workflows/test
     steps:
       - name: List all simulators
         run: xcrun instruments -s
