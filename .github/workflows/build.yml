@@ -9,7 +9,7 @@ jobs:
     if: github.event_name != 'pull_request'
     runs-on: macos-latest
     #Identifies any jobs that must complete successfully before this job will run.
-    needs: [drive_ios,drive_android,test]
+    needs: [./.github/workflows/drive_ios,./.github/workflows/drive_android,./.github/workflows/test]
     name: Build  apk  and web
     steps:
       - uses: actions/checkout@v1
