@@ -13,8 +13,8 @@ const AppBarStyle = TextStyle(
     fontFamily: FontNameDefault,
     fontWeight: FontWeight.w300,
     fontSize: MediumTextSize,
-    backgroundColor: Colors.blue,
-    color: Colors.white);
+    backgroundColor: Colors.white,
+    color: Colors.blue);
 
 const TextTitleStyle = TextStyle(
     fontFamily: FontNameDefault,
