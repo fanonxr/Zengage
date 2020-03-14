@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/styles/style.dart';
+import 'package:zengage_learning_platform/widgets/navbar/NavLink.dart';
 
 class Footer extends StatelessWidget {
   @override
@@ -25,19 +26,22 @@ class Footer extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              NavLink(navText: "About Us"),
+              NavLink(
+                navText: "About Us",
+                textColor: Colors.white,
+              ),
               Text(" | "),
-              NavLink(navText: "Contact Us"),
+              NavLink(navText: "Contact Us", textColor: Colors.white),
               Text(" | "),
-              NavLink(navText: "Become a Trainer Us"),
+              NavLink(navText: "Become a Trainer Us", textColor: Colors.white),
               Text(" | "),
-              NavLink(navText: "Webinars"),
+              NavLink(navText: "Webinars", textColor: Colors.white),
               Text(" | "),
-              NavLink(navText: "Privacy Policy "),
+              NavLink(navText: "Privacy Policy", textColor: Colors.white),
               Text(" | "),
-              NavLink(navText: "Terms & Conditions"),
+              NavLink(navText: "Terms & Conditions", textColor: Colors.white),
               Text(" | "),
-              NavLink(navText: "FAQ")
+              NavLink(navText: "FAQ", textColor: Colors.white)
             ],
           ),
           SizedBox(
@@ -54,26 +58,6 @@ class Footer extends StatelessWidget {
             ],
           )
         ],
-      ),
-    );
-  }
-}
-
-// Nav links for routing to different pages
-class NavLink extends StatelessWidget {
-  final String navText;
-
-  NavLink({this.navText});
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: MaterialButton(
-        child: Text(
-          navText,
-          style: TextStyle(color: Colors.white),
-        ),
-        onPressed: () => print(
-            "Navigate to page: $navText"), // TODO: implement the route it should navigate to
       ),
     );
   }
