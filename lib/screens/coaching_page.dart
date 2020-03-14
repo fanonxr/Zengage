@@ -11,7 +11,7 @@ class _CoachingPageState extends State<CoachingPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: buildNavBar(context, "Coaching"),
+        appBar: NavBar(),
         body: Container(
           child: Text("Coaching Page"),
         ),

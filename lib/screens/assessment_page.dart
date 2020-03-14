@@ -11,7 +11,7 @@ class _AssessmentPageState extends State<AssessmentPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: buildNavBar(context, "Assessments"),
+        appBar: NavBar(),
         body: Container(
           child: Text("Assement Page"),
         ),

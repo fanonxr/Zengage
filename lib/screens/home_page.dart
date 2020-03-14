@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: buildNavBar(context, "Home"),
+        appBar: NavBar(),
         body: Container(
           child: Column(
             children: <Widget>[Footer()],

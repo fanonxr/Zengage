@@ -11,7 +11,7 @@ class _RegisterPageState extends State<RegisterPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: buildNavBar(context, "Register Page"),
+        appBar: NavBar(),
         body: Container(
           child: Text("Register Page"),
         ),

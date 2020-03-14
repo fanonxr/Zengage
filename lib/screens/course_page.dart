@@ -11,7 +11,7 @@ class _CoursePageState extends State<CoursePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: buildNavBar(context, "Courses"),
+        appBar: NavBar(),
         body: Container(
           child: Text("Courses Page"),
         ),
