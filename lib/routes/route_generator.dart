@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/constants/app_constants.dart';
-import 'package:zengage_learning_platform/screens/home/home_page.dart';
+import 'package:zengage_learning_platform/screens/home_page.dart';
 
 class RouteGenerator {
   static const SPLASH_ROUTE = '/';
