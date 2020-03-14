@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zengage_learning_platform/widgets/footer/footer.dart';
 import 'package:zengage_learning_platform/widgets/header/sign_in_sign_up.dart';
 
 /// Home page placeholder
@@ -37,27 +38,10 @@ class _HomePageState extends State<HomePage> {
             style: Theme.of(context).appBarTheme.textTheme.title,
           ),
         ),
-        body: Center(
+        body: Container(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              Text(
-                'You have pushed the button this many times:',
-                style: Theme.of(context).textTheme.title,
-                textAlign: TextAlign.center,
-              ),
-              Text(
-                '$_counter',
-                style: Theme.of(context).textTheme.display1,
-              ),
-            ],
+            children: <Widget>[Footer()],
           ),
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: _incrementCounter,
-          tooltip: 'Increment',
-          child: Icon(Icons.add),
         ),
       ),
     );
