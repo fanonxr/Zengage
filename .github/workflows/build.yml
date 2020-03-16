@@ -33,4 +33,4 @@ jobs:
 
     - run: flutter test       # runs tests
     - run: flutter build apk  # builds apk, ipa build not supported yet. Will update it in future
-    - run: flutter build web  # builds for web
+  # - run: flutter build web  # builds for web DISABLING IT FOR NOW. LOOKS LIKE IT IS NOT YET SUPPORTED.
