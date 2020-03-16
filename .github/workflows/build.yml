@@ -23,14 +23,14 @@ jobs:
     - uses: actions/checkout@v2
     - uses: subosito/flutter-action@v1.2.0
       with:
-        flutter-version: '1.12.13'
-        channel: 'dev' # to support build for web
+        flutter-version: '1.14.6'
+        channel: 'beta' # to support build for web
     
     - run: flutter pub get    # updates dependencies
   #  - run: flutter channel beta
-  #  - run: flutter upgrade
-  #  - run: flutter config --enable-web
+    - run: flutter upgrade
+    - run: flutter config --enable-web
 
     - run: flutter test       # runs tests
     - run: flutter build apk  # builds apk, ipa build not supported yet. Will update it in future
-  # - run: flutter build web  # builds for web DISABLING IT FOR NOW. LOOKS LIKE IT IS NOT YET SUPPORTED.
+    - run: flutter build web  # builds for web DISABLING IT FOR NOW. LOOKS LIKE IT IS NOT YET SUPPORTED.
