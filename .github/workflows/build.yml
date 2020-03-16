@@ -24,7 +24,7 @@ jobs:
     - uses: subosito/flutter-action@v1.2.0
       with:
         flutter-version: '1.12.13'
-        channel: 'beta' # to support build for web
+        channel: 'dev' # to support build for web
     
     - run: flutter pub get    # updates dependencies
     - run: flutter channel beta
