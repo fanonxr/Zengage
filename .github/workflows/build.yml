@@ -27,9 +27,9 @@ jobs:
         channel: 'dev' # to support build for web
     
     - run: flutter pub get    # updates dependencies
-    - run: flutter channel beta
-    - run: flutter upgrade
-    - run: flutter config --enable-web
+  #  - run: flutter channel beta
+  #  - run: flutter upgrade
+  #  - run: flutter config --enable-web
 
     - run: flutter test       # runs tests
     - run: flutter build apk  # builds apk, ipa build not supported yet. Will update it in future
