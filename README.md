@@ -1,4 +1,5 @@
-# Zengage Learning Platform
+# Zengage Learning Platform 
+![Flutter CI for Web and Android](https://github.com/fanonxr/Zengage/workflows/Flutter%20CI%20for%20Web%20and%20Android/badge.svg)
 
 A learning platform application for both web and mobile
 
