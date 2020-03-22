@@ -29,34 +29,23 @@ class _NavBarState extends State<NavBar> {
     return AppBar(
         leading: Icon(Icons.accessibility_new),
         actions: <Widget>[
-          NavLinkDropDown(
-            dropDownValue: "Assessments",
-            menuValueItems: assessmentMenuValues,
+          NavLink(
+            navText: "Assessments",
+            navigateToPage: RouteGenerator.TRAINING_ROUTE,
+            textColor: Colors.black,
           ),
           NavLinkDropDown(
             dropDownValue: "Training",
             menuValueItems: trainingMenuValue,
           ),
-          NavLinkDropDown(
-            dropDownValue: "Coaching",
-            menuValueItems: coachingMenuValue,
-          ),
-          NavLinkDropDown(
-            dropDownValue: "Resources",
-            menuValueItems: resourcesMenuValue,
-          ),
           NavLink(
-            navText: "Home",
-            navigateToPage: RouteGenerator.HOME_ROUTE,
+            navText: "Coaching",
+            navigateToPage: RouteGenerator.TRAINING_ROUTE,
             textColor: Colors.black,
           ),
           NavLink(
-            navText: "About",
-            navigateToPage: RouteGenerator.HOME_ROUTE,
-            textColor: Colors.black,
-          ),
-          NavLink(
-            navText: "Contact Us",
+            navText: "Resources",
+            navigateToPage: RouteGenerator.TRAINING_ROUTE,
             textColor: Colors.black,
           ),
           SignInSignUp()
