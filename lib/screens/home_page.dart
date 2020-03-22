@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/widgets/footer/footer.dart';
+import 'package:zengage_learning_platform/widgets/imageBody/image_body.dart';
 import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
 
 /// Home page placeholder
@@ -19,10 +20,18 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         appBar: buildNavBar(context, "Home"),
         body: Container(
-          child: Column(
-            children: <Widget>[Footer()],
-          ),
-        ),
+            child: ListView(
+          shrinkWrap: true,
+          children: <Widget>[
+            Column(
+              children: <Widget>[
+                buildImageBodyHeader("assets/images/homepage/test-image-1.jpg",
+                    "some random text", context),
+                Footer()
+              ],
+            ),
+          ],
+        )),
       ),
     );
   }
