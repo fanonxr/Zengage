@@ -19,8 +19,14 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         appBar: buildNavBar(context, "Home"),
         body: Container(
-          child: Column(
-            children: <Widget>[Footer()],
+          child: ListView(
+            children: <Widget>[
+              Column(
+                children: <Widget>[
+                  Footer(),
+                ],
+              ),
+            ],
           ),
         ),
       ),
