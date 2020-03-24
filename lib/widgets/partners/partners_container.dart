@@ -5,6 +5,7 @@ class PartnersContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.only(top: 30.0),
       height: MediaQuery.of(context).size.height / 3,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -17,25 +18,31 @@ class PartnersContainer extends StatelessWidget {
                 fontSize: 20.0,
                 fontWeight: FontWeight.w400),
           ),
-          Divider(
-            color: Colors.blue,
-            thickness: 10.0,
+          Container(
+            width: MediaQuery.of(context).size.width / 2,
+            child: Divider(
+              color: Colors.blue,
+              thickness: 10.0,
+            ),
+          ),
+          SizedBox(
+            height: 100.0,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               ImageBadge(
-                imagePath: "assets/images/course-page-assets/leading-logo.png",
+                imagePath: "assets/images/homepage/leading-logo.png",
               ),
               ImageBadge(
-                imagePath: "assets/images/course-page-assets/leading-logo.png",
+                imagePath: "assets/images/homepage/hp-banner-1.jpg",
               ),
               ImageBadge(
-                imagePath: "assets/images/course-page-assets/cp-1.jpg",
+                imagePath: "assets/images/homepage/hp-banner-1.jpg",
               )
             ],
-          )
+          ),
         ],
       ),
     );
@@ -50,7 +57,6 @@ class ImageBadge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: Colors.black,
         height: MediaQuery.of(context).size.height / 5,
         width: MediaQuery.of(context).size.width / 5,
         child: Image.asset(imagePath));
