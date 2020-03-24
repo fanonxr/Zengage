@@ -17,7 +17,7 @@ class _SearchBarNavigationState extends State<SearchBarNavigation> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 400.0,
+      width: MediaQuery.of(context).size.width / 6,
       child: TextFormField(
         controller: searchController,
         decoration: InputDecoration(

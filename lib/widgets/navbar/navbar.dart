@@ -4,6 +4,7 @@ import 'package:zengage_learning_platform/routes/route_generator.dart';
 import 'package:zengage_learning_platform/widgets/header/sign_in_sign_up.dart';
 import 'package:zengage_learning_platform/widgets/navbar/NavLink.dart';
 import 'package:zengage_learning_platform/widgets/navbar/NavLinkDropDown.dart';
+import 'package:zengage_learning_platform/widgets/navbar/SearchNavigation.dart';
 
 class NavBar extends StatefulWidget implements PreferredSizeWidget {
   NavBar({Key key})
@@ -27,8 +28,11 @@ class _NavBarState extends State<NavBar> {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-        leading: Icon(Icons.accessibility_new),
+        leading: Container(
+          child: Image.asset("assets/images/logos/logo-1.png"),
+        ),
         actions: <Widget>[
+          SearchBarNavigation(),
           NavLink(
             navText: "Assessments",
             navigateToPage: RouteGenerator.TRAINING_ROUTE,
@@ -48,10 +52,10 @@ class _NavBarState extends State<NavBar> {
             navigateToPage: RouteGenerator.TRAINING_ROUTE,
             textColor: Colors.black,
           ),
-          SignInSignUp()
+          SignInSignUp(),
         ],
         title: NavLink(
-          navText: "Zengage",
+          navText: "Agile TechPrime",
           navigateToPage: RouteGenerator.HOME_ROUTE,
         ));
   }
