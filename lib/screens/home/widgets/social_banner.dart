@@ -5,34 +5,36 @@ class SocialBanner extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[
-        SocialHolder(),
-        SocialHolder(),
-        SocialHolder(),
-        SocialHolder(),
-        SocialHolder(),
+        SocialHolder(
+            assetPath: 'assets/images/logos/social/social-facebook.png'),
+        SocialHolder(
+          assetPath: 'assets/images/logos/social/social-twitter.png',
+        ),
+        SocialHolder(
+          assetPath: 'assets/images/logos/social/social-linkedin.png',
+        ),
+        SocialHolder(
+          assetPath: 'assets/images/logos/social/social-youtube.png',
+        ),
       ],
     );
   }
 }
 
 class SocialHolder extends StatelessWidget {
-  /// Background color of Social
-  final Color backGround;
-  final Image foreGroundImage;
+  final String assetPath;
 
-  SocialHolder({this.backGround = Colors.grey, this.foreGroundImage});
+  SocialHolder({this.assetPath});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Padding(
-        padding: const EdgeInsets.all(2.0),
-        child: CircleAvatar(
-          backgroundColor: this.backGround,
-          child: Text(
-            'f',
-            style: TextStyle(fontSize: 22, color: Colors.white),
-          ),
+        padding: const EdgeInsets.all(6.0),
+        child: Image.asset(
+          assetPath,
+          width: 40.0,
+          height: 40.0,
         ),
       ),
     );
