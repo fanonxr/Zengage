@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/widgets/footer/footer.dart';
 import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
+import 'package:zengage_learning_platform/widgets/stay_connected/stay_connected.dart';
 
 /// Home page placeholder
 class HomePage extends StatefulWidget {
@@ -20,7 +21,13 @@ class _HomePageState extends State<HomePage> {
         appBar: buildNavBar(context, "Home"),
         body: Container(
           child: Column(
-            children: <Widget>[Footer()],
+            children: <Widget>[
+              StayConnected(
+                backgroundImagePath: "assets/images/homepage/hp-banner-4.jpg",
+                avatarImagePath: "assets/images/homepage/hp-banner-3.jpg",
+              ),
+              Footer()
+            ],
           ),
         ),
       ),
