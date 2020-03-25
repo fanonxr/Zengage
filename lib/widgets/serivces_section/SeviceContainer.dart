@@ -12,6 +12,16 @@ class ServiceContainer extends StatelessWidget {
         children: <Widget>[
           Text("Our Services"),
           SizedBox(
+            height: 10.0,
+          ),
+          Container(
+            width: MediaQuery.of(context).size.width / 2,
+            child: Divider(
+              color: Colors.blue,
+              thickness: 10.0,
+            ),
+          ),
+          SizedBox(
             height: 35.0,
           ),
           Row(
@@ -60,18 +70,25 @@ class ServiceItem extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Text(serviceInfoTitle),
+          Text(
+            serviceInfoTitle,
+            style: TextStyle(
+                color: Colors.black,
+                fontSize: 18.0,
+                fontWeight: FontWeight.w800),
+          ),
           SizedBox(
             height: 25.0,
           ),
           Container(
-            width: MediaQuery.of(context).size.width / 6,
-            height: MediaQuery.of(context).size.height / 6,
-            child: CircleAvatar(
-              backgroundColor: Colors.white,
-              // backgroundImage: AssetImage(imagePath),
-              child: Image.asset(imagePath),
-              // child: Image.asset(imagePath),
+            child: Container(
+              // color: Colors.white,
+              child: CircleAvatar(
+                radius: MediaQuery.of(context).size.width / 20,
+                backgroundColor: Colors.white,
+                backgroundImage: AssetImage(imagePath),
+                // child: Image.asset(imagePath),
+              ),
             ),
           ),
           SizedBox(
@@ -87,10 +104,14 @@ class ServiceItem extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text(
-                  serviceItemInfo,
-                  textAlign: TextAlign.center,
-                ),
+                Container(
+                  // height: MediaQuery.of(context).size.height / 6,
+                  // width: MediaQuery.of(context).size.width / 6,
+                  child: Text(
+                    serviceItemInfo,
+                    textAlign: TextAlign.center,
+                  ),
+                )
               ],
             ),
           ),
