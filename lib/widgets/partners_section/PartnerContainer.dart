@@ -5,8 +5,9 @@ class PartnersContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: MediaQuery.of(context).size.width / 1.5,
+      height: MediaQuery.of(context).size.height / 1.8,
       padding: EdgeInsets.only(top: 30.0),
-      height: MediaQuery.of(context).size.height / 3,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,

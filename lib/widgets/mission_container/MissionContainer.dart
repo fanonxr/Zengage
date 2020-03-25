@@ -8,7 +8,7 @@ class MissionContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: MediaQuery.of(context).size.height / 3,
+      height: MediaQuery.of(context).size.height / 2,
       alignment: Alignment.center,
       decoration: BoxDecoration(
           image:

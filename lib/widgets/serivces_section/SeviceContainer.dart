@@ -65,11 +65,12 @@ class ServiceItem extends StatelessWidget {
             height: 25.0,
           ),
           Container(
-            width: MediaQuery.of(context).size.width / 5,
-            height: MediaQuery.of(context).size.height / 5,
+            width: MediaQuery.of(context).size.width / 6,
+            height: MediaQuery.of(context).size.height / 6,
             child: CircleAvatar(
               backgroundColor: Colors.white,
-              backgroundImage: AssetImage(imagePath),
+              // backgroundImage: AssetImage(imagePath),
+              child: Image.asset(imagePath),
               // child: Image.asset(imagePath),
             ),
           ),
