@@ -36,7 +36,7 @@ class _NavBarState extends State<NavBar> {
           SearchBarNavigation(),
           NavLink(
             navText: "Assessments",
-            navigateToPage: RouteGenerator.TRAINING_ROUTE,
+            navigateToPage: RouteGenerator.ASSESSMENT_ROUTE,
             textColor: Colors.black,
           ),
           NavLinkDropDown(
