@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/constants/app_constants.dart';
-import 'package:zengage_learning_platform/screens/assessment_page.dart';
+import 'package:zengage_learning_platform/screens/assessment/assessment_page.dart';
 import 'package:zengage_learning_platform/screens/coaching_page.dart';
 import 'package:zengage_learning_platform/screens/course_page.dart';
 import 'package:zengage_learning_platform/screens/home_page.dart';
