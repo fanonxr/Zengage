@@ -27,7 +27,7 @@ jobs:
         channel: 'beta' # to support build for web
         
     - run: flutter pub get    # updates dependencies
-    - run: flutter upgrage
+    - run: flutter upgrade
     - run: flutter config --enable-web
     - run: flutter build web
     - uses: w9jds/firebase-action@master
