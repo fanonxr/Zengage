@@ -30,13 +30,10 @@ class _StayConnectedState extends State<StayConnected> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
-            Container(
-              width: MediaQuery.of(context).size.width / 5,
-              height: MediaQuery.of(context).size.height / 5,
-              child: CircleAvatar(
-                //backgroundImage: AssetImage(widget.avatarImagePath),
-                child: Image.asset(widget.avatarImagePath),
-              ),
+            CircleAvatar(
+              radius: MediaQuery.of(context).size.width / 16,
+              backgroundColor: Colors.white,
+              backgroundImage: AssetImage(widget.avatarImagePath),
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.center,
