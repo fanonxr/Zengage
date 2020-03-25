@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/widgets/footer/footer.dart';
 import 'package:zengage_learning_platform/widgets/landing_banner/HeaderBanner.dart';
 import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
+import 'package:zengage_learning_platform/widgets/serivces_section/SeviceContainer.dart';
 
 /// Home page placeholder
 class HomePage extends StatefulWidget {
@@ -28,6 +29,7 @@ class _HomePageState extends State<HomePage> {
                       "assets/images/homepage/hp-banner-1.jpg",
                       "THIS IS WHERE YOU START THINKING DIFFERENT \n TRAIN, TRANSFORM, PERFORM AND EVOlVE",
                       context),
+                  ServiceContainer(),
                   Footer(),
                 ],
               ),
