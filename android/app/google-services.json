@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "782574210446",
+    "firebase_url": "https://zengage-learning.firebaseio.com",
+    "project_id": "zengage-learning",
+    "storage_bucket": "zengage-learning.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782574210446:android:44e676c3f9eaec5c52a8df",
+        "android_client_info": {
+          "package_name": "com.zengage_learning_platform"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782574210446-3kvhqs12hnat8ke0kid59csvu6h4idmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBefswOCQlzzhFCdREOPgHfmKQMgjJncWE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "782574210446-3kvhqs12hnat8ke0kid59csvu6h4idmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

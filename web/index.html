@@ -1,30 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A learning platform application for both web and mobile">
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="description" content="A learning platform application for both web and mobile">
 
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="zengage_learning_platform">
-  <link rel="apple-touch-icon" href="/icons/Icon-192.png">
+    <!-- iOS meta tags & icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="zengage_learning_platform">
+    <link rel="apple-touch-icon" href="/icons/Icon-192.png">
 
-  <title>zengage_learning_platform</title>
-  <link rel="manifest" href="/manifest.json">
+    <title>zengage_learning_platform</title>
+    <link rel="manifest" href="/manifest.json">
 </head>
 <body>
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('/flutter_service_worker.js');
-      });
-    }
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+
+    <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+
+    <!-- This script installs service_worker.js to provide PWA functionality to
+        application. For more information, see:
+        https://developers.google.com/web/fundamentals/primers/service-workers -->
+    <script>
+        if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('/flutter_service_worker.js');
+        });
+        }
+
+    </script>
+
+    <script>
+        // TODO: Replace the following with your app's Firebase project configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyC7p26XD1p7JEAigiIlVus9lPCB-rQsW3M",
+            authDomain: "zengage-learning.firebaseapp.com",
+            databaseURL: "https://zengage-learning.firebaseio.com",
+            projectId: "zengage-learning",
+            storageBucket: "zengage-learning.appspot.com",
+            messagingSenderId: "782574210446",
+            appId: "1:782574210446:web:8afafa87d264854f52a8df",
+            measurementId: "G-SQRC1VPBZ0"
+        };
+
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
   </script>
-  <script src="main.dart.js" type="application/javascript"></script>
+    <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>
