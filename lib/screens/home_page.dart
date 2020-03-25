@@ -3,6 +3,7 @@ import 'package:zengage_learning_platform/widgets/footer/footer.dart';
 import 'package:zengage_learning_platform/widgets/landing_banner/HeaderBanner.dart';
 import 'package:zengage_learning_platform/widgets/mission_container/MissionContainer.dart';
 import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
+import 'package:zengage_learning_platform/widgets/partners_section/PartnerContainer.dart';
 import 'package:zengage_learning_platform/widgets/serivces_section/SeviceContainer.dart';
 
 /// Home page placeholder
@@ -34,6 +35,7 @@ class _HomePageState extends State<HomePage> {
                   MissionContainer(
                     imagePath: "assets/images/homepage/hp-banner-2.jpg",
                   ),
+                  PartnersContainer(),
                   Footer(),
                 ],
               ),
