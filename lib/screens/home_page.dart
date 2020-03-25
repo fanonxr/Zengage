@@ -6,6 +6,7 @@ import 'package:zengage_learning_platform/widgets/mission_container/MissionConta
 import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
 import 'package:zengage_learning_platform/widgets/partners_section/PartnerContainer.dart';
 import 'package:zengage_learning_platform/widgets/serivces_section/SeviceContainer.dart';
+import 'package:zengage_learning_platform/widgets/slider_section/slider_container.dart';
 import 'package:zengage_learning_platform/widgets/stay_connected_section/stay_connected.dart';
 
 /// Home page placeholder
@@ -23,7 +24,7 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: NavBar(),
+        appBar: buildNavBar(context),
         body: Container(
           child: ListView(
             children: <Widget>[
@@ -33,6 +34,7 @@ class _HomePageState extends State<HomePage> {
                       "assets/images/homepage/hp-banner-1.jpg",
                       "THIS IS WHERE YOU START THINKING DIFFERENT \n TRAIN, TRANSFORM, PERFORM AND EVOlVE",
                       context),
+                  buildSliderContainer(context),
                   ServiceContainer(),
                   MissionContainer(
                     imagePath: "assets/images/homepage/hp-banner-2.jpg",
