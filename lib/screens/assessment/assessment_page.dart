@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:zengage_learning_platform/screens/assessment/widgets/WhyAssessmentHeader.dart';
-import 'package:zengage_learning_platform/widgets/body/ContactUsImageBanner.dart';
 import 'package:zengage_learning_platform/widgets/footer/footer.dart';
 import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
+import 'package:zengage_learning_platform/widgets/body/ContactUsImageBanner.dart';
+
+import 'widgets/AssessmentsList.dart';
+import 'widgets/WhyAssessmentHeader.dart';
 
 class AssessmentPage extends StatefulWidget {
   @override
@@ -20,6 +22,7 @@ class _AssessmentPageState extends State<AssessmentPage> {
             children: [
               ContactUsImageBanner(),
               WhyAssessmentHeader(),
+              AssessmentsList(),
               Footer(),
             ],
           ),
