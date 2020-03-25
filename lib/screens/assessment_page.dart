@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zengage_learning_platform/widgets/body/ContactUsImageBanner.dart';
 import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
 
 class AssessmentPage extends StatefulWidget {
@@ -13,7 +14,9 @@ class _AssessmentPageState extends State<AssessmentPage> {
       child: Scaffold(
         appBar: NavBar(),
         body: Container(
-          child: Text("Assement Page"),
+          child: ListView(
+            children: [ContactUsImageBanner()],
+          ),
         ),
       ),
     );

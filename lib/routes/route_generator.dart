@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/constants/app_constants.dart';
+import 'package:zengage_learning_platform/screens/assessment_page.dart';
 import 'package:zengage_learning_platform/screens/coaching_page.dart';
 import 'package:zengage_learning_platform/screens/course_page.dart';
 import 'package:zengage_learning_platform/screens/home_page.dart';
@@ -13,6 +14,7 @@ class RouteGenerator {
   static const REGISTRATION_ROUTE = '/login/registration';
   static const UPCOMING_COURSE_ROUTE = '/upcomingcourses';
   static const TRAINING_ROUTE = '/training';
+  static const ASSESSMENT_ROUTE = '/assessment';
   static const COACHING_ROUTE = '/coaching';
   static const COURSE_ROUTE = '/courses';
 
@@ -35,6 +37,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => UpcomingCoursesPage());
       case TRAINING_ROUTE:
         return MaterialPageRoute(builder: (_) => TrainingPage());
+      case ASSESSMENT_ROUTE:
+        return MaterialPageRoute(builder: (_) => AssessmentPage());
       case COACHING_ROUTE:
         return MaterialPageRoute(builder: (_) => CoachingPage());
       case COURSE_ROUTE:
