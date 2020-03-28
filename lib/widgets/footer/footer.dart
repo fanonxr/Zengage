@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:zengage_learning_platform/screens/home/widgets/social_banner.dart';
 import 'package:zengage_learning_platform/styles/style.dart';
 import 'package:zengage_learning_platform/widgets/navbar/NavLink.dart';
 
@@ -17,7 +18,9 @@ class Footer extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[Text("Social Media Icons")],
+            children: <Widget>[
+              SocialBanner(),
+            ],
           ),
           SizedBox(
             height: 20.0,
