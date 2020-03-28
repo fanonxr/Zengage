@@ -20,37 +20,38 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  List<Widget> homePageWidgets = [
+    HeaderBanner(
+      imagePath: "assets/images/homepage/hp-banner-1.jpg",
+      imageCoverText:
+          "THIS IS WHERE YOU START THINKING DIFFERENT \n TRAIN, TRANSFORM, PERFORM AND EVOlVE",
+    ),
+    SliderContainer(),
+    ServiceContainer(),
+    MissionContainer(
+      imagePath: "assets/images/homepage/hp-banner-2.jpg",
+    ),
+    PartnersContainer(),
+    InspiredContainer(),
+    StayConnected(
+      backgroundImagePath: "assets/images/homepage/hp-banner-4.jpg",
+      avatarImagePath: "assets/images/homepage/hp-banner-3.jpg",
+    ),
+    Footer(),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         appBar: buildNavBar(context),
-        body: Container(
-          child: ListView(
-            children: <Widget>[
-              Column(
-                children: <Widget>[
-                  buildHeaderBanner(
-                      "assets/images/homepage/hp-banner-1.jpg",
-                      "THIS IS WHERE YOU START THINKING DIFFERENT \n TRAIN, TRANSFORM, PERFORM AND EVOlVE",
-                      context),
-                  buildSliderContainer(context),
-                  ServiceContainer(),
-                  MissionContainer(
-                    imagePath: "assets/images/homepage/hp-banner-2.jpg",
-                  ),
-                  PartnersContainer(),
-                  InspiredContainer(),
-                  StayConnected(
-                    backgroundImagePath:
-                        "assets/images/homepage/hp-banner-4.jpg",
-                    avatarImagePath: "assets/images/homepage/hp-banner-3.jpg",
-                  ),
-                  Footer(),
-                ],
-              ),
-            ],
-          ),
+        body: ListView.builder(
+          itemBuilder: (context, index) {
+            return Container(
+              child: homePageWidgets[index],
+            );
+          },
+          itemCount: homePageWidgets.length,
         ),
       ),
     );
