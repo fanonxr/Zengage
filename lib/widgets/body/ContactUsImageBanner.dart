@@ -3,10 +3,13 @@ import 'package:flutter/material.dart';
 class ContactUsImageBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    double imageHeight = MediaQuery.of(context).size.height / 1.3;
+    double imageWidth = MediaQuery.of(context).size.width;
     return Stack(
       children: [
         Container(
-          height: MediaQuery.of(context).size.height / 1.3,
+          height: imageHeight,
+          width: imageWidth,
           alignment: Alignment.topCenter,
           padding: EdgeInsets.only(top: 100.0),
           decoration: BoxDecoration(
@@ -16,14 +19,16 @@ class ContactUsImageBanner extends StatelessWidget {
                   fit: BoxFit.cover)),
         ),
         Container(
-          margin: EdgeInsets.only(left: 80.0, top: 220.0),
+          margin:
+              EdgeInsets.only(left: imageWidth * 0.1, top: imageHeight * 0.35),
           color: Colors.white,
           child: OutlineButton(
-            padding: EdgeInsets.fromLTRB(104.0, 22.0, 104.0, 22.0),
+            padding: EdgeInsets.fromLTRB(imageWidth * 0.1, imageHeight * 0.03,
+                imageWidth * 0.1, imageHeight * 0.03),
             child: Text(
               "Contact Us",
               style: TextStyle(
-                  fontSize: 18.0,
+                  fontSize: (imageWidth > 700.0) ? 18.0 : 12.0,
                   color: Colors.grey,
                   fontWeight: FontWeight.bold),
             ),
