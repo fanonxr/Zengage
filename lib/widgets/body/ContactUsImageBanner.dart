@@ -1,6 +1,15 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class ContactUsImageBanner extends StatelessWidget {
+  final String imageLink;
+
+  final bool isButtonTranslucent;
+
+  ContactUsImageBanner(
+      {@required this.imageLink, this.isButtonTranslucent = false});
+
   @override
   Widget build(BuildContext context) {
     double imageHeight = MediaQuery.of(context).size.height / 1.3;
@@ -14,14 +23,14 @@ class ContactUsImageBanner extends StatelessWidget {
           padding: EdgeInsets.only(top: 100.0),
           decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage(
-                      'assets/images/assessment/assessment-page-banner.jpg'),
-                  fit: BoxFit.cover)),
+                  image: AssetImage(imageLink), fit: BoxFit.cover)),
         ),
         Container(
           margin:
               EdgeInsets.only(left: imageWidth * 0.1, top: imageHeight * 0.35),
-          color: Colors.white,
+          color: isButtonTranslucent
+              ? Colors.white.withOpacity(0.25)
+              : Colors.white,
           child: OutlineButton(
             padding: EdgeInsets.fromLTRB(imageWidth * 0.1, imageHeight * 0.03,
                 imageWidth * 0.1, imageHeight * 0.03),
@@ -29,7 +38,7 @@ class ContactUsImageBanner extends StatelessWidget {
               "Contact Us",
               style: TextStyle(
                   fontSize: (imageWidth > 700.0) ? 18.0 : 12.0,
-                  color: Colors.grey,
+                  color: isButtonTranslucent ? Colors.white : Colors.grey,
                   fontWeight: FontWeight.bold),
             ),
             onPressed: () {

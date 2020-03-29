@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
 
-class WhyAssessmentHeader extends StatelessWidget {
+class WhyBodyHeader extends StatelessWidget {
+  final String topImageLink;
+  final String headerText;
+  final String bodyText;
+
+  WhyBodyHeader(
+      {@required this.topImageLink,
+      this.headerText = 'Why Assessment',
+      this.bodyText = 'Content will go here'});
+
   @override
   Widget build(BuildContext context) {
     double imageHeight = MediaQuery.of(context).size.height / 4.5;
@@ -27,15 +36,14 @@ class WhyAssessmentHeader extends StatelessWidget {
                 decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     image: new DecorationImage(
-                        fit: BoxFit.fill,
-                        image: AssetImage(
-                            "assets/images/assessment/assessment-page-logo.png"))),
+                        fit: BoxFit.cover, image: AssetImage(topImageLink))),
               ),
             ],
           ),
           Expanded(
             child: Container(
-              height: MediaQuery.of(context).size.height * 0.35,
+              margin: EdgeInsets.only(right: 128.0),
+//              height: MediaQuery.of(context).size.height * 0.35,
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
@@ -47,19 +55,23 @@ class WhyAssessmentHeader extends StatelessWidget {
                 shape: BoxShape.rectangle,
               ),
               child: Container(
-                padding: EdgeInsets.only(left: 64.0),
+                padding: EdgeInsets.only(
+                    left: 64.0, right: 32.0, bottom: 32.0, top: 32.0),
                 color: Colors.white,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      'Why Assessment?',
+                      headerText,
                       style: TextStyle(
                           fontWeight: FontWeight.bold, fontSize: 22.0),
                     ),
+                    Container(
+                      height: 32.0,
+                    ),
                     Text(
-                      'Content will go here',
+                      bodyText,
                       style: TextStyle(fontSize: 18.0),
                     ),
                   ],

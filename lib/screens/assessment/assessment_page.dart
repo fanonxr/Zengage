@@ -3,8 +3,8 @@ import 'package:zengage_learning_platform/widgets/body/ContactUsImageBanner.dart
 import 'package:zengage_learning_platform/widgets/footer/footer.dart';
 import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
 
-import 'widgets/AssessmentsList.dart';
-import 'widgets/WhyAssessmentHeader.dart';
+import '../../widgets/body/BodyDropdownItemsList.dart';
+import '../../widgets/body/WhyBodyHeader.dart';
 
 class AssessmentPage extends StatefulWidget {
   @override
@@ -14,6 +14,15 @@ class AssessmentPage extends StatefulWidget {
 class _AssessmentPageState extends State<AssessmentPage> {
   @override
   Widget build(BuildContext context) {
+    final assessmentsList = [
+      'Leadership Assessment',
+      'Organization Assessment',
+      'Portfolio Assessment',
+      'Program Assessment',
+      'Team Assessment',
+      'Individual Role | Talent'
+    ];
+
     return SafeArea(
       child: Scaffold(
         appBar: NavBar(),
@@ -22,9 +31,18 @@ class _AssessmentPageState extends State<AssessmentPage> {
             children: [
               Column(
                 children: <Widget>[
-                  ContactUsImageBanner(),
-                  WhyAssessmentHeader(),
-                  AssessmentsList(),
+                  ContactUsImageBanner(
+                    imageLink:
+                        'assets/images/assessment/assessment-page-banner.jpg',
+                  ),
+                  WhyBodyHeader(
+                    topImageLink:
+                        "assets/images/assessment/assessment-page-logo.png",
+                  ),
+                  BodyDropdownItemsList(
+                    headerText: 'What are different types of assessments?',
+                    assessmentListItems: assessmentsList,
+                  ),
                   ContactUsButton(),
                 ],
               ),

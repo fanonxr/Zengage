@@ -16,7 +16,7 @@ class NavLink extends StatelessWidget {
           navText,
           style: TextStyle(color: textColor),
         ),
-        onPressed: () => Navigator.pushNamed(context,
+        onPressed: () => Navigator.popAndPushNamed(context,
             navigateToPage), // TODO: implement the route it should navigate to
       ),
     );
