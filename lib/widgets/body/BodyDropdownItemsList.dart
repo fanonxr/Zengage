@@ -1,26 +1,26 @@
 import 'package:flutter/material.dart';
 
-class AssessmentsList extends StatelessWidget {
+class BodyDropdownItemsList extends StatelessWidget {
+  final List<String> assessmentListItems;
+  final String headerText;
+
+  BodyDropdownItemsList(
+      {this.headerText = '', @required this.assessmentListItems});
+
   @override
   Widget build(BuildContext context) {
-    final assessmentListItems = [
-      'Leadership Assesment',
-      'Organization Assessment',
-      'Portfolio Assesment',
-      'Program Assesment',
-      'Team Assesment',
-      'Individual Role | Talent',
-    ];
-
     return Container(
       padding: EdgeInsets.all(80.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Text(
-            'What are different types of assessments?',
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
+          Visibility(
+            visible: headerText != '',
+            child: Text(
+              headerText,
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
+            ),
           ),
           SizedBox(
             width: MediaQuery.of(context).size.width * 0.7,

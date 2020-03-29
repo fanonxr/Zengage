@@ -4,7 +4,7 @@ import 'package:zengage_learning_platform/widgets/body/ContactUsImageBanner.dart
 import 'package:zengage_learning_platform/widgets/footer/footer.dart';
 import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
 
-import '../widgets/body/AssessmentsList.dart';
+import '../widgets/body/BodyDropdownItemsList.dart';
 import '../widgets/body/WhyBodyHeader.dart';
 import 'assessment/assessment_page.dart';
 
@@ -16,6 +16,12 @@ class CoachingPage extends StatefulWidget {
 class _CoachingPageState extends State<CoachingPage> {
   @override
   Widget build(BuildContext context) {
+    final coachingList = [
+      'Agile Transformation',
+      'DevOps Transformation',
+      'Tools Assessments & Implementation'
+    ];
+
     return SafeArea(
       child: Scaffold(
         appBar: NavBar(),
@@ -34,7 +40,9 @@ class _CoachingPageState extends State<CoachingPage> {
                     headerText: 'Why Coaching',
                     bodyText: coachingBodyText,
                   ),
-                  AssessmentsList(),
+                  BodyDropdownItemsList(
+                    assessmentListItems: coachingList,
+                  ),
                   ContactUsButton(),
                 ],
               ),
