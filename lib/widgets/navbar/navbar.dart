@@ -45,7 +45,7 @@ class _NavBarState extends State<NavBar> {
           ),
           NavLink(
             navText: "Coaching",
-            navigateToPage: RouteGenerator.TRAINING_ROUTE,
+            navigateToPage: RouteGenerator.COACHING_ROUTE,
             textColor: Colors.black,
           ),
           NavLink(

@@ -3,8 +3,8 @@ import 'package:zengage_learning_platform/widgets/body/ContactUsImageBanner.dart
 import 'package:zengage_learning_platform/widgets/footer/footer.dart';
 import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
 
-import 'widgets/AssessmentsList.dart';
-import 'widgets/WhyAssessmentHeader.dart';
+import '../../widgets/body/AssessmentsList.dart';
+import '../../widgets/body/WhyBodyHeader.dart';
 
 class AssessmentPage extends StatefulWidget {
   @override
@@ -22,8 +22,14 @@ class _AssessmentPageState extends State<AssessmentPage> {
             children: [
               Column(
                 children: <Widget>[
-                  ContactUsImageBanner(),
-                  WhyAssessmentHeader(),
+                  ContactUsImageBanner(
+                    imageLink:
+                        'assets/images/assessment/assessment-page-banner.jpg',
+                  ),
+                  WhyBodyHeader(
+                    topImageLink:
+                        "assets/images/assessment/assessment-page-logo.png",
+                  ),
                   AssessmentsList(),
                   ContactUsButton(),
                 ],
