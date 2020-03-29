@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 class WhyAssessmentHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    double imageHeight = MediaQuery.of(context).size.height / 4.5;
+    double imageWidth = imageHeight;
+
     return Padding(
       padding: const EdgeInsets.all(32.0),
       child: Row(
@@ -13,14 +16,14 @@ class WhyAssessmentHeader extends StatelessWidget {
               Container(
                 child: Image.asset(
                   'assets/images/assessment/why-assessment-header-bg.png',
-                  height: 345.0,
+                  height: imageHeight + 125.0,
                   fit: BoxFit.fill,
-                  width: 345.0,
+                  width: imageWidth + 125.0,
                 ),
               ),
               Container(
-                height: 225.0,
-                width: 225.0,
+                height: imageHeight,
+                width: imageHeight,
                 decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     image: new DecorationImage(
@@ -32,7 +35,7 @@ class WhyAssessmentHeader extends StatelessWidget {
           ),
           Expanded(
             child: Container(
-              height: 300.0,
+              height: MediaQuery.of(context).size.height * 0.35,
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
