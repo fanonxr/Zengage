@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zengage_learning_platform/routes/route_generator.dart';
 
 class MissionContainer extends StatelessWidget {
   final String imagePath;
@@ -28,9 +29,6 @@ class MissionContainer extends StatelessWidget {
               MissionButton(
                 buttonText: "What We do",
               ),
-              MissionButton(
-                buttonText: "Contact us",
-              )
             ],
           ),
           Container(
@@ -55,7 +53,8 @@ class MissionContainer extends StatelessWidget {
                         fontSize: 20.0,
                         fontWeight: FontWeight.w500),
                   ),
-                )
+                ),
+                buildCollabButton(context, RouteGenerator.TRAINING_ROUTE),
               ],
             ),
           )
@@ -63,12 +62,36 @@ class MissionContainer extends StatelessWidget {
       ),
     );
   }
+
+  Widget buildCollabButton(context, route) {
+    return Container(
+      width: MediaQuery.of(context).size.width / 4,
+      child: FlatButton(
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(1.0),
+            side: BorderSide(color: Colors.blue)),
+        color: Colors.transparent.withOpacity(0.5),
+        textColor: Colors.black,
+        padding: EdgeInsets.all(8.0),
+        onPressed: () {
+          Navigator.pushNamed(context, route);
+        },
+        child: Text(
+          "Colloborate".toUpperCase(),
+          style: TextStyle(
+            fontSize: 22.0,
+          ),
+        ),
+      ),
+    );
+  }
 }
 
 class MissionButton extends StatelessWidget {
   final String buttonText;
+  final String route;
 
-  MissionButton({this.buttonText});
+  MissionButton({this.buttonText, this.route});
 
   @override
   Widget build(BuildContext context) {
@@ -81,7 +104,7 @@ class MissionButton extends StatelessWidget {
           elevation: 5.0,
           child: MaterialButton(
             onPressed: () {
-              //Implement login functionality.
+              // Implement login functionality.
             },
             minWidth: 200.0,
             height: 72.0,
