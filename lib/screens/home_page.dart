@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/widgets/footer/footer.dart';
 import 'package:zengage_learning_platform/widgets/inspire_section/inspire_container.dart';
-import 'package:zengage_learning_platform/widgets/landing_banner/HeaderBanner.dart';
-import 'package:zengage_learning_platform/widgets/mission_container/MissionContainer.dart';
 import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
 import 'package:zengage_learning_platform/widgets/partners_section/PartnerContainer.dart';
 import 'package:zengage_learning_platform/widgets/serivces_section/SeviceContainer.dart';
@@ -21,16 +19,8 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   List<Widget> homePageWidgets = [
-    HeaderBanner(
-      imagePath: "assets/images/homepage/hp-banner-1.jpg",
-      imageCoverText:
-          "THIS IS WHERE YOU START THINKING DIFFERENT \n TRAIN, TRANSFORM, PERFORM AND EVOlVE",
-    ),
     SliderContainer(),
     ServiceContainer(),
-    MissionContainer(
-      imagePath: "assets/images/homepage/hp-banner-2.jpg",
-    ),
     PartnersContainer(),
     InspiredContainer(),
     StayConnected(
