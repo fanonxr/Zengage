@@ -30,7 +30,7 @@ class SliderContainer extends StatelessWidget {
             route: RouteGenerator.COURSE_ROUTE,
           ),
           SliderContent(
-            imagePath: "assets/images/homepage/hp-banner-3.jpg",
+            imagePath: "assets/images/homepage/scrolling-3.jpg",
             headlineText:
                 "Shed light onto your future! Discover our offerings!",
             buttonText: "Our Offerings",
