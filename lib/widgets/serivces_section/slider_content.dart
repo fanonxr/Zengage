@@ -38,7 +38,7 @@ class SliderContent extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(1.0),
                       side: BorderSide(color: Colors.blue)),
-                  color: Colors.transparent.withOpacity(0.5),
+                  color: Color(0xf6f8fa),
                   textColor: Colors.white,
                   padding: EdgeInsets.all(8.0),
                   onPressed: () {
