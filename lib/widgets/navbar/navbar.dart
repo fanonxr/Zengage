@@ -90,12 +90,12 @@ Widget buildNavBar(BuildContext context) {
         ),
         NavLink(
           navText: "Coaching",
-          navigateToPage: RouteGenerator.TRAINING_ROUTE,
+          navigateToPage: RouteGenerator.COACHING_ROUTE,
           textColor: Colors.black,
         ),
         NavLink(
           navText: "Resources",
-          navigateToPage: RouteGenerator.TRAINING_ROUTE,
+          navigateToPage: RouteGenerator.COURSE_ROUTE,
           textColor: Colors.black,
         ),
         SignInSignUp()
