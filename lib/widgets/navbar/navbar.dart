@@ -36,7 +36,7 @@ class _NavBarState extends State<NavBar> {
           SearchBarNavigation(),
           NavLink(
             navText: "Assessments",
-            navigateToPage: RouteGenerator.TRAINING_ROUTE,
+            navigateToPage: RouteGenerator.ASSESSMENT_ROUTE,
             textColor: Colors.black,
           ),
           NavLinkDropDown(
@@ -45,7 +45,7 @@ class _NavBarState extends State<NavBar> {
           ),
           NavLink(
             navText: "Coaching",
-            navigateToPage: RouteGenerator.TRAINING_ROUTE,
+            navigateToPage: RouteGenerator.COACHING_ROUTE,
             textColor: Colors.black,
           ),
           NavLink(
@@ -104,4 +104,5 @@ Widget buildNavBar(BuildContext context) {
         navText: "Agile TechPrime",
         navigateToPage: RouteGenerator.HOME_ROUTE,
       ));
+
 }
