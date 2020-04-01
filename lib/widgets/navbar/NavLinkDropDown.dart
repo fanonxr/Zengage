@@ -40,12 +40,16 @@ class _NavLinkDropDownState extends State<NavLinkDropDown> {
         onChanged: (value) {
           // TODO: Navigate to the next page
           value = value.toString().toLowerCase();
-          if (value == 'public' ||
-              value == 'training' ||
-              value == 'upcoming courses') {
+          if (value == 'public') {
             // navigate to the training page
             Navigator.pushNamed(context, RouteGenerator.TRAINING_ROUTE);
+          } else if (value == 'training') {
+            Navigator.pushNamed(context, RouteGenerator.TRAINING_ROUTE);
+          } else if (value == 'upcoming courses') {
+            // navigate to the upcoming courses page
+            Navigator.pushNamed(context, RouteGenerator.UPCOMING_COURSE_ROUTE);
           }
+
           setState(() {
             // widget.dropDownValue = value;
           });
