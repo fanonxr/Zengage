@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/models/DropDownValueItems.dart';
 import 'package:zengage_learning_platform/routes/route_generator.dart';
-import 'package:zengage_learning_platform/screens/home/widgets/social_banner.dart';
 import 'package:zengage_learning_platform/widgets/header/sign_in_sign_up.dart';
 import 'package:zengage_learning_platform/widgets/navbar/NavLink.dart';
 import 'package:zengage_learning_platform/widgets/navbar/NavLinkDropDown.dart';
@@ -73,7 +72,7 @@ Widget buildNavBar(BuildContext context) {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
-            SocialBanner(),
+//            SocialBanner(),
           ],
         ),
       ),

@@ -20,7 +20,7 @@ class Footer extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              SocialBanner(),
+//              SocialBanner(),
             ],
           ),
 //          SocialBanner(),
