@@ -104,5 +104,4 @@ Widget buildNavBar(BuildContext context) {
         navText: "Agile TechPrime",
         navigateToPage: RouteGenerator.HOME_ROUTE,
       ));
-
 }
