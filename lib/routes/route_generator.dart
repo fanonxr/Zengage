@@ -4,6 +4,7 @@ import 'package:zengage_learning_platform/screens/assessment/assessment_page.dar
 import 'package:zengage_learning_platform/screens/coaching_page.dart';
 import 'package:zengage_learning_platform/screens/course_page.dart';
 import 'package:zengage_learning_platform/screens/home_page.dart';
+import 'package:zengage_learning_platform/screens/register_page.dart';
 import 'package:zengage_learning_platform/screens/training_page.dart';
 import 'package:zengage_learning_platform/screens/upcoming_courses_page.dart';
 
@@ -11,7 +12,7 @@ class RouteGenerator {
   static const SPLASH_ROUTE = '/';
   static const HOME_ROUTE = 'home'; //  temporary
   static const LOGIN_ROUTE = '/login';
-  static const REGISTRATION_ROUTE = '/login/registration';
+  static const REGISTRATION_ROUTE = '/registration';
   static const UPCOMING_COURSE_ROUTE = '/upcomingcourses';
   static const TRAINING_ROUTE = '/training';
   static const ASSESSMENT_ROUTE = '/assessment';
@@ -43,6 +44,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => CoachingPage());
       case COURSE_ROUTE:
         return MaterialPageRoute(builder: (_) => CoursePage());
+      case REGISTRATION_ROUTE:
+        return MaterialPageRoute(builder: (_) => RegisterPage());
 
       default:
         return _errorRoute();

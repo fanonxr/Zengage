@@ -23,6 +23,7 @@ class Footer extends StatelessWidget {
               SocialBanner(),
             ],
           ),
+//          SocialBanner(),
           SizedBox(
             height: 20.0,
           ),
