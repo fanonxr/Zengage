@@ -19,6 +19,7 @@ class Footer extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[Text("Social Media Icons")],
           ),
+//          SocialBanner(),
           SizedBox(
             height: 20.0,
           ),

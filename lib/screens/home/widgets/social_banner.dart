@@ -3,20 +3,26 @@ import 'package:flutter/material.dart';
 class SocialBanner extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: <Widget>[
-        SocialHolder(
-            assetPath: 'assets/images/logos/social/social-facebook.png'),
-        SocialHolder(
-          assetPath: 'assets/images/logos/social/social-twitter.png',
-        ),
-        SocialHolder(
-          assetPath: 'assets/images/logos/social/social-linkedin.png',
-        ),
-        SocialHolder(
-          assetPath: 'assets/images/logos/social/social-youtube.png',
-        ),
-      ],
+    final socialLinks = [
+      'assets/images/logos/social/social-facebook.png',
+      'assets/images/logos/social/social-twitter.png',
+      'assets/images/logos/social/social-linkedin.png',
+      'assets/images/logos/social/social-youtube.png'
+    ];
+
+    return Expanded(
+      child: Row(
+        children: <Widget>[
+          ListView.builder(
+            shrinkWrap: true,
+            scrollDirection: Axis.vertical,
+            itemCount: socialLinks.length,
+            itemBuilder: (BuildContext context, int index) {
+              return SocialHolder(assetPath: socialLinks[index]);
+            },
+          ),
+        ],
+      ),
     );
   }
 }

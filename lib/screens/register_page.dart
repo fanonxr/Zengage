@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zengage_learning_platform/widgets/footer/footer.dart';
 import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
 
 class RegisterPage extends StatefulWidget {
@@ -13,7 +14,16 @@ class _RegisterPageState extends State<RegisterPage> {
       child: Scaffold(
         appBar: NavBar(),
         body: Container(
-          child: Text("Register Page"),
+          child: ListView(
+            children: <Widget>[
+              Column(
+                children: <Widget>[
+                  Text('Register Page'),
+                ],
+              ),
+              Footer()
+            ],
+          ),
         ),
       ),
     );

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:zengage_learning_platform/constants/app_constants.dart';
+import 'package:zengage_learning_platform/routes/route_generator.dart';
 import 'package:zengage_learning_platform/styles/style.dart';
 
 class SignInSignUp extends StatelessWidget {
@@ -12,6 +13,8 @@ class SignInSignUp extends StatelessWidget {
           text: signUp,
           onPressed: () {
             print("$signUp clicked");
+            Navigator.popAndPushNamed(context,
+                RouteGenerator.REGISTRATION_ROUTE);
           },
         ),
         Padding(
