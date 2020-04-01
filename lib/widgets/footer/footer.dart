@@ -16,12 +16,15 @@ class Footer extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-//              SocialBanner(),
-            ],
+          Container(
+            margin: EdgeInsets.only(
+                right: MediaQuery.of(context).size.width * 0.10),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: <Widget>[
+                SocialBanner(),
+              ],
+            ),
           ),
 //          SocialBanner(),
           SizedBox(

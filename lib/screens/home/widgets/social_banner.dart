@@ -10,19 +10,14 @@ class SocialBanner extends StatelessWidget {
       'assets/images/logos/social/social-youtube.png'
     ];
 
-    return Expanded(
-      child: Row(
-        children: <Widget>[
-          ListView.builder(
-            shrinkWrap: true,
-            scrollDirection: Axis.vertical,
-            itemCount: socialLinks.length,
-            itemBuilder: (BuildContext context, int index) {
-              return SocialHolder(assetPath: socialLinks[index]);
-            },
-          ),
-        ],
-      ),
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: <Widget>[
+        SocialHolder(assetPath: socialLinks[0]),
+        SocialHolder(assetPath: socialLinks[1]),
+        SocialHolder(assetPath: socialLinks[2]),
+        SocialHolder(assetPath: socialLinks[3]),
+      ],
     );
   }
 }
