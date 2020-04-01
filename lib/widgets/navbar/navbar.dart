@@ -60,11 +60,14 @@ class _NavBarState extends State<NavBar> {
           navigateToPage: RouteGenerator.HOME_ROUTE,
         ));
   }
+}
 
 // method to build the navbar on each page, each page
-  Widget buildNavBar(BuildContext context, String pageText) {
-    return AppBar(
-      leading: Icon(Icons.accessibility_new),
+Widget buildNavBar(BuildContext context) {
+  return AppBar(
+      leading: Container(
+        child: Image.asset("assets/images/logos/logo-1.png"),
+      ),
       bottom: PreferredSize(
         preferredSize: const Size.fromHeight(48.0),
         child: Row(
@@ -75,27 +78,30 @@ class _NavBarState extends State<NavBar> {
         ),
       ),
       actions: <Widget>[
+        SearchBarNavigation(),
         NavLink(
-          navText: "Home",
-          navigateToPage: RouteGenerator.HOME_ROUTE,
+          navText: "Assessments",
+          navigateToPage: RouteGenerator.TRAINING_ROUTE,
+          textColor: Colors.black,
+        ),
+        NavLinkDropDown(
+          dropDownValue: "Training",
+          menuValueItems: trainingMenuValue,
+        ),
+        NavLink(
+          navText: "Coaching",
+          navigateToPage: RouteGenerator.COACHING_ROUTE,
           textColor: Colors.black,
         ),
         NavLink(
-          navText: "About",
-          navigateToPage: RouteGenerator.HOME_ROUTE,
-          textColor: Colors.black,
-        ),
-        NavLink(
-          navText: "Contact Us",
-          navigateToPage: RouteGenerator.HOME_ROUTE,
+          navText: "Resources",
+          navigateToPage: RouteGenerator.COURSE_ROUTE,
           textColor: Colors.black,
         ),
         SignInSignUp()
       ],
-      title: Text(
-        pageText,
-        style: Theme.of(context).appBarTheme.textTheme.title,
-      ),
-    );
-  }
+      title: NavLink(
+        navText: "Agile TechPrime",
+        navigateToPage: RouteGenerator.HOME_ROUTE,
+      ));
 }

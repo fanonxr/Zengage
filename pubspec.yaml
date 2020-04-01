@@ -37,6 +37,7 @@ dependencies:
   timeago: 2.0.17
   cached_network_image:
   flutter_svg:
+  getflutter: ^1.0.11
 
 dev_dependencies:
   flutter_test:
@@ -62,3 +63,5 @@ flutter:
     - assets/images/coaching/
     - assets/images/logos/
     - assets/images/logos/social/
+    - assets/images/trainingpage/
+    - assets/images/trainingpage/course-logos/

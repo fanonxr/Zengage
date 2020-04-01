@@ -30,13 +30,10 @@ class _StayConnectedState extends State<StayConnected> {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
-            Container(
-              width: MediaQuery.of(context).size.width / 5,
-              height: MediaQuery.of(context).size.height / 5,
-              child: CircleAvatar(
-                //backgroundImage: AssetImage(widget.avatarImagePath),
-                child: Image.asset(widget.avatarImagePath),
-              ),
+            CircleAvatar(
+              radius: MediaQuery.of(context).size.width / 16,
+              backgroundColor: Colors.white,
+              backgroundImage: AssetImage(widget.avatarImagePath),
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -46,23 +43,11 @@ class _StayConnectedState extends State<StayConnected> {
                 Text("Recieve information on upcoming workshops and classes"),
                 Row(
                   children: <Widget>[
-                    ButtonWithOutline(
-                      buttonText: "Name",
-                      buttonBackgroundColor: Colors.grey,
-                      buttonBorderColor: Colors.blue,
-                      buttonHeight: MediaQuery.of(context).size.height / 20,
-                      buttonWidth: MediaQuery.of(context).size.width / 4.5,
-                    ),
+                    buildInputField(context, "Name"),
                     SizedBox(
-                      width: 45.0,
+                      width: 40.0,
                     ),
-                    ButtonWithOutline(
-                      buttonText: "Email",
-                      buttonBackgroundColor: Colors.grey,
-                      buttonBorderColor: Colors.blue,
-                      buttonHeight: MediaQuery.of(context).size.height / 20,
-                      buttonWidth: MediaQuery.of(context).size.width / 4.5,
-                    ),
+                    buildInputField(context, "Email")
                   ],
                 ),
                 Row(
@@ -71,11 +56,7 @@ class _StayConnectedState extends State<StayConnected> {
                         value: checkValue,
                         onChanged: (value) {
                           setState(() {
-                            if (value == false) {
-                              checkValue = true;
-                            } else {
-                              checkValue = false;
-                            }
+                            checkValue = value;
                           });
                         }),
                     Text("I permit you to email me")
@@ -125,4 +106,19 @@ class ButtonWithOutline extends StatelessWidget {
       ),
     );
   }
+}
+
+buildInputField(context, String displayText) {
+  TextEditingController inputController = TextEditingController();
+  return Container(
+    width: MediaQuery.of(context).size.width / 10,
+    child: TextFormField(
+      controller: inputController,
+      decoration: InputDecoration(
+        hintText: displayText,
+        filled: true,
+      ),
+      onFieldSubmitted: (value) {},
+    ),
+  );
 }

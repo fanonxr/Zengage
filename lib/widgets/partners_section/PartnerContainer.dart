@@ -5,8 +5,9 @@ class PartnersContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width / 1.5,
-      height: MediaQuery.of(context).size.height / 1.8,
+      color: Colors.white,
+      width: MediaQuery.of(context).size.width / 1,
+      height: MediaQuery.of(context).size.height / 2,
       padding: EdgeInsets.only(top: 30.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
@@ -16,8 +17,11 @@ class PartnersContainer extends StatelessWidget {
             "Our Partners",
             style: TextStyle(
                 color: Colors.black,
-                fontSize: 20.0,
-                fontWeight: FontWeight.w400),
+                fontSize: 28.0,
+                fontWeight: FontWeight.w900),
+          ),
+          SizedBox(
+            height: 20.0,
           ),
           Container(
             width: MediaQuery.of(context).size.width / 2,
@@ -30,18 +34,15 @@ class PartnersContainer extends StatelessWidget {
             height: 100.0,
           ),
           Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
-              ImageBadge(
-                imagePath: "assets/images/homepage/leading-logo.png",
-              ),
-              ImageBadge(
-                imagePath: "assets/images/homepage/hp-banner-1.jpg",
-              ),
-              ImageBadge(
-                imagePath: "assets/images/homepage/hp-banner-1.jpg",
-              )
+              buildImageBadge(
+                  "assets/images/homepage/leading-logo.png", context),
+              buildImageBadge(
+                  "assets/images/homepage/scrum-2-logo.png", context),
+              buildImageBadge(
+                  "assets/images/homepage/scrum-3-logo.png", context),
             ],
           ),
         ],
@@ -50,16 +51,9 @@ class PartnersContainer extends StatelessWidget {
   }
 }
 
-class ImageBadge extends StatelessWidget {
-  final String imagePath;
-
-  ImageBadge({this.imagePath});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-        height: MediaQuery.of(context).size.height / 5,
-        width: MediaQuery.of(context).size.width / 5,
-        child: Image.asset(imagePath));
-  }
+Widget buildImageBadge(String imagePath, context) {
+  return Container(
+      height: MediaQuery.of(context).size.height / 5,
+      width: MediaQuery.of(context).size.width / 5,
+      child: Image.asset(imagePath));
 }

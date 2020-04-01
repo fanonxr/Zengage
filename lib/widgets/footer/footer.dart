@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:zengage_learning_platform/constants/app_constants.dart';
+import 'package:zengage_learning_platform/screens/home/widgets/social_banner.dart';
 import 'package:zengage_learning_platform/styles/style.dart';
 import 'package:zengage_learning_platform/widgets/navbar/NavLink.dart';
 
@@ -17,7 +19,9 @@ class Footer extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[Text("Social Media Icons")],
+            children: <Widget>[
+              SocialBanner(),
+            ],
           ),
           SizedBox(
             height: 20.0,
@@ -52,7 +56,7 @@ class Footer extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: <Widget>[
               Text(
-                "@Tech Prime 2020 All Rights Reserved",
+                copyrightText,
                 style: Body1TextStyle,
               )
             ],
