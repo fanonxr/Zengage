@@ -1,0 +1,669 @@
+[
+  {
+    "course": "CSM",
+    "partner": "Scrum Alliance",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-06-10",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-07-14",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "CSPO",
+    "partner": "Scrum Alliance",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-08-18",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-09-08",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "CSD",
+    "partner": "Scrum Alliance",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-06-17",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-07-21",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "PSM",
+    "partner": "Scrum.org",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-10-15",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-10-21",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "PSPO",
+    "partner": "Scrum.org",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-05-02",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-05-30",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "PSD",
+    "partner": "Scrum.org",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-04-22",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-04-05",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "Certified SAFe Agilist",
+    "partner": "Scrum Alliance",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-04-25",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-10-06",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "Certified SAFe Scrum Master",
+    "partner": "Scrum Alliance",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-12-07",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-11-22",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "Certified SAFe® Product Owner / Product Manager",
+    "partner": "Scrum Alliance",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2021-01-10",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2021-02-13",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "Certified SAFe® Government Practitioner",
+    "partner": "Scrum Alliance",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-08-22",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-08-27",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "Certified SAFe® Program Consultant",
+    "partner": "Scrum Alliance",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-05-24",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-07-29",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "Certified SAFe® Advanced Scrum Master",
+    "partner": "Scrum Alliance",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-06-20",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-07-24",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "Certified SAFe® DevOps Practitioner",
+    "partner": "Scrum Alliance",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-12-09",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-09-14",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "Certified SAFe® Architect",
+    "partner": "Scrum Alliance",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-10-12",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-10-21",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "Certified SAFe® Practitioner",
+    "partner": "Scaled Agile",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-05-21",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-06-11",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "Certified SAFe® Release Train Engineer",
+    "partner": "Scaled Agile",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-04-20",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-07-24",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "Certified SAFe® Agile Software Engineer",
+    "partner": "Scaled Agile",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-06-02",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-07-05",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "Certified SAFe® Lean Portfolio Manager",
+    "partner": "Scaled Agile",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-09-22",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-09-28",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "Certified SAFe® Agile Product Manager",
+    "partner": "Scaled Agile",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-04-28",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-07-12",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "Leadership CAL1",
+    "partner": "Scrum Alliance",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2021-01-10",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-11-11",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "PMP",
+    "partner": "PMI",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-05-11",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-07-20",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "PMI-ACP",
+    "partner": "PMI",
+    "course type": "Public",
+    "details": {
+      "cost": 1000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-08-18",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-07-01",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "Value-Stream Workshop",
+    "partner": "Custom",
+    "course type": "Corporate",
+    "details": {
+      "cost": 5000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-11-03",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-11-12",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "SAFe Portfolio Management",
+    "partner": "Custom",
+    "course type": "Corporate",
+    "details": {
+      "cost": 5000,
+      "class hours": 16
+    },
+    "classes": [
+      {
+        "start date": "2020-08-17",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-09-12",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "Program Increment Workshop",
+    "partner": "Custom",
+    "course type": "Corporate",
+    "details": {
+      "cost": 6000,
+      "class hours": 24
+    },
+    "classes": [
+      {
+        "start date": "2020-05-16",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-06-14",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "Inspect & Adapt",
+    "partner": "Custom",
+    "course type": "Corporate",
+    "details": {
+      "cost": 5000,
+      "class hours": 20
+    },
+    "classes": [
+      {
+        "start date": "2020-12-08",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-12-07",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "Product Management Workshop",
+    "partner": "Custom",
+    "course type": "Corporate",
+    "details": {
+      "cost": 5000,
+      "class hours": 8
+    },
+    "classes": [
+      {
+        "start date": "2020-09-21",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-08-30",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "Team Building",
+    "partner": "Custom",
+    "course type": "Corporate",
+    "details": {
+      "cost": 5000,
+      "class hours": 12
+    },
+    "classes": [
+      {
+        "start date": "2020-07-29",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-06-29",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  },
+  {
+    "course": "Customized Scrum/Kanban Workshop",
+    "partner": "Custom",
+    "course type": "Corporate",
+    "details": {
+      "cost": 5000,
+      "class hours": 24
+    },
+    "classes": [
+      {
+        "start date": "2020-08-17",
+        "instructor": "Heda",
+        "city": "London",
+        "country": "UK"
+      },
+      {
+        "start date": "2020-08-12",
+        "instructor": "Heda",
+        "city": "Boston",
+        "country": "US"
+      }
+    ]
+  }
+]
