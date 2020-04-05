@@ -94,7 +94,7 @@ Widget buildNavBar(BuildContext context) {
         ),
         NavLink(
           navText: "Resources",
-          navigateToPage: RouteGenerator.COURSE_ROUTE,
+          navigateToPage: RouteGenerator.COURSE_DETAILS_ROUTE,
           textColor: Colors.black,
         ),
         SignInSignUp()

@@ -1,4 +1,8 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart' show rootBundle;
+import 'package:zengage_learning_platform/models/Course.dart';
 import 'package:zengage_learning_platform/routes/route_generator.dart';
 
 class NavLinkDropDown extends StatefulWidget {
@@ -12,6 +16,25 @@ class NavLinkDropDown extends StatefulWidget {
 }
 
 class _NavLinkDropDownState extends State<NavLinkDropDown> {
+  List<Course> courseList = [];
+
+  @override
+  void initState() {
+    super.initState();
+    readFileContents("assets/content/courses.json").then((value) {
+      print("Data is read from courses.json");
+      final decoded = jsonDecode(value) as List;
+      decoded.forEach((element) {
+        Course course = new Course.fromJson(element);
+        courseList.add(course);
+      });
+    });
+  }
+
+  Future<String> readFileContents(String filePath) async {
+    return rootBundle.loadString(filePath);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -44,7 +67,9 @@ class _NavLinkDropDownState extends State<NavLinkDropDown> {
             // navigate to the training page
             Navigator.pushNamed(context, RouteGenerator.TRAINING_ROUTE);
           } else if (value == 'training') {
-            Navigator.pushNamed(context, RouteGenerator.TRAINING_ROUTE);
+//            TODO: Temporary
+            Navigator.pushNamed(context, RouteGenerator.COURSE_DETAILS_ROUTE,
+                arguments: courseList[5]);
           } else if (value == 'upcoming courses') {
             // navigate to the upcoming courses page
             Navigator.pushNamed(context, RouteGenerator.UPCOMING_COURSE_ROUTE);
