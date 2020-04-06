@@ -16,52 +16,69 @@ class MissionContainer extends StatelessWidget {
       decoration: BoxDecoration(
           image:
               DecorationImage(image: AssetImage(imagePath), fit: BoxFit.cover)),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              MissionButton(
-                buttonText: "Who We are",
-              ),
-              MissionButton(
-                buttonText: "What We do",
-              ),
-            ],
-          ),
           Container(
-            child: Column(
+            margin: EdgeInsets.only(
+                top: MediaQuery.of(context).size.height / 2 * 0.2),
+            child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                Text(
-                  "Our Mission:",
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 24.0,
-                      fontWeight: FontWeight.w800),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    MissionButton(
+                      buttonText: "Who We are",
+                    ),
+                    MissionButton(
+                      buttonText: "What We do",
+                    ),
+                  ],
                 ),
                 Container(
-                  width: MediaQuery.of(context).size.width / 4,
-                  height: MediaQuery.of(context).size.height / 4,
-                  child: Text(
-                    "We will guide you and your organzation in your quest to implement an Agile environment. We will help you assess your current state, provide training to elevate your knowledge of Agile tools and practices, and offer individualized coaching as you roll out Agile. We are dedicated to helping you succeed!",
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 20.0,
-                        fontWeight: FontWeight.w500),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        "Our Mission:",
+                        style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 24.0,
+                            fontWeight: FontWeight.w800),
+                      ),
+                      Container(
+                        width: MediaQuery.of(context).size.width / 4,
+                        height: MediaQuery.of(context).size.height / 4,
+                        child: Text(
+                          "We will guide you and your organzation in your quest to implement an Agile environment. We will help you assess your current state, provide training to elevate your knowledge of Agile tools and practices, and offer individualized coaching as you roll out Agile. We are dedicated to helping you succeed!",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontSize: 20.0,
+                              fontWeight: FontWeight.w500),
+                        ),
+                      ),
+                    ],
                   ),
-                ),
-                BlueBorderWhiteButton(
-                  buttonText: "Colloborate",
-                  route: RouteGenerator.TRAINING_ROUTE,
-                ),
+                )
               ],
             ),
-          )
+          ),
+          Align(
+            alignment: Alignment.bottomRight,
+            child: Container(
+              margin: EdgeInsets.only(
+                  bottom: MediaQuery.of(context).size.height / 2 * 0.1,
+                  right: MediaQuery.of(context).size.height / 2 * 0.1),
+              child: BlueBorderWhiteButton(
+                buttonText: "Colloborate",
+                route: RouteGenerator.TRAINING_ROUTE,
+              ),
+            ),
+          ),
         ],
       ),
     );

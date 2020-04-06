@@ -20,10 +20,11 @@ class SliderContent extends StatelessWidget {
         image: DecorationImage(image: AssetImage(imagePath), fit: BoxFit.cover),
       ),
       child: Padding(
-        padding: EdgeInsets.only(bottom: 75.0, right: 50.0),
+        padding: EdgeInsets.only(top: 75.0, bottom: 45.0, right: 50.0),
         child: Container(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.end,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Text(
                 headlineText,
@@ -35,8 +36,11 @@ class SliderContent extends StatelessWidget {
               SizedBox(
                 height: 50.0,
               ),
-              BlueBorderWhiteButton(
-                  buttonText: buttonText.toUpperCase(), route: route),
+              Align(
+                alignment: Alignment.bottomRight,
+                child: BlueBorderWhiteButton(
+                    buttonText: buttonText.toUpperCase(), route: route),
+              ),
             ],
           ),
         ),
