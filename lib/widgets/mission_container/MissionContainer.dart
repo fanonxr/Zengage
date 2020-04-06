@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/routes/route_generator.dart';
+import 'package:zengage_learning_platform/widgets/body/BlueBorderWhiteButton.dart';
 
 class MissionContainer extends StatelessWidget {
   final String imagePath;
@@ -54,7 +55,10 @@ class MissionContainer extends StatelessWidget {
                         fontWeight: FontWeight.w500),
                   ),
                 ),
-                buildCollabButton(context, RouteGenerator.TRAINING_ROUTE),
+                BlueBorderWhiteButton(
+                  buttonText: "Colloborate",
+                  route: RouteGenerator.TRAINING_ROUTE,
+                ),
               ],
             ),
           )
