@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zengage_learning_platform/constants/app_colors.dart';
 import 'package:zengage_learning_platform/models/DropDownValueItems.dart';
 import 'package:zengage_learning_platform/routes/route_generator.dart';
 import 'package:zengage_learning_platform/widgets/header/sign_in_sign_up.dart';
@@ -56,6 +57,7 @@ class _NavBarState extends State<NavBar> {
         ],
         title: NavLink(
           navText: "Agile TechPrime",
+          textColor: blueThemeColor,
           navigateToPage: RouteGenerator.HOME_ROUTE,
         ));
   }
