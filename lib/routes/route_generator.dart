@@ -18,6 +18,7 @@ class RouteGenerator {
   static const ASSESSMENT_ROUTE = '/assessment';
   static const COACHING_ROUTE = '/coaching';
   static const COURSE_ROUTE = '/courses';
+  static const CONTACT_US_ROUTE = '/contactus';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     final args = settings.arguments;
