@@ -5,10 +5,8 @@ import 'BlueBorderWhiteButton.dart';
 class ContactUsImageBanner extends StatelessWidget {
   final String imageLink;
 
-  final bool isButtonTranslucent;
-
   ContactUsImageBanner(
-      {@required this.imageLink, this.isButtonTranslucent = false});
+      {@required this.imageLink});
 
   @override
   Widget build(BuildContext context) {

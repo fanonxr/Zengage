@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/constants/app_colors.dart';
+import 'package:zengage_learning_platform/routes/route_generator.dart';
 
 class BlueBorderWhiteButton extends StatelessWidget {
   BlueBorderWhiteButton(
@@ -7,7 +8,7 @@ class BlueBorderWhiteButton extends StatelessWidget {
       double width = -1.0,
       double height = -1.0,
       String buttonText = "Contact Us",
-      String route = "Contact Us"})
+      String route = RouteGenerator.CONTACT_US_ROUTE})
       : super(key: key) {
     this.width = width;
     this.height = height;

@@ -32,7 +32,6 @@ class _CoachingPageState extends State<CoachingPage> {
                 children: <Widget>[
                   ContactUsImageBanner(
                     imageLink: 'assets/images/coaching/contact-us-coaching.jpg',
-                    isButtonTranslucent: true,
                   ),
                   WhyBodyHeader(
                     topImageLink:
