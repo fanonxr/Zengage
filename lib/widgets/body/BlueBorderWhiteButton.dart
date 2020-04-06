@@ -29,7 +29,6 @@ class BlueBorderWhiteButton extends StatelessWidget {
       height = MediaQuery.of(context).size.height;
     }
     return Container(
-//      margin: EdgeInsets.only(left: width * 0.1, top: height * 0.35),
       color: Colors.white,
       child: OutlineButton(
         padding: EdgeInsets.fromLTRB(

@@ -25,7 +25,16 @@ class ContactUsImageBanner extends StatelessWidget {
               image: DecorationImage(
                   image: AssetImage(imageLink), fit: BoxFit.cover)),
         ),
-        BlueBorderWhiteButton(width: imageWidth, height: imageHeight)
+        Positioned.fill(
+          child: Align(
+              alignment: Alignment.bottomRight,
+              child: Container(
+                margin: EdgeInsets.only(
+                    right: imageWidth * 0.05, bottom: imageHeight * 0.1),
+                child: BlueBorderWhiteButton(
+                    width: imageWidth, height: imageHeight),
+              )),
+        )
       ],
     );
   }
