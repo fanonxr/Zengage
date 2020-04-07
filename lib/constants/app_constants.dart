@@ -1,4 +1,4 @@
-final String appName = 'Zengage';
+final String appName = 'Agile TechPrime';
 
 final String homePageTitle = 'Welcome';
 final String routeErrorTitle = 'Error';

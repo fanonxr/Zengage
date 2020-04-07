@@ -35,7 +35,8 @@ class _FilterHeaderState extends State<FilterHeader> {
                         SizedBox(
                           width: 10.0,
                         ),
-                        buildInputField(context, "Search for a course..."),
+                        buildSearchInputField(context, "Search for a course...",
+                            MediaQuery.of(context).size.width / 2),
                         SizedBox(
                           width: 50.0,
                         ),
@@ -87,10 +88,10 @@ class _FilterHeaderState extends State<FilterHeader> {
   }
 }
 
-buildInputField(context, String displayText) {
+buildSearchInputField(context, String displayText, width) {
   TextEditingController inputController = TextEditingController();
   return Container(
-    width: MediaQuery.of(context).size.width / 2,
+    width: width,
     child: TextFormField(
       controller: inputController,
       decoration: InputDecoration(

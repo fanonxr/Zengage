@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:zengage_learning_platform/constants/app_colors.dart';
 import 'package:zengage_learning_platform/constants/app_constants.dart';
 import 'package:zengage_learning_platform/routes/route_generator.dart';
 import 'package:zengage_learning_platform/styles/style.dart';
@@ -13,8 +14,8 @@ class SignInSignUp extends StatelessWidget {
           text: signUp,
           onPressed: () {
             print("$signUp clicked");
-            Navigator.popAndPushNamed(context,
-                RouteGenerator.REGISTRATION_ROUTE);
+            Navigator.popAndPushNamed(
+                context, RouteGenerator.REGISTRATION_ROUTE);
           },
         ),
         Padding(
@@ -45,7 +46,7 @@ class BlueHeaderText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialButton(
-      hoverColor: Colors.black,
+      hoverColor: bgGreyColor,
       textColor: AppBarStyle.color,
       textTheme: ButtonTextTheme.normal,
       onPressed: onPressed,
