@@ -1,15 +1,20 @@
+import 'dart:math';
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/constants/app_colors.dart';
+import 'package:zengage_learning_platform/constants/app_constants.dart';
 import 'package:zengage_learning_platform/models/DropDownValueItems.dart';
 import 'package:zengage_learning_platform/routes/route_generator.dart';
+import 'package:zengage_learning_platform/screens/home/widgets/social_banner.dart';
 import 'package:zengage_learning_platform/widgets/header/sign_in_sign_up.dart';
 import 'package:zengage_learning_platform/widgets/navbar/NavLink.dart';
 import 'package:zengage_learning_platform/widgets/navbar/NavLinkDropDown.dart';
-import 'package:zengage_learning_platform/widgets/navbar/SearchNavigation.dart';
+import 'package:zengage_learning_platform/widgets/upcoming_course_widgets/FilterHeader.dart';
 
 class NavBar extends StatefulWidget implements PreferredSizeWidget {
   NavBar({Key key})
-      : preferredSize = Size.fromHeight(kToolbarHeight),
+      : preferredSize = Size.fromHeight(kToolbarHeight * 2),
         super(key: key);
 
   @override
@@ -28,81 +33,91 @@ class _NavBarState extends State<NavBar> {
 
   @override
   Widget build(BuildContext context) {
-    return AppBar(
-        leading: Container(
-          child: Image.asset("assets/images/logos/logo-1.png"),
-        ),
-        actions: <Widget>[
-          SearchBarNavigation(),
-          NavLink(
-            navText: "Assessments",
-            navigateToPage: RouteGenerator.ASSESSMENT_ROUTE,
-            textColor: Colors.black,
+    return Container(
+      child: Row(
+        children: <Widget>[
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Transform.rotate(
+                angle: 0 * pi / 180,
+                child: Container(
+                  height: 80.0,
+                  width: 80.0,
+                  alignment: Alignment.topCenter,
+//            padding: EdgeInsets.only(top: 100.0),
+                  decoration: BoxDecoration(
+                      image: DecorationImage(
+                          image: AssetImage("assets/images/logos/logo-1.png"),
+                          fit: BoxFit.fill)),
+                ),
+              ),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pushNamed(context, RouteGenerator.HOME_ROUTE);
+                },
+                child: Container(
+                  margin: EdgeInsets.only(left: 16.0),
+                  child: Text(
+                    appName,
+                    style: TextStyle(
+                        color: blueThemeColor,
+                        fontSize: 26.0,
+                        fontWeight: FontWeight.bold),
+                  ),
+                ),
+              )
+            ],
           ),
-          NavLinkDropDown(
-            dropDownValue: "Training",
-            menuValueItems: trainingMenuValue,
+          Expanded(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                buildSearchInputField(context, "View Courses",
+                    MediaQuery.of(context).size.width * 0.15),
+                SizedBox(
+                  width: 10.0,
+                ),
+                Icon(Icons.search),
+                SizedBox(
+                  width: 16.0,
+                ),
+                NavLink(
+                  navText: "Assessments",
+                  navigateToPage: RouteGenerator.ASSESSMENT_ROUTE,
+                  isBold: true,
+                ),
+                NavLinkDropDown(
+                  dropDownValue: "Training",
+                  menuValueItems: trainingMenuValue,
+                ),
+                NavLink(
+                  navText: "Coaching",
+                  navigateToPage: RouteGenerator.COACHING_ROUTE,
+                  isBold: true,
+                ),
+                NavLink(
+                  navText: "Resources",
+                  navigateToPage: RouteGenerator.TRAINING_ROUTE,
+                  isBold: true,
+                ),
+              ],
+            ),
           ),
-          NavLink(
-            navText: "Coaching",
-            navigateToPage: RouteGenerator.COACHING_ROUTE,
-            textColor: Colors.black,
+          SizedBox(
+            width: 16.0,
           ),
-          NavLink(
-            navText: "Resources",
-            navigateToPage: RouteGenerator.TRAINING_ROUTE,
-            textColor: Colors.black,
-          ),
-          SignInSignUp(),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              SignInSignUp(),
+              SocialBanner(),
+            ],
+          )
         ],
-        title: NavLink(
-          navText: "Agile TechPrime",
-          textColor: blueThemeColor,
-          navigateToPage: RouteGenerator.HOME_ROUTE,
-        ));
+      ),
+    );
   }
-}
-
-// method to build the navbar on each page, each page
-Widget buildNavBar(BuildContext context) {
-  return AppBar(
-      leading: Container(
-        child: Image.asset("assets/images/logos/logo-1.png"),
-      ),
-      bottom: PreferredSize(
-        preferredSize: const Size.fromHeight(48.0),
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.end,
-          children: <Widget>[
-//            SocialBanner(),
-          ],
-        ),
-      ),
-      actions: <Widget>[
-        SearchBarNavigation(),
-        NavLink(
-          navText: "Assessments",
-          navigateToPage: RouteGenerator.TRAINING_ROUTE,
-          textColor: Colors.black,
-        ),
-        NavLinkDropDown(
-          dropDownValue: "Training",
-          menuValueItems: trainingMenuValue,
-        ),
-        NavLink(
-          navText: "Coaching",
-          navigateToPage: RouteGenerator.COACHING_ROUTE,
-          textColor: Colors.black,
-        ),
-        NavLink(
-          navText: "Resources",
-          navigateToPage: RouteGenerator.COURSE_ROUTE,
-          textColor: Colors.black,
-        ),
-        SignInSignUp()
-      ],
-      title: NavLink(
-        navText: "Agile TechPrime",
-        navigateToPage: RouteGenerator.HOME_ROUTE,
-      ));
 }
