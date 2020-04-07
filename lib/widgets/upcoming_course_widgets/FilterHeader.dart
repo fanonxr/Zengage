@@ -25,49 +25,60 @@ class _FilterHeaderState extends State<FilterHeader> {
                     padding: EdgeInsets.all(25.0),
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.center,
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        Icon(Icons.clear_all),
-                        Text("Filter"),
                         SizedBox(
                           width: 50.0,
                         ),
-                        Icon(Icons.search),
-                        SizedBox(
-                          width: 10.0,
-                        ),
-                        buildInputField(context, "Search for a course..."),
-                        SizedBox(
-                          width: 50.0,
-                        ),
-                        Icon(Icons.calendar_today),
-                        SizedBox(
-                          width: 10.0,
-                        ),
-                        RaisedButton(
-                          color: Colors.white,
-                          hoverColor: Colors.grey,
-                          child: Text(
-                            _dateTime == null
-                                ? 'Select a Date'
-                                : _dateTime.toString().substring(0, 10),
+                        Container(
+                          child: Row(
+                            children: <Widget>[
+                              buildInputField(
+                                  context, "Search for a course..."),
+                              SizedBox(
+                                width: 10.0,
+                              ),
+                              Icon(Icons.search),
+                            ],
                           ),
-                          textColor: Colors.blue,
-                          padding: EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
-                          splashColor: Colors.white,
-                          onPressed: () {
-                            showDatePicker(
-                              context: context,
-                              initialDate: _dateTime == null
-                                  ? DateTime.now()
-                                  : _dateTime,
-                              firstDate: DateTime(2001),
-                              lastDate: DateTime(2222),
-                            ).then((value) {
-                              setState(() {
-                                _dateTime = value;
-                              });
-                            });
-                          },
+                        ),
+                        SizedBox(
+                          width: 50.0,
+                        ),
+                        Row(
+                          children: <Widget>[
+                            RaisedButton(
+                              color: Colors.white,
+                              hoverColor: Colors.grey,
+                              child: Text(
+                                _dateTime == null
+                                    ? 'Select a Date'
+                                    : _dateTime.toString().substring(0, 10),
+                              ),
+                              textColor: Colors.blue,
+                              padding:
+                                  EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+                              splashColor: Colors.white,
+                              onPressed: () {
+                                showDatePicker(
+                                  context: context,
+                                  initialDate: _dateTime == null
+                                      ? DateTime.now()
+                                      : _dateTime,
+                                  firstDate: DateTime(2001),
+                                  lastDate: DateTime(2222),
+                                ).then((value) {
+                                  setState(() {
+                                    _dateTime = value;
+                                  });
+                                });
+                              },
+                            ),
+                            SizedBox(
+                              width: 10.0,
+                            ),
+                            Icon(Icons.calendar_today),
+                          ],
                         )
                       ],
                     ),

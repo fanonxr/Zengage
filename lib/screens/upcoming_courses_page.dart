@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/widgets/footer/footer.dart';
 import 'package:zengage_learning_platform/widgets/landing_banner/HeaderBanner.dart';
 import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
-import 'package:zengage_learning_platform/widgets/upcoming_course_widgets/FilterBody.dart';
 import 'package:zengage_learning_platform/widgets/upcoming_course_widgets/FilterHeader.dart';
+import 'package:zengage_learning_platform/widgets/upcoming_course_widgets/tabbar_content.dart';
 
 class UpcomingCoursesPage extends StatefulWidget {
   @override
@@ -17,7 +17,7 @@ class _UpcomingCoursesPageState extends State<UpcomingCoursesPage> {
       imageCoverText: "",
     ),
     FilterHeader(),
-    FilterBody(),
+    CourseTabBar(),
     Footer(),
   ];
 
