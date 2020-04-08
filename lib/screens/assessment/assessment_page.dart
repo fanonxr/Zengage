@@ -23,6 +23,11 @@ class _AssessmentPageState extends State<AssessmentPage> {
       'Individual Role | Talent'
     ];
 
+    final bodyText =
+        "Embedded in the Agile principles is the concept of reflection, feedback, and continuous improvement.  "
+        "The best way to progress is to assess your current Agile environment in order to identify areas for improvement.  "
+        "Knowledge gained from assessments can be crucial in developing a plan to help you and your organization progress with Agile.";
+
     return SafeArea(
       child: Scaffold(
         appBar: NavBar(),
@@ -38,6 +43,7 @@ class _AssessmentPageState extends State<AssessmentPage> {
                   WhyBodyHeader(
                     topImageLink:
                         "assets/images/assessment/assessment-page-logo.png",
+                    bodyText: bodyText,
                   ),
                   BodyDropdownItemsList(
                     headerText: 'What are different types of assessments?',
