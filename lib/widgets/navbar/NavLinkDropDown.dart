@@ -16,7 +16,7 @@ class _NavLinkDropDownState extends State<NavLinkDropDown> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 110,
+      width: 117,
       child: DropdownButton(
         underline: SizedBox(),
         hint: widget.dropDownValue == null
@@ -45,6 +45,7 @@ class _NavLinkDropDownState extends State<NavLinkDropDown> {
         onChanged: (value) {
           // TODO: Navigate to the next page
           value = value.toString().toLowerCase();
+          // refractor this to switch statement
           if (value == 'public') {
             // navigate to the training page
             Navigator.pushNamed(context, RouteGenerator.TRAINING_ROUTE);
@@ -53,6 +54,10 @@ class _NavLinkDropDownState extends State<NavLinkDropDown> {
           } else if (value == 'upcoming courses') {
             // navigate to the upcoming courses page
             Navigator.pushNamed(context, RouteGenerator.UPCOMING_COURSE_ROUTE);
+          } else if (value == 'about us') {
+            Navigator.pushNamed(context, RouteGenerator.ABOUT_US_ROUTE);
+          } else if (value == 'contact us') {
+            Navigator.pushNamed(context, RouteGenerator.CONTACT_US_ROUTE);
           }
 
           setState(() {
