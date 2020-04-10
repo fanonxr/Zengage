@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/constants/app_constants.dart';
+import 'package:zengage_learning_platform/screens/about_us_page.dart';
 import 'package:zengage_learning_platform/screens/assessment/assessment_page.dart';
 import 'package:zengage_learning_platform/screens/coaching_page.dart';
 import 'package:zengage_learning_platform/screens/course_page.dart';
@@ -19,6 +20,7 @@ class RouteGenerator {
   static const COACHING_ROUTE = '/coaching';
   static const COURSE_ROUTE = '/courses';
   static const CONTACT_US_ROUTE = '/contactus';
+  static const ABOUT_US_ROUTE = '/aboutus';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     final args = settings.arguments;
@@ -47,6 +49,8 @@ class RouteGenerator {
         return MaterialPageRoute(builder: (_) => CoursePage());
       case REGISTRATION_ROUTE:
         return MaterialPageRoute(builder: (_) => RegisterPage());
+      case ABOUT_US_ROUTE:
+        return MaterialPageRoute(builder: (_) => AboutUsPage());
 
       default:
         return _errorRoute();

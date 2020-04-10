@@ -98,11 +98,15 @@ class _NavBarState extends State<NavBar> {
                   navigateToPage: RouteGenerator.COACHING_ROUTE,
                   isBold: true,
                 ),
-                NavLink(
-                  navText: "Resources",
-                  navigateToPage: RouteGenerator.TRAINING_ROUTE,
-                  isBold: true,
+                NavLinkDropDown(
+                  dropDownValue: "Resources",
+                  menuValueItems: resourceMenuValues,
                 ),
+//                NavLink(
+//                  navText: "Resources",
+//                  navigateToPage: RouteGenerator.TRAINING_ROUTE,
+//                  isBold: true,
+//                ),
               ],
             ),
           ),
