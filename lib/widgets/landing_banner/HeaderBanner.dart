@@ -4,7 +4,7 @@ class HeaderBanner extends StatelessWidget {
   final String imagePath;
   final String imageCoverText;
 
-  HeaderBanner({this.imagePath, this.imageCoverText});
+  HeaderBanner({this.imagePath, this.imageCoverText = ""});
 
   @override
   Widget build(BuildContext context) {

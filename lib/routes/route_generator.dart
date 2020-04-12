@@ -4,6 +4,7 @@ import 'package:zengage_learning_platform/screens/about_us_page.dart';
 import 'package:zengage_learning_platform/screens/assessment/assessment_page.dart';
 import 'package:zengage_learning_platform/screens/coaching_page.dart';
 import 'package:zengage_learning_platform/screens/course_page.dart';
+import 'package:zengage_learning_platform/screens/home/contact_us_page.dart';
 import 'package:zengage_learning_platform/screens/home_page.dart';
 import 'package:zengage_learning_platform/screens/register_page.dart';
 import 'package:zengage_learning_platform/screens/training_page.dart';
@@ -50,7 +51,11 @@ class RouteGenerator {
         return MaterialPageRoute(
             builder: (_) => RegisterPage(), settings: settings);
       case ABOUT_US_ROUTE:
-        return MaterialPageRoute(builder: (_) => AboutUsPage(), settings: settings);
+        return MaterialPageRoute(
+            builder: (_) => AboutUsPage(), settings: settings);
+      case CONTACT_US_ROUTE:
+        return MaterialPageRoute(
+            builder: (_) => ContactUsPage(), settings: settings);
 
       default:
         return _errorRoute();
