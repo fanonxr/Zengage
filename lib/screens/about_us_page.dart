@@ -5,7 +5,7 @@ import 'package:zengage_learning_platform/widgets/landing_banner/HeaderBanner.da
 import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
 
 class AboutUsPage extends StatelessWidget {
-  List<Widget> aboutUsWidgets = [
+  final List<Widget> aboutUsWidgets = [
     HeaderBanner(
       imagePath: "assets/images/homepage/hp-banner-2.jpg",
       imageCoverText: "",
@@ -213,22 +213,22 @@ class MeetTheTeamDetail extends StatelessWidget {
                   width: MediaQuery.of(context).size.width / 1.8,
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    "Rej Heda is an energtic, accomplished and seasoned technology consultant with core compentency in scaling software agility at"
-                    "large enterprises using SAFe/LeSS/SOS framework. With over 22 years of proven experience in Fortune 500 companies across "
-                    "various industries (Eductaion, Finance, Insurance, healthcare, Energy, Retail and Manufracturing), Raj has demonstrated his ability to lead, motivate"
-                    "and mentor multi-functional and global teams. His strong communication and faciltation skills have helped clients succeed across all levels of their organziation"
-                    "He's an Enterprise Agile transofrmation coach, a DevOps coach, a Delivery lead and Trainer."
-                    "Raj's expertise includes: \n"
-                    "* Scaled Agile Framework implementation -SAFe, Less, SOSO \n"
-                    "* Enterprise Agile Transformation - Scrum, Kanban \n"
-                    "* Enteprise Agile/DevOps Coach and Trainer \n"
-                    "* Lead Agile Management Office and Project Management Office \n"
-                    "* Agile Program/Project Management \n"
-                    "* Change Management \n"
-                    "* Client Relationships \n"
-                    "* Resource Management \n "
-                    "* Release Management \n"
-                    "* Software Development \n",
+                    """Rej Heda is an energtic, accomplished and seasoned technology consultant with core compentency in scaling software agility at
+                    large enterprises using SAFe/LeSS/SOS framework. With over 22 years of proven experience in Fortune 500 companies across
+                    various industries (Eductaion, Finance, Insurance, healthcare, Energy, Retail and Manufracturing), Raj has demonstrated his ability to lead, motivate
+                    and mentor multi-functional and global teams. His strong communication and faciltation skills have helped clients succeed across all levels of their organziation
+                    He's an Enterprise Agile transofrmation coach, a DevOps coach, a Delivery lead and Trainer.
+                    Raj's expertise includes:
+                    * Scaled Agile Framework implementation -SAFe, Less, SOSO
+                    * Enterprise Agile Transformation - Scrum, Kanban
+                    * Enteprise Agile/DevOps Coach and Trainer
+                    * Lead Agile Management Office and Project Management Office
+                    * Agile Program/Project Management
+                    * Change Management
+                    * Client Relationships
+                    * Resource Management
+                    * Release Management
+                    * Software Development""",
                     style: TextStyle(
                       color: Colors.black54,
                       fontWeight: FontWeight.w800,
