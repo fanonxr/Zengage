@@ -10,8 +10,7 @@ import 'package:zengage_learning_platform/screens/training_page.dart';
 import 'package:zengage_learning_platform/screens/upcoming_courses_page.dart';
 
 class RouteGenerator {
-  static const SPLASH_ROUTE = '/';
-  static const HOME_ROUTE = 'home'; //  temporary
+  static const HOME_ROUTE = '/home';
   static const LOGIN_ROUTE = '/login';
   static const REGISTRATION_ROUTE = '/registration';
   static const UPCOMING_COURSE_ROUTE = '/upcomingcourses';
@@ -26,31 +25,32 @@ class RouteGenerator {
     final args = settings.arguments;
 
     switch (settings.name) {
-      /*case SPLASH_ROUTE:
-        return MaterialPageRoute(builder: (_) => SplashPage());
-      case LOGIN_ROUTE:
-        return MaterialPageRoute(builder: (_) => LoginPage());
-      case REGISTRATION_ROUTE:
-        return MaterialPageRoute(builder: (_) => RegistrationPage());*/
       case HOME_ROUTE:
         return MaterialPageRoute(
             builder: (_) => HomePage(
                   title: homePageTitle,
-                ));
+                ),
+            settings: settings);
       case UPCOMING_COURSE_ROUTE:
-        return MaterialPageRoute(builder: (_) => UpcomingCoursesPage());
+        return MaterialPageRoute(
+            builder: (_) => UpcomingCoursesPage(), settings: settings);
       case TRAINING_ROUTE:
-        return MaterialPageRoute(builder: (_) => TrainingPage());
+        return MaterialPageRoute(
+            builder: (_) => TrainingPage(), settings: settings);
       case ASSESSMENT_ROUTE:
-        return MaterialPageRoute(builder: (_) => AssessmentPage());
+        return MaterialPageRoute(
+            builder: (_) => AssessmentPage(), settings: settings);
       case COACHING_ROUTE:
-        return MaterialPageRoute(builder: (_) => CoachingPage());
+        return MaterialPageRoute(
+            builder: (_) => CoachingPage(), settings: settings);
       case COURSE_ROUTE:
-        return MaterialPageRoute(builder: (_) => CoursePage());
+        return MaterialPageRoute(
+            builder: (_) => CoursePage(), settings: settings);
       case REGISTRATION_ROUTE:
-        return MaterialPageRoute(builder: (_) => RegisterPage());
+        return MaterialPageRoute(
+            builder: (_) => RegisterPage(), settings: settings);
       case ABOUT_US_ROUTE:
-        return MaterialPageRoute(builder: (_) => AboutUsPage());
+        return MaterialPageRoute(builder: (_) => AboutUsPage(), settings: settings);
 
       default:
         return _errorRoute();
@@ -58,20 +58,24 @@ class RouteGenerator {
   }
 
   static Route<dynamic> _errorRoute() {
-    return MaterialPageRoute(builder: (_) {
-      return Scaffold(
-        appBar: AppBar(
-          title: Text(routeErrorTitle),
-          backgroundColor: Colors.amber,
-        ),
-        backgroundColor: Colors.red,
-        body: Center(
-            child: Text(
-          'Error Occured',
-          style: TextStyle(
-              color: Colors.white, fontWeight: FontWeight.bold, fontSize: 40),
-        )),
-      );
-    });
+    return MaterialPageRoute(
+        builder: (_) {
+          return Scaffold(
+            appBar: AppBar(
+              title: Text(routeErrorTitle),
+              backgroundColor: Colors.amber,
+            ),
+            backgroundColor: Colors.red,
+            body: Center(
+                child: Text(
+              'Error Occured',
+              style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 40),
+            )),
+          );
+        },
+        settings: RouteSettings(name: "Error"));
   }
 }
