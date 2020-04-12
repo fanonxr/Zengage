@@ -8,7 +8,6 @@ class AboutUsPage extends StatelessWidget {
   final List<Widget> aboutUsWidgets = [
     HeaderBanner(
       imagePath: "assets/images/homepage/hp-banner-2.jpg",
-      imageCoverText: "",
     ),
     MissionDetail(),
     WhatWeDoDetail(),
