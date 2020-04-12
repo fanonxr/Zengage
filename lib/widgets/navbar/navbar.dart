@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/constants/app_colors.dart';
@@ -36,13 +34,15 @@ class _NavBarState extends State<NavBar> {
     return Container(
       child: Row(
         children: <Widget>[
-          Row(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: <Widget>[
-              Transform.rotate(
-                angle: 0 * pi / 180,
-                child: Container(
+          GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(context, RouteGenerator.HOME_ROUTE);
+            },
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: <Widget>[
+                Container(
                   height: 80.0,
                   width: 80.0,
                   alignment: Alignment.topCenter,
@@ -53,12 +53,7 @@ class _NavBarState extends State<NavBar> {
                               "assets/images/logos/company-logo.png"),
                           fit: BoxFit.fill)),
                 ),
-              ),
-              GestureDetector(
-                onTap: () {
-                  Navigator.pushNamed(context, RouteGenerator.HOME_ROUTE);
-                },
-                child: Container(
+                Container(
                   margin: EdgeInsets.only(left: 16.0),
                   child: Text(
                     appName,
@@ -67,9 +62,9 @@ class _NavBarState extends State<NavBar> {
                         fontSize: 26.0,
                         fontWeight: FontWeight.bold),
                   ),
-                ),
-              )
-            ],
+                )
+              ],
+            ),
           ),
           Expanded(
             child: Row(
