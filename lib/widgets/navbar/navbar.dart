@@ -49,7 +49,8 @@ class _NavBarState extends State<NavBar> {
 //            padding: EdgeInsets.only(top: 100.0),
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage("assets/images/logos/logo-1.png"),
+                          image: AssetImage(
+                              "assets/images/logos/company-logo.png"),
                           fit: BoxFit.fill)),
                 ),
               ),
