@@ -64,7 +64,7 @@ class _AssessmentPageState extends State<AssessmentPage> {
                     bodyText: bodyText,
                   ),
                   BodyDropdownItemsList(
-                    headerText: 'What are different types of assessments?',
+                    headerText: 'What are the different types of assessments?',
                     assessmentListItems: assessmentsList,
                   ),
                   ContactUsButton(),
