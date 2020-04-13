@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/constants/app_colors.dart';
 import 'package:zengage_learning_platform/routes/route_generator.dart';
+import 'package:zengage_learning_platform/widgets/header/CustomDropDownButton.dart';
 
 class NavLinkDropDown extends StatefulWidget {
   final List<String> menuValueItems;
@@ -16,9 +17,9 @@ class _NavLinkDropDownState extends State<NavLinkDropDown> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 117,
-      child: DropdownButton(
-        underline: SizedBox(),
+      width: widget.dropDownValue == "Training" ? 94 : 117,
+      child: CustomDropdownButton(
+//        underline: SizedBox(),
         hint: widget.dropDownValue == null
             ? Text("Dropdown")
             : Text(
@@ -28,7 +29,7 @@ class _NavLinkDropDownState extends State<NavLinkDropDown> {
                     color: textGreyColor,
                     fontWeight: FontWeight.bold),
               ),
-        isExpanded: true,
+//        isExpanded: true,
         style: TextStyle(color: textGreyColor, fontWeight: FontWeight.bold),
         items: widget.menuValueItems.map((value) {
           return DropdownMenuItem<String>(

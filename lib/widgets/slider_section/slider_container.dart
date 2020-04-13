@@ -38,7 +38,7 @@ class AutoCarousel extends StatelessWidget {
           HeaderBanner(
             imagePath: "assets/images/homepage/hp-banner-1.jpg",
             imageCoverText:
-                "THIS IS WHERE YOU START THINKING DIFFERENT \n TRAIN, TRANSFORM, PERFORM AND EVOlVE",
+                "THIS IS WHERE YOU START THINKING DIFFERENT \n TRAIN, TRANSFORM, PERFORM AND EVOLVE",
           ),
           MissionContainer(imagePath: "assets/images/homepage/hp-banner-2.jpg"),
           SliderContent(

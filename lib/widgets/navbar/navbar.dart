@@ -71,7 +71,7 @@ class _NavBarState extends State<NavBar> {
               mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                buildSearchInputField(context, "View Courses",
+                buildSearchInputField(context, "Search for courses",
                     MediaQuery.of(context).size.width * 0.15),
                 SizedBox(
                   width: 10.0,
@@ -113,6 +113,7 @@ class _NavBarState extends State<NavBar> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               SignInSignUp(),
+//              TODO: Add View Courses between the in Blue bg and White Text
               SocialBanner(),
             ],
           )

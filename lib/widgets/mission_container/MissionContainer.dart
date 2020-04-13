@@ -74,7 +74,7 @@ class MissionContainer extends StatelessWidget {
                   bottom: MediaQuery.of(context).size.height / 2 * 0.1,
                   right: MediaQuery.of(context).size.height / 2 * 0.1),
               child: BlueBorderWhiteButton(
-                buttonText: "Colloborate",
+                buttonText: "COLLABORATE",
                 route: RouteGenerator.TRAINING_ROUTE,
               ),
             ),
