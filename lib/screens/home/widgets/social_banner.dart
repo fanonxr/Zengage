@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zengage_learning_platform/extensions/hover_extensions.dart';
 
 class SocialBanner extends StatelessWidget {
   @override
@@ -29,13 +30,15 @@ class SocialHolder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Padding(
-        padding: const EdgeInsets.all(6.0),
-        child: Image.asset(
-          assetPath,
-          width: 40.0,
-          height: 40.0,
+    return HandCursor(
+      child: Container(
+        child: Padding(
+          padding: const EdgeInsets.all(6.0),
+          child: Image.asset(
+            assetPath,
+            width: 40.0,
+            height: 40.0,
+          ),
         ),
       ),
     );

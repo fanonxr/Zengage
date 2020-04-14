@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zengage_learning_platform/extensions/hover_extensions.dart';
 import 'package:zengage_learning_platform/widgets/body/ContactUsImageBanner.dart';
 import 'package:zengage_learning_platform/widgets/footer/footer.dart';
 import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
@@ -56,7 +57,7 @@ class _AssessmentPageState extends State<AssessmentPage> {
                 children: <Widget>[
                   ContactUsImageBanner(
                     imageLink:
-                        'assets/images/assessment/assessment-page-banner.jpg',
+                        'https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/Assessment-page-banner.jpg?alt=media&token=f69601d2-4898-467a-955b-9006bf66cc62',
                   ),
                   WhyBodyHeader(
                     topImageLink:
@@ -82,21 +83,23 @@ class _AssessmentPageState extends State<AssessmentPage> {
 class ContactUsButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: EdgeInsets.only(bottom: 60.0),
-      width: MediaQuery.of(context).size.width / 3,
-      child: MaterialButton(
-        color: Colors.grey[300],
-        padding: EdgeInsets.only(top: 16.0, bottom: 16.0),
-        onPressed: () {
-          print("Contact Us clicked");
-        },
-        child: Text(
-          'Contact Us',
-          style: TextStyle(
-            fontSize: 22.0,
-            fontWeight: FontWeight.bold,
-            color: Colors.lightBlue,
+    return HandCursor(
+      child: Container(
+        margin: EdgeInsets.only(bottom: 60.0),
+        width: MediaQuery.of(context).size.width / 3,
+        child: MaterialButton(
+          color: Colors.grey[300],
+          padding: EdgeInsets.only(top: 16.0, bottom: 16.0),
+          onPressed: () {
+            print("Contact Us clicked");
+          },
+          child: Text(
+            'Contact Us',
+            style: TextStyle(
+              fontSize: 22.0,
+              fontWeight: FontWeight.bold,
+              color: Colors.lightBlue,
+            ),
           ),
         ),
       ),

@@ -5,8 +5,7 @@ import 'BlueBorderWhiteButton.dart';
 class ContactUsImageBanner extends StatelessWidget {
   final String imageLink;
 
-  ContactUsImageBanner(
-      {@required this.imageLink});
+  ContactUsImageBanner({@required this.imageLink});
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +20,7 @@ class ContactUsImageBanner extends StatelessWidget {
           padding: EdgeInsets.only(top: 100.0),
           decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage(imageLink), fit: BoxFit.cover)),
+                  image: NetworkImage(imageLink), fit: BoxFit.cover)),
         ),
         Positioned.fill(
           child: Align(
