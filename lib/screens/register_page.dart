@@ -100,83 +100,116 @@ class GreyBoldText extends StatelessWidget {
   }
 }
 
-class RegistrationForm extends StatelessWidget {
+class RegistrationForm extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    final registrationFormItems = [
+  _RegistrationFormState createState() => _RegistrationFormState();
+}
+
+class _RegistrationFormState extends State<RegistrationForm> {
+  List<FormItem> registrationFormItems;
+
+  final _formKey = GlobalKey<FormState>();
+
+  @override
+  void initState() {
+    super.initState();
+    registrationFormItems = [
       FormItem(labelText: "Full name"),
-      FormItem(labelText: "Email"),
+      FormItem(labelText: "Email", textType: TextInputType.emailAddress),
       FormItem(labelText: "Password", obscureText: true),
       FormItem(labelText: "Country"),
       FormItem(labelText: "Mailing Address", isOptional: true),
-      FormItem(labelText: "Contact Number", isOptional: true),
+      FormItem(
+          labelText: "Contact Number",
+          textType: TextInputType.number,
+          isOptional: true),
       FormItem(labelText: "Courses", isOptional: true),
       FormItem(
-          labelText: "Payment info", hintText: "Card Number", isOptional: true)
+          labelText: "Payment info",
+          textType: TextInputType.number,
+          hintText: "Card Number",
+          isOptional: true)
     ];
-    return Column(
-      children: <Widget>[
-        Container(
-          margin: EdgeInsets.only(
-              top: 32.0,
-              bottom: 32.0,
-              left: MediaQuery.of(context).size.width * 0.05),
-          width: MediaQuery.of(context).size.width * 0.65,
-          child: ListView.builder(
-              itemCount: registrationFormItems.length,
-              shrinkWrap: true,
-              itemBuilder: (context, position) {
-                return FormItemField(
-                    registrationFormItem: registrationFormItems[position]);
-              }),
-        ),
-        Container(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Container(
-                color: bgGreyColor,
-                width: MediaQuery.of(context).size.width * 0.55 / 4,
-                child: TextField(
-                  decoration:
-                      InputDecoration.collapsed(hintText: "Month | Day"),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-              Container(
-                width: 48.0,
-              ),
-              Container(
-                color: bgGreyColor,
-                width: MediaQuery.of(context).size.width * 0.55 / 4,
-                child: TextField(
-                  textAlign: TextAlign.center,
-                  decoration: InputDecoration.collapsed(
-                    hintText: 'CVV',
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Form(
+      key: _formKey,
+      child: Column(
+        children: <Widget>[
+          Container(
+            margin: EdgeInsets.only(
+                top: 32.0,
+                bottom: 32.0,
+                left: MediaQuery.of(context).size.width * 0.05),
+            width: MediaQuery.of(context).size.width * 0.65,
+            child: ListView.builder(
+                itemCount: registrationFormItems.length,
+                shrinkWrap: true,
+                itemBuilder: (context, position) {
+                  return FormItemField(
+                      registrationFormItem: registrationFormItems[position]);
+                }),
+          ),
+          Container(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Container(
+                  color: bgGreyColor,
+                  width: MediaQuery.of(context).size.width * 0.55 / 4,
+                  child: TextField(
+                    decoration:
+                        InputDecoration.collapsed(hintText: "Month | Day"),
+                    textAlign: TextAlign.center,
                   ),
                 ),
-              ),
-            ],
+                Container(
+                  width: 48.0,
+                ),
+                Container(
+                  color: bgGreyColor,
+                  width: MediaQuery.of(context).size.width * 0.55 / 4,
+                  child: TextField(
+                    textAlign: TextAlign.center,
+                    decoration: InputDecoration.collapsed(
+                      hintText: 'CVV',
+                    ),
+                  ),
+                ),
+              ],
+            ),
           ),
-        ),
-        Container(
-          margin: EdgeInsets.only(top: 32.0, bottom: 64.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              GreyButton(
-                text: 'Reset',
-              ),
-              Container(
-                width: 48.0,
-              ),
-              GreyButton(
-                text: 'Register',
-              ),
-            ],
+          Container(
+            margin: EdgeInsets.only(top: 32.0, bottom: 64.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                GreyButton(
+                  text: 'Reset',
+                  onPressed: () {
+                    _formKey.currentState.reset();
+                  },
+                ),
+                Container(
+                  width: 48.0,
+                ),
+                GreyButton(
+                  text: 'Register',
+                  onPressed: () {
+                    // Validate returns true if the form is valid, otherwise false.
+                    if (_formKey.currentState.validate()) {
+                      Scaffold.of(context).showSnackBar(
+                          SnackBar(content: Text('Registering User')));
+                    }
+                  },
+                ),
+              ],
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
@@ -199,10 +232,11 @@ class FormItemField extends StatelessWidget {
             width: MediaQuery.of(context).size.width * 0.55,
             padding: EdgeInsets.all(4.0),
             color: bgGreyColor,
-            child: TextField(
+            child: TextFormField(
               decoration: InputDecoration.collapsed(
                   hintText: registrationFormItem.hintText),
               obscureText: registrationFormItem.obscureText,
+              keyboardType: registrationFormItem.textType,
               minLines: registrationFormItem.isMessage ? 9 : 1,
               maxLines: registrationFormItem.isMessage ? 12 : 1,
             ),
@@ -216,6 +250,7 @@ class FormItemField extends StatelessWidget {
 class FormItem {
   String labelText;
   String hintText;
+  TextInputType textType;
   bool isOptional;
   bool obscureText;
   bool isMessage;
@@ -223,6 +258,7 @@ class FormItem {
   FormItem(
       {@required this.labelText,
       this.hintText = '',
+      this.textType = TextInputType.text,
       this.isOptional = false,
       this.obscureText = false,
       this.isMessage = false});
