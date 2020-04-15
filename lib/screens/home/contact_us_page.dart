@@ -86,7 +86,15 @@ class ContactUsForm extends StatelessWidget {
 class GreyButton extends StatelessWidget {
   final String text;
 
-  GreyButton({this.text});
+  Function onPressed;
+
+  GreyButton({@required this.text, this.onPressed}) {
+    if (onPressed == null) {
+      onPressed = () {
+        print("$text clicked");
+      };
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -98,8 +106,6 @@ class GreyButton extends StatelessWidget {
         height: 56.0,
         minWidth: MediaQuery.of(context).size.width * 0.55 / 4,
         color: darkGreyColor,
-        onPressed: () {
-          print("$text clicked");
-        });
+        onPressed: onPressed);
   }
 }

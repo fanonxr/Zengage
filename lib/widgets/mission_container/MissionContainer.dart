@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zengage_learning_platform/extensions/hover_extensions.dart';
 import 'package:zengage_learning_platform/routes/route_generator.dart';
 import 'package:zengage_learning_platform/widgets/body/BlueBorderWhiteButton.dart';
 
@@ -116,25 +117,27 @@ class MissionButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: MediaQuery.of(context).size.width / 4,
-      child: Padding(
-        padding: EdgeInsets.symmetric(vertical: 16.0),
-        child: Material(
-          color: Colors.lightBlue,
-          elevation: 5.0,
-          child: MaterialButton(
-            onPressed: () {
-              // Implement login functionality.
-            },
-            minWidth: 200.0,
-            height: 72.0,
-            child: Text(
-              buttonText,
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 32.0,
-                  fontWeight: FontWeight.bold),
+    return HandCursor(
+      child: Container(
+        width: MediaQuery.of(context).size.width / 4,
+        child: Padding(
+          padding: EdgeInsets.symmetric(vertical: 16.0),
+          child: Material(
+            color: Colors.lightBlue,
+            elevation: 5.0,
+            child: MaterialButton(
+              onPressed: () {
+                // Implement login functionality.
+              },
+              minWidth: 200.0,
+              height: 72.0,
+              child: Text(
+                buttonText,
+                style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 32.0,
+                    fontWeight: FontWeight.bold),
+              ),
             ),
           ),
         ),
