@@ -6,6 +6,7 @@ import 'package:zengage_learning_platform/extensions/hover_extensions.dart';
 import 'package:zengage_learning_platform/models/DropDownValueItems.dart';
 import 'package:zengage_learning_platform/routes/route_generator.dart';
 import 'package:zengage_learning_platform/screens/home/widgets/social_banner.dart';
+import 'package:zengage_learning_platform/widgets/header/custom_clipper.dart';
 import 'package:zengage_learning_platform/widgets/header/sign_in_sign_up.dart';
 import 'package:zengage_learning_platform/widgets/navbar/NavLink.dart';
 import 'package:zengage_learning_platform/widgets/navbar/NavLinkDropDown.dart';
@@ -57,12 +58,15 @@ class _NavBarState extends State<NavBar> {
                   ),
                   Container(
                     margin: EdgeInsets.only(left: 16.0),
-                    child: Text(
-                      appName,
-                      style: TextStyle(
-                          color: blueThemeColor,
-                          fontSize: 26.0,
-                          fontWeight: FontWeight.bold),
+                    child: ClipPath(
+                      clipper: CustomBottomLeftTriangleClipper(),
+                      child: Text(
+                        appName,
+                        style: TextStyle(
+                            color: blueThemeColor,
+                            fontSize: 28.0,
+                            fontWeight: FontWeight.bold),
+                      ),
                     ),
                   )
                 ],
