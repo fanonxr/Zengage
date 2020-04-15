@@ -5,16 +5,12 @@
 // gestures. You can also use WidgetTester to find child widgets in the widget
 // tree, read text, and verify that the values of widget properties are correct.
 
-import 'package:flutter_test/flutter_test.dart';
-import 'package:zengage_learning_platform/constants/app_constants.dart';
-import 'package:zengage_learning_platform/main.dart';
-
 void main() {
-  testWidgets('Loads Copyright', (WidgetTester tester) async {
+  /*testWidgets('Loads Copyright', (WidgetTester tester) async {
     // Build our app and trigger a frame.
 //    await tester.pumpWidget(ZengageApp());
 
 //    Verify that copyright text loads
 //    expect(find.text(copyrightText), findsOneWidget);
-  });
+  });*/
 }
