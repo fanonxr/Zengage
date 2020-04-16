@@ -7,13 +7,15 @@ class NavLink extends StatelessWidget {
   final String navText;
   final String navigateToPage;
   final Color textColor;
+  final Color bgColor;
   final bool isBold;
   final double fontSize;
 
   NavLink(
-      {this.navText,
+      {@required this.navText,
       this.navigateToPage,
       this.textColor = textGreyColor,
+      this.bgColor = Colors.transparent,
       this.isBold = false,
       this.fontSize = 18});
 
@@ -21,6 +23,7 @@ class NavLink extends StatelessWidget {
   Widget build(BuildContext context) {
     return HandCursor(
       child: Container(
+        color: bgColor,
         child: MaterialButton(
           child: Text(
             navText,

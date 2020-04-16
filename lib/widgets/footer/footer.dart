@@ -40,11 +40,20 @@ class Footer extends StatelessWidget {
                 textColor: Colors.white,
               ),
               Text(" | "),
-              NavLink(navText: "Contact Us", textColor: Colors.white),
+              NavLink(
+                navText: "Contact Us",
+                textColor: Colors.white,
+              ),
               Text(" | "),
-              NavLink(navText: "Become a Trainer", textColor: Colors.white),
+              NavLink(
+                navText: "Become a Trainer",
+                textColor: Colors.white,
+              ),
               Text(" | "),
-              NavLink(navText: "Terms & Conditions", textColor: Colors.white),
+              NavLink(
+                navText: "Terms & Conditions",
+                textColor: Colors.white,
+              ),
             ],
           ),
           SizedBox(

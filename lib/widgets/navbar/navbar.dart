@@ -10,7 +10,6 @@ import 'package:zengage_learning_platform/widgets/header/custom_clipper.dart';
 import 'package:zengage_learning_platform/widgets/header/sign_in_sign_up.dart';
 import 'package:zengage_learning_platform/widgets/navbar/NavLink.dart';
 import 'package:zengage_learning_platform/widgets/navbar/NavLinkDropDown.dart';
-import 'package:zengage_learning_platform/widgets/upcoming_course_widgets/FilterHeader.dart';
 
 class NavBar extends StatefulWidget implements PreferredSizeWidget {
   NavBar({Key key})
@@ -78,15 +77,6 @@ class _NavBarState extends State<NavBar> {
               mainAxisAlignment: MainAxisAlignment.end,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: <Widget>[
-                buildSearchInputField(context, "Search for courses",
-                    MediaQuery.of(context).size.width * 0.15),
-                SizedBox(
-                  width: 10.0,
-                ),
-                Icon(Icons.search),
-                SizedBox(
-                  width: 16.0,
-                ),
                 NavLink(
                   navText: "Assessments",
                   navigateToPage: RouteGenerator.ASSESSMENT_ROUTE,
@@ -122,6 +112,8 @@ class _NavBarState extends State<NavBar> {
               SignInSignUp(),
 //              TODO: Add View Courses between the in Blue bg and White Text
               NavLink(
+                bgColor: blueThemeColor,
+                textColor: Colors.white,
                 navText: "View Courses",
                 isBold: true,
                 navigateToPage: RouteGenerator.UPCOMING_COURSE_ROUTE,
