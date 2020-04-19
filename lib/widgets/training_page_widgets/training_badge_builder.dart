@@ -23,12 +23,45 @@ class TrainingBadgeItem extends StatelessWidget {
             SizedBox(
               height: 10.0,
             ),
-            CircleAvatar(
-              radius: MediaQuery.of(context).size.width / 20,
-              backgroundColor: Colors.white,
-              backgroundImage: AssetImage(imagePath),
-            ),
+            PartnerAssetLogo(
+              imagePath: imagePath,
+            )
           ],
         ));
+  }
+}
+
+class PartnerAssetLogo extends StatelessWidget {
+  final String imagePath;
+
+  const PartnerAssetLogo({Key key, @required this.imagePath}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return CircleAvatar(
+      radius: MediaQuery.of(context).size.width / 20,
+      backgroundColor: Colors.white,
+      backgroundImage: AssetImage(imagePath),
+    );
+  }
+}
+
+class PartnerLogoNetwork extends StatelessWidget {
+  final String imageUrl;
+
+  const PartnerLogoNetwork({Key key, @required this.imageUrl})
+      : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      width: MediaQuery.of(context).size.width / 20,
+      height: MediaQuery.of(context).size.width / 20,
+      child: CircleAvatar(
+        radius: MediaQuery.of(context).size.width / 20,
+        backgroundColor: Colors.white,
+        backgroundImage: NetworkImage(imageUrl),
+      ),
+    );
   }
 }

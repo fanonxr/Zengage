@@ -9,12 +9,12 @@ class Course {
   List<Classes> classes;
 
   Course(
-      {this.courseCode,
-      this.courseTitle,
-      this.partner,
-      this.courseType,
+      {this.courseCode = "",
+      this.courseTitle = "",
+      this.partner = "",
+      this.courseType = "",
       this.roles,
-      this.iconFile,
+      this.iconFile = "",
       this.details,
       this.classes});
 
@@ -61,12 +61,12 @@ class Course {
 }
 
 class Details {
-  String cost;
-  String classHours;
-  String aboutThisCourse;
-  String whatYoullLearn;
-  String length;
-  String effort;
+  String cost = "";
+  String classHours = "";
+  String aboutThisCourse = "";
+  String whatYoullLearn = "";
+  String length = "";
+  String effort = "";
   List<String> reviews;
 
   Details(

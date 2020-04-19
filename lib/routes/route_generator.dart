@@ -21,7 +21,7 @@ class RouteGenerator {
   static const COACHING_ROUTE = '/coaching';
   static const CONTACT_US_ROUTE = '/contactus';
   static const ABOUT_US_ROUTE = '/aboutus';
-  static const COURSE_DETAILS_ROUTE = '$TRAINING_ROUTE/courseDetails';
+  static const COURSE_DETAILS_ROUTE = '/courseDetails';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     final args = settings.arguments;
@@ -57,7 +57,7 @@ class RouteGenerator {
               builder: (_) => CourseDetailsPage(course: course));
         } else {
           return MaterialPageRoute(
-              builder: (_) => CourseDetailsPage(course: null));
+              builder: (_) => CourseDetailsPage());
         }
         print("Args is not course");
         return _errorRoute();
