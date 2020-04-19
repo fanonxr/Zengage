@@ -159,7 +159,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
                 Container(
                   color: bgGreyColor,
                   width: MediaQuery.of(context).size.width * 0.55 / 4,
-                  child: TextField(
+                  child: TextFormField(
                     decoration:
                         InputDecoration.collapsed(hintText: "Month | Day"),
                     textAlign: TextAlign.center,
@@ -171,7 +171,7 @@ class _RegistrationFormState extends State<RegistrationForm> {
                 Container(
                   color: bgGreyColor,
                   width: MediaQuery.of(context).size.width * 0.55 / 4,
-                  child: TextField(
+                  child: TextFormField(
                     textAlign: TextAlign.center,
                     decoration: InputDecoration.collapsed(
                       hintText: 'CVV',
