@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/constants/app_constants.dart';
-import 'package:zengage_learning_platform/screens/about_us_page.dart';
 import 'package:zengage_learning_platform/models/Course.dart';
+import 'package:zengage_learning_platform/screens/about_us_page.dart';
 import 'package:zengage_learning_platform/screens/assessment/assessment_page.dart';
 import 'package:zengage_learning_platform/screens/coaching_page.dart';
-import 'package:zengage_learning_platform/screens/course_page.dart';
-import 'package:zengage_learning_platform/screens/home/contact_us_page.dart';
 import 'package:zengage_learning_platform/screens/course_details_page.dart';
+import 'package:zengage_learning_platform/screens/home/contact_us_page.dart';
 import 'package:zengage_learning_platform/screens/home_page.dart';
 import 'package:zengage_learning_platform/screens/register_page.dart';
 import 'package:zengage_learning_platform/screens/training_page.dart';
@@ -20,7 +19,6 @@ class RouteGenerator {
   static const TRAINING_ROUTE = '/training';
   static const ASSESSMENT_ROUTE = '/assessment';
   static const COACHING_ROUTE = '/coaching';
-  static const COURSE_ROUTE = '/courses';
   static const CONTACT_US_ROUTE = '/contactus';
   static const ABOUT_US_ROUTE = '/aboutus';
   static const COURSE_DETAILS_ROUTE = '$TRAINING_ROUTE/courseDetails';
@@ -47,9 +45,9 @@ class RouteGenerator {
       case COACHING_ROUTE:
         return MaterialPageRoute(
             builder: (_) => CoachingPage(), settings: settings);
-      case COURSE_ROUTE:
+        /*case COURSE_ROUTE:
         return MaterialPageRoute(
-            builder: (_) => CoursePage(), settings: settings);
+            builder: (_) => CoursePage(), settings: settings);*/
         return MaterialPageRoute(builder: (_) => CoachingPage());
       case COURSE_DETAILS_ROUTE:
         if (args is Course) {
@@ -57,6 +55,9 @@ class RouteGenerator {
           final Course course = args;
           return MaterialPageRoute(
               builder: (_) => CourseDetailsPage(course: course));
+        } else {
+          return MaterialPageRoute(
+              builder: (_) => CourseDetailsPage(course: null));
         }
         print("Args is not course");
         return _errorRoute();
