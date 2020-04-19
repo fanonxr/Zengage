@@ -1,9 +1,8 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
-import 'package:zengage_learning_platform/models/Course.dart';
+import 'package:zengage_learning_platform/constants/app_colors.dart';
+import 'package:zengage_learning_platform/extensions/hover_extensions.dart';
 import 'package:zengage_learning_platform/routes/route_generator.dart';
+import 'package:zengage_learning_platform/widgets/header/CustomDropDownButton.dart';
 
 class NavLinkDropDown extends StatefulWidget {
   final List<String> menuValueItems;
@@ -16,69 +15,60 @@ class NavLinkDropDown extends StatefulWidget {
 }
 
 class _NavLinkDropDownState extends State<NavLinkDropDown> {
-  List<Course> courseList = [];
-
-  @override
-  void initState() {
-    super.initState();
-    readFileContents("assets/content/courses.json").then((value) {
-      print("Data is read from courses.json");
-      final decoded = jsonDecode(value) as List;
-      decoded.forEach((element) {
-        Course course = new Course.fromJson(element);
-        courseList.add(course);
-      });
-    });
-  }
-
-  Future<String> readFileContents(String filePath) async {
-    return rootBundle.loadString(filePath);
-  }
-
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: DropdownButton(
-        underline: SizedBox(),
-        hint: widget.dropDownValue == null
-            ? Text("Dropdown")
-            : Text(
-                widget.dropDownValue,
-                style: TextStyle(color: Colors.black),
+    return HandCursor(
+      child: Container(
+        width: widget.dropDownValue == "Training" ? 94 : 117,
+        child: CustomDropdownButton(
+//        underline: SizedBox(),
+          hint: widget.dropDownValue == null
+              ? Text("Dropdown")
+              : Text(
+                  widget.dropDownValue,
+                  style: TextStyle(
+                      fontSize: 18.0,
+                      color: textGreyColor,
+                      fontWeight: FontWeight.bold),
+                ),
+//        isExpanded: true,
+          style: TextStyle(color: textGreyColor, fontWeight: FontWeight.bold),
+          items: widget.menuValueItems.map((value) {
+            return DropdownMenuItem<String>(
+              value: value,
+              child: Text(
+                value,
+                style: TextStyle(
+                    color: textGreyColor,
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.bold),
               ),
-        isExpanded: false,
-        style: TextStyle(color: Colors.black),
-        items: widget.menuValueItems.map((value) {
-          return DropdownMenuItem<String>(
-            value: value,
-            child: Text(
-              value,
-              style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 20.0,
-                  fontWeight: FontWeight.bold),
-            ),
-          );
-        }).toList(),
-        onChanged: (value) {
-          // TODO: Navigate to the next page
-          value = value.toString().toLowerCase();
-          if (value == 'public') {
-            // navigate to the training page
-            Navigator.pushNamed(context, RouteGenerator.TRAINING_ROUTE);
-          } else if (value == 'training') {
-//            TODO: Temporary
-            Navigator.pushNamed(context, RouteGenerator.COURSE_DETAILS_ROUTE,
-                arguments: courseList[5]);
-          } else if (value == 'upcoming courses') {
-            // navigate to the upcoming courses page
-            Navigator.pushNamed(context, RouteGenerator.UPCOMING_COURSE_ROUTE);
-          }
+            );
+          }).toList(),
+          onChanged: (value) {
+            // TODO: Navigate to the next page
+            value = value.toString().toLowerCase();
+            // refractor this to switch statement
+            if (value == 'public') {
+              // navigate to the training page
+              Navigator.pushNamed(context, RouteGenerator.TRAINING_ROUTE);
+            } else if (value == 'training') {
+              Navigator.pushNamed(context, RouteGenerator.TRAINING_ROUTE);
+            } else if (value == 'upcoming courses') {
+              // navigate to the upcoming courses page
+              Navigator.pushNamed(
+                  context, RouteGenerator.UPCOMING_COURSE_ROUTE);
+            } else if (value == 'about us') {
+              Navigator.pushNamed(context, RouteGenerator.ABOUT_US_ROUTE);
+            } else if (value == 'contact us') {
+              Navigator.pushNamed(context, RouteGenerator.CONTACT_US_ROUTE);
+            }
 
-          setState(() {
-            // widget.dropDownValue = value;
-          });
-        },
+            setState(() {
+              // widget.dropDownValue = value;
+            });
+          },
+        ),
       ),
     );
   }

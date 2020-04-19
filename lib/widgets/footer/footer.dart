@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:zengage_learning_platform/constants/app_colors.dart';
 import 'package:zengage_learning_platform/constants/app_constants.dart';
 import 'package:zengage_learning_platform/screens/home/widgets/social_banner.dart';
 import 'package:zengage_learning_platform/styles/style.dart';
@@ -9,7 +10,7 @@ class Footer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.lightBlue, // TODO: change to theme color
+      color: blueThemeColor,
       // margin: EdgeInsets.only(top: 20.0, bottom: 20.0),
       padding: EdgeInsets.only(top: 40.0, bottom: 40.0),
       child: Column(
@@ -39,17 +40,20 @@ class Footer extends StatelessWidget {
                 textColor: Colors.white,
               ),
               Text(" | "),
-              NavLink(navText: "Contact Us", textColor: Colors.white),
+              NavLink(
+                navText: "Contact Us",
+                textColor: Colors.white,
+              ),
               Text(" | "),
-              NavLink(navText: "Become a Trainer Us", textColor: Colors.white),
+              NavLink(
+                navText: "Become a Trainer",
+                textColor: Colors.white,
+              ),
               Text(" | "),
-              NavLink(navText: "Webinars", textColor: Colors.white),
-              Text(" | "),
-              NavLink(navText: "Privacy Policy", textColor: Colors.white),
-              Text(" | "),
-              NavLink(navText: "Terms & Conditions", textColor: Colors.white),
-              Text(" | "),
-              NavLink(navText: "FAQ", textColor: Colors.white)
+              NavLink(
+                navText: "Terms & Conditions",
+                textColor: Colors.white,
+              ),
             ],
           ),
           SizedBox(

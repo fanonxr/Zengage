@@ -1,14 +1,11 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
+
+import 'BlueBorderWhiteButton.dart';
 
 class ContactUsImageBanner extends StatelessWidget {
   final String imageLink;
 
-  final bool isButtonTranslucent;
-
-  ContactUsImageBanner(
-      {@required this.imageLink, this.isButtonTranslucent = false});
+  ContactUsImageBanner({@required this.imageLink});
 
   @override
   Widget build(BuildContext context) {
@@ -23,33 +20,17 @@ class ContactUsImageBanner extends StatelessWidget {
           padding: EdgeInsets.only(top: 100.0),
           decoration: BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage(imageLink), fit: BoxFit.cover)),
+                  image: NetworkImage(imageLink), fit: BoxFit.cover)),
         ),
-        Container(
-          margin:
-              EdgeInsets.only(left: imageWidth * 0.1, top: imageHeight * 0.35),
-          color: isButtonTranslucent
-              ? Colors.white.withOpacity(0.25)
-              : Colors.white,
-          child: OutlineButton(
-            padding: EdgeInsets.fromLTRB(imageWidth * 0.1, imageHeight * 0.03,
-                imageWidth * 0.1, imageHeight * 0.03),
-            child: Text(
-              "Contact Us",
-              style: TextStyle(
-                  fontSize: (imageWidth > 700.0) ? 18.0 : 12.0,
-                  color: isButtonTranslucent ? Colors.white : Colors.grey,
-                  fontWeight: FontWeight.bold),
-            ),
-            onPressed: () {
-              print("Contact Us pressed");
-            },
-            borderSide: BorderSide(
-              color: Colors.lightBlue, //Color of the border
-              style: BorderStyle.solid, //Style of the border
-              width: 4, //width of the border
-            ),
-          ),
+        Positioned.fill(
+          child: Align(
+              alignment: Alignment.bottomRight,
+              child: Container(
+                margin: EdgeInsets.only(
+                    right: imageWidth * 0.05, bottom: imageHeight * 0.1),
+                child: BlueBorderWhiteButton(
+                    width: imageWidth, height: imageHeight),
+              )),
         )
       ],
     );

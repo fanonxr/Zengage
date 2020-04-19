@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/models/DropDownValueItems.dart';
+import 'package:zengage_learning_platform/widgets/body/ContactUsImageBanner.dart';
 import 'package:zengage_learning_platform/widgets/footer/footer.dart';
 import 'package:zengage_learning_platform/widgets/navbar/NavLinkDropDown.dart';
 import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
@@ -25,7 +26,7 @@ class _TrainingPageState extends State<TrainingPage> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: buildNavBar(context),
+        appBar: NavBar(),
         body: ListView.builder(
           itemBuilder: (context, index) {
             return Container(
@@ -46,40 +47,10 @@ class TrainingHeaderBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-        height: MediaQuery.of(context).size.height / 2,
-        alignment: Alignment.topCenter,
-        padding: EdgeInsets.only(top: 100.0),
-        decoration: BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage(imagePath), fit: BoxFit.cover)),
-        child: Row(
-          children: <Widget>[
-            SizedBox(
-              width: 100.0,
-            ),
-            buildButtonWithOpacity("Contact Us", context)
-          ],
-        ));
+    return ContactUsImageBanner(
+      imageLink: imagePath,
+    );
   }
-}
-
-Widget buildButtonWithOpacity(String buttonText, context) {
-  return Container(
-    height: MediaQuery.of(context).size.height / 18,
-    width: MediaQuery.of(context).size.width / 7,
-    child: Opacity(
-      opacity: .9,
-      child: RaisedButton(
-        color: Colors.blue,
-        child: Text(
-          buttonText,
-          style: TextStyle(color: Colors.black, fontSize: 28.0),
-        ),
-        onPressed: () {},
-      ),
-    ),
-  );
 }
 
 class DropdownContainer extends StatelessWidget {

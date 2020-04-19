@@ -17,32 +17,13 @@ class WhyBodyHeader extends StatelessWidget {
 
     return Padding(
       padding: const EdgeInsets.all(32.0),
-      child: Row(
+      child: Stack(
+        alignment: Alignment.center,
         children: <Widget>[
-          Stack(
-            alignment: Alignment(0.0, 0.0),
-            children: <Widget>[
-              Container(
-                child: Image.asset(
-                  'assets/images/assessment/why-assessment-header-bg.png',
-                  height: imageHeight + 125.0,
-                  fit: BoxFit.fill,
-                  width: imageWidth + 125.0,
-                ),
-              ),
-              Container(
-                height: imageHeight,
-                width: imageHeight,
-                decoration: BoxDecoration(
-                    shape: BoxShape.circle,
-                    image: new DecorationImage(
-                        fit: BoxFit.cover, image: AssetImage(topImageLink))),
-              ),
-            ],
-          ),
-          Expanded(
+          Align(
+            alignment: Alignment.centerRight,
             child: Container(
-              margin: EdgeInsets.only(right: 128.0),
+              margin: EdgeInsets.only(left: imageHeight + 40, right: 128.0),
 //              height: MediaQuery.of(context).size.height * 0.35,
               decoration: BoxDecoration(
                 boxShadow: [
@@ -77,6 +58,30 @@ class WhyBodyHeader extends StatelessWidget {
                   ],
                 ),
               ),
+            ),
+          ),
+          Align(
+            alignment: Alignment.centerLeft,
+            child: Stack(
+              alignment: Alignment(0.0, 0.0),
+              children: <Widget>[
+                Container(
+                  child: Image.asset(
+                    'assets/images/assessment/why-assessment-header-bg.png',
+                    height: imageHeight + 125.0,
+                    fit: BoxFit.fill,
+                    width: imageWidth + 125.0,
+                  ),
+                ),
+                Container(
+                  height: imageHeight,
+                  width: imageHeight,
+                  decoration: BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: new DecorationImage(
+                          fit: BoxFit.cover, image: AssetImage(topImageLink))),
+                ),
+              ],
             ),
           )
         ],

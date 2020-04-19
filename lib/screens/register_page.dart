@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/constants/app_colors.dart';
+import 'package:zengage_learning_platform/screens/home/contact_us_page.dart';
 import 'package:zengage_learning_platform/widgets/footer/footer.dart';
 import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
 
@@ -69,8 +70,8 @@ class WelcomeBanner extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
-                  GreyBoldText('Welcome!'),
-                  GreyBoldText('Register below to create your account.')
+                  GreyBoldText(text: 'Welcome!'),
+                  GreyBoldText(text: 'Register below to create your account.')
                 ],
               ),
             ),
@@ -84,7 +85,7 @@ class WelcomeBanner extends StatelessWidget {
 class GreyBoldText extends StatelessWidget {
   final String text;
 
-  const GreyBoldText(this.text);
+  const GreyBoldText({this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -99,135 +100,168 @@ class GreyBoldText extends StatelessWidget {
   }
 }
 
-class RegistrationForm extends StatelessWidget {
+class RegistrationForm extends StatefulWidget {
+  @override
+  _RegistrationFormState createState() => _RegistrationFormState();
+}
+
+class _RegistrationFormState extends State<RegistrationForm> {
+  List<FormItem> registrationFormItems;
+
+  final _formKey = GlobalKey<FormState>();
+
+  @override
+  void initState() {
+    super.initState();
+    registrationFormItems = [
+      FormItem(labelText: "Full name"),
+      FormItem(labelText: "Email", textType: TextInputType.emailAddress),
+      FormItem(labelText: "Password", obscureText: true),
+      FormItem(labelText: "Country"),
+      FormItem(labelText: "Mailing Address", isOptional: true),
+      FormItem(
+          labelText: "Contact Number",
+          textType: TextInputType.number,
+          isOptional: true),
+      FormItem(labelText: "Courses", isOptional: true),
+      FormItem(
+          labelText: "Payment info",
+          textType: TextInputType.number,
+          hintText: "Card Number",
+          isOptional: true)
+    ];
+  }
+
   @override
   Widget build(BuildContext context) {
-    final registrationFormItems = [
-      RegistrationFormItem(labelText: "Full name"),
-      RegistrationFormItem(labelText: "Email"),
-      RegistrationFormItem(labelText: "Password", obscureText: true),
-      RegistrationFormItem(labelText: "Country"),
-      RegistrationFormItem(labelText: "Mailing Address", isOptional: true),
-      RegistrationFormItem(labelText: "Contact Number", isOptional: true),
-      RegistrationFormItem(labelText: "Courses", isOptional: true),
-      RegistrationFormItem(
-          labelText: "Payment info", hintText: "Card Number", isOptional: true)
-    ];
-    return Column(
-      children: <Widget>[
-        Container(
-          margin: EdgeInsets.only(
-              top: 32.0,
-              bottom: 32.0,
-              left: MediaQuery.of(context).size.width * 0.05),
-          width: MediaQuery.of(context).size.width * 0.65,
-          child: ListView.builder(
-              itemCount: registrationFormItems.length,
-              shrinkWrap: true,
-              itemBuilder: (context, position) {
-                return Container(
-                  margin: EdgeInsets.only(top: 16.0, bottom: 16.0),
-                  child: Row(
-                    children: <Widget>[
-                      Container(
-                          width: MediaQuery.of(context).size.width * 0.10,
-                          child: GreyBoldText(
-                              registrationFormItems[position].getLabelText)),
-                      Container(
-                        width: MediaQuery.of(context).size.width * 0.55,
-                        padding: EdgeInsets.all(4.0),
-                        color: bgGreyColor,
-                        child: TextField(
-                          decoration: InputDecoration.collapsed(
-                              hintText:
-                                  registrationFormItems[position].hintText),
-                          obscureText:
-                              registrationFormItems[position].obscureText,
-                        ),
-                      )
-                    ],
-                  ),
-                );
-              }),
-        ),
-        Container(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              Container(
-                color: bgGreyColor,
-                width: MediaQuery.of(context).size.width * 0.55 / 4,
-                child: TextField(
-                  decoration:
-                      InputDecoration.collapsed(hintText: "Month | Day"),
-                  textAlign: TextAlign.center,
-                ),
-              ),
-              Container(
-                width: 48.0,
-              ),
-              Container(
-                color: bgGreyColor,
-                width: MediaQuery.of(context).size.width * 0.55 / 4,
-                child: TextField(
-                  textAlign: TextAlign.center,
-                  decoration: InputDecoration.collapsed(
-                    hintText: 'CVV',
+    return Form(
+      key: _formKey,
+      child: Column(
+        children: <Widget>[
+          Container(
+            margin: EdgeInsets.only(
+                top: 32.0,
+                bottom: 32.0,
+                left: MediaQuery.of(context).size.width * 0.05),
+            width: MediaQuery.of(context).size.width * 0.65,
+            child: ListView.builder(
+                itemCount: registrationFormItems.length,
+                shrinkWrap: true,
+                itemBuilder: (context, position) {
+                  return FormItemField(
+                      registrationFormItem: registrationFormItems[position]);
+                }),
+          ),
+          Container(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Container(
+                  color: bgGreyColor,
+                  width: MediaQuery.of(context).size.width * 0.55 / 4,
+                  child: TextField(
+                    decoration:
+                        InputDecoration.collapsed(hintText: "Month | Day"),
+                    textAlign: TextAlign.center,
                   ),
                 ),
-              ),
-            ],
-          ),
-        ),
-        Container(
-          margin: EdgeInsets.only(top: 32.0, bottom: 64.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              MaterialButton(
-                  child: Text(
-                    'Reset',
-                    style: TextStyle(color: Colors.white, fontSize: 22.0),
+                Container(
+                  width: 48.0,
+                ),
+                Container(
+                  color: bgGreyColor,
+                  width: MediaQuery.of(context).size.width * 0.55 / 4,
+                  child: TextField(
+                    textAlign: TextAlign.center,
+                    decoration: InputDecoration.collapsed(
+                      hintText: 'CVV',
+                    ),
                   ),
-                  height: 56.0,
-                  minWidth: MediaQuery.of(context).size.width * 0.55 / 4,
-                  color: darkGreyColor,
-                  onPressed: () {
-                    print("Reset clicked");
-                  }),
-              Container(
-                width: 48.0,
-              ),
-              MaterialButton(
-                  child: Text(
-                    'Register',
-                    style: TextStyle(color: Colors.white, fontSize: 22.0),
-                  ),
-                  height: 56.0,
-                  minWidth: MediaQuery.of(context).size.width * 0.55 / 4,
-                  color: darkGreyColor,
-                  onPressed: () {
-                    print("Register clicked");
-                  }),
-            ],
+                ),
+              ],
+            ),
           ),
-        ),
-      ],
+          Container(
+            margin: EdgeInsets.only(top: 32.0, bottom: 64.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                GreyButton(
+                  text: 'Reset',
+                  onPressed: () {
+                    _formKey.currentState.reset();
+                  },
+                ),
+                Container(
+                  width: 48.0,
+                ),
+                GreyButton(
+                  text: 'Register',
+                  onPressed: () {
+                    // Validate returns true if the form is valid, otherwise false.
+                    if (_formKey.currentState.validate()) {
+                      Scaffold.of(context).showSnackBar(
+                          SnackBar(content: Text('Registering User')));
+                    }
+                  },
+                ),
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
 
-class RegistrationFormItem {
+class FormItemField extends StatelessWidget {
+  const FormItemField({@required this.registrationFormItem});
+
+  final FormItem registrationFormItem;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(top: 16.0, bottom: 16.0),
+      child: Row(
+        children: <Widget>[
+          Container(
+              width: MediaQuery.of(context).size.width * 0.10,
+              child: GreyBoldText(text: registrationFormItem.getLabelText)),
+          Container(
+            width: MediaQuery.of(context).size.width * 0.55,
+            padding: EdgeInsets.all(4.0),
+            color: bgGreyColor,
+            child: TextFormField(
+              decoration: InputDecoration.collapsed(
+                  hintText: registrationFormItem.hintText),
+              obscureText: registrationFormItem.obscureText,
+              keyboardType: registrationFormItem.textType,
+              minLines: registrationFormItem.isMessage ? 9 : 1,
+              maxLines: registrationFormItem.isMessage ? 12 : 1,
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class FormItem {
   String labelText;
   String hintText;
+  TextInputType textType;
   bool isOptional;
   bool obscureText;
+  bool isMessage;
 
-  RegistrationFormItem(
+  FormItem(
       {@required this.labelText,
       this.hintText = '',
+      this.textType = TextInputType.text,
       this.isOptional = false,
-      this.obscureText = false});
+      this.obscureText = false,
+      this.isMessage = false});
 
   String get getLabelText => isOptional ? '$labelText:' : "*$labelText:";
 }

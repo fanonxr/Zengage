@@ -29,7 +29,7 @@ class ServiceContainer extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               ServiceItem(
-                serviceInfoTitle: "Assesments",
+                serviceInfoTitle: "Assessments",
                 imagePath: "assets/images/homepage/light-bulb-img.png",
                 serviceItemInfo:
                     "Embedded in the Agile principles is the concept of reflection, feedback and continuous improvement."
