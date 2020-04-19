@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/extensions/hover_extensions.dart';
+import 'package:zengage_learning_platform/routes/route_generator.dart';
 import 'package:zengage_learning_platform/widgets/body/ContactUsImageBanner.dart';
 import 'package:zengage_learning_platform/widgets/footer/footer.dart';
 import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
@@ -92,6 +93,7 @@ class ContactUsButton extends StatelessWidget {
           padding: EdgeInsets.only(top: 16.0, bottom: 16.0),
           onPressed: () {
             print("Contact Us clicked");
+            Navigator.of(context).pushNamed(RouteGenerator.CONTACT_US_ROUTE);
           },
           child: Text(
             'Contact Us',
