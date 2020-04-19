@@ -26,7 +26,7 @@ class _CoachingPageState extends State<CoachingPage> {
           contents:
               'Combining both software development and operations, an Agile DevOps environment maximizes productivity by coordinating a shared vision.  This enables your organization to cooperate on a common set of tools and practices, from planning to maintenance.'),
       WhyItems(
-          title: 'Tools Assessment and Implementation',
+          title: 'Tools Assessments and Implementation',
           contents:
               'Agile is a set of principles – there are a plethora of tools available, but which ones are best for your specific needs and goals?  With this coaching session, we help you assess your current toolset and your organization’s strengths and challenges, and we assemble a collection of tools specific to your requirements.')
     ];
