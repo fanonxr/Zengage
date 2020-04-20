@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/constants/app_colors.dart';
 import 'package:zengage_learning_platform/constants/app_constants.dart';
+import 'package:zengage_learning_platform/routes/route_generator.dart';
 import 'package:zengage_learning_platform/screens/home/widgets/social_banner.dart';
 import 'package:zengage_learning_platform/styles/style.dart';
 import 'package:zengage_learning_platform/widgets/navbar/NavLink.dart';
@@ -38,11 +39,13 @@ class Footer extends StatelessWidget {
               NavLink(
                 navText: "About Us",
                 textColor: Colors.white,
+                navigateToPage: RouteGenerator.ABOUT_US_ROUTE,
               ),
               Text(" | "),
               NavLink(
                 navText: "Contact Us",
                 textColor: Colors.white,
+                navigateToPage: RouteGenerator.CONTACT_US_ROUTE,
               ),
               Text(" | "),
               NavLink(

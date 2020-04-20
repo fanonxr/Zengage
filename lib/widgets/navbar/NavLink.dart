@@ -25,16 +25,17 @@ class NavLink extends StatelessWidget {
       child: Container(
         color: bgColor,
         child: MaterialButton(
-          child: Text(
-            navText,
-            style: TextStyle(
-                color: textColor,
-                fontSize: fontSize,
-                fontWeight: isBold ? FontWeight.bold : FontWeight.normal),
-          ),
-          onPressed: () => Navigator.popAndPushNamed(context,
-              navigateToPage), // TODO: implement the route it should navigate to
-        ),
+            child: Text(
+              navText,
+              style: TextStyle(
+                  color: textColor,
+                  fontSize: fontSize,
+                  fontWeight: isBold ? FontWeight.bold : FontWeight.normal),
+            ),
+            onPressed: () {
+              Navigator.popAndPushNamed(context,
+                  navigateToPage); // TODO: implement the route it should navigate to
+            }),
       ),
     );
   }

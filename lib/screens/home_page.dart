@@ -1,8 +1,5 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
-import 'package:zengage_learning_platform/models/Course.dart';
 import 'package:zengage_learning_platform/widgets/footer/footer.dart';
 import 'package:zengage_learning_platform/widgets/inspire_section/inspire_container.dart';
 import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
@@ -38,14 +35,14 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     print("Home Page");
-    readFileContents("assets/content/courses.json").then((value) {
+    /*readFileContents("assets/content/courses.json").then((value) {
       print("Data read from the file is:");
       final decoded = jsonDecode(value) as List;
       decoded.forEach((element) {
         Course test = new Course.fromJson(element);
         print(test);
       });
-    });
+    });*/
   }
 
   Future<String> readFileContents(String filePath) async {
