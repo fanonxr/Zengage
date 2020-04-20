@@ -35,7 +35,7 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
       print("Data read from the file is:");
       final decoded = jsonDecode(value) as List;
       setState(() {
-        course = new Course.fromJson(decoded[10]);
+        course = new Course.fromJson(decoded[1]);
         print(course.toString());
       });
     });
@@ -268,7 +268,7 @@ class TextSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 300.0,
+//      height: 300.0,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zengage_learning_platform/routes/route_generator.dart';
 
 class FilterBody extends StatelessWidget {
   @override
@@ -152,7 +153,10 @@ class CourseItem extends StatelessWidget {
                     padding: const EdgeInsets.all(8.0),
                     textColor: Colors.white,
                     color: Colors.blue,
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context)
+                          .pushNamed(RouteGenerator.REGISTRATION_ROUTE);
+                    },
                     child: Text("REGISTER"),
                   ),
                 )
