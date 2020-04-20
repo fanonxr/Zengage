@@ -29,7 +29,7 @@ class ServiceContainer extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               ServiceItem(
-                serviceInfoTitle: "Assesments",
+                serviceInfoTitle: "Assessments",
                 imagePath: "assets/images/homepage/light-bulb-img.png",
                 serviceItemInfo:
                     "Embedded in the Agile principles is the concept of reflection, feedback and continuous improvement."
@@ -66,6 +66,8 @@ class ServiceItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: MediaQuery.of(context).size.height / 1.5,
+      width: MediaQuery.of(context).size.width / 3,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
@@ -81,22 +83,20 @@ class ServiceItem extends StatelessWidget {
             height: 25.0,
           ),
           Container(
-            child: Container(
-              // color: Colors.white,
-              child: CircleAvatar(
-                radius: MediaQuery.of(context).size.width / 20,
-                backgroundColor: Colors.white,
-                backgroundImage: AssetImage(imagePath),
-                // child: Image.asset(imagePath),
-              ),
+            // color: Colors.white,
+            child: CircleAvatar(
+              radius: MediaQuery.of(context).size.width / 20,
+              backgroundColor: Colors.white,
+              backgroundImage: AssetImage(imagePath),
+              // child: Image.asset(imagePath),
             ),
           ),
           SizedBox(
             height: 25.0,
           ),
           Container(
-            height: MediaQuery.of(context).size.height / 5,
-            width: MediaQuery.of(context).size.width / 5,
+            height: MediaQuery.of(context).size.height / 5.5,
+            width: MediaQuery.of(context).size.width / 5.5,
             color: Colors.grey,
             padding: EdgeInsets.all(20.0),
             constraints: BoxConstraints(minWidth: 150.0, minHeight: 150.0),
@@ -105,8 +105,8 @@ class ServiceItem extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 Container(
-                  // height: MediaQuery.of(context).size.height / 6,
-                  // width: MediaQuery.of(context).size.width / 6,
+                  height: MediaQuery.of(context).size.height / 7.5,
+                  width: MediaQuery.of(context).size.width / 7.5,
                   child: Text(
                     serviceItemInfo,
                     textAlign: TextAlign.center,
