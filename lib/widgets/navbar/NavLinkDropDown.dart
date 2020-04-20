@@ -53,7 +53,7 @@ class _NavLinkDropDownState extends State<NavLinkDropDown> {
               // navigate to the training page
               Navigator.pushNamed(context, RouteGenerator.TRAINING_ROUTE);
             } else if (value == 'training') {
-              Navigator.pushNamed(context, RouteGenerator.TRAINING_ROUTE);
+              Navigator.pushNamed(context, RouteGenerator.COURSE_DETAILS_ROUTE);
             } else if (value == 'upcoming courses') {
               // navigate to the upcoming courses page
               Navigator.pushNamed(

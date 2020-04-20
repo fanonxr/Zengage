@@ -45,7 +45,7 @@ class AutoCarousel extends StatelessWidget {
             imagePath: "assets/images/homepage/hp-banner-3.jpg",
             headlineText: "Browse the courses that will enable you to succeed!",
             buttonText: "VIEW COURSES",
-            route: RouteGenerator.COURSE_ROUTE,
+            route: RouteGenerator.COURSE_DETAILS_ROUTE,
           ),
           SliderContent(
             imagePath: "assets/images/homepage/scrolling-3.jpg",

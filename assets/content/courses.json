@@ -7,7 +7,7 @@
     "roles": [
       "Scrum Master"
     ],
-    "icon file": "SAI_BadgeSizes_DigitalBadging_CSM.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/Certified Scrum Master.png",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -46,7 +46,7 @@
       "Product Owner",
       "Business Analyst"
     ],
-    "icon file": "SAI_BadgeSizes_DigitalBadging_CSPO.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/Certified Scrum Product Owner.png",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -86,7 +86,7 @@
       "QA",
       "UI/UX"
     ],
-    "icon file": "SAI_BadgeSizes_DigitalBadging_CSD.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/Certified Scrum Developer.png",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -124,7 +124,7 @@
     "roles": [
       "Scrum Master"
     ],
-    "icon file": "PSM Logo.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/Professional Scrum Master logo.png",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -163,7 +163,7 @@
       "Product Owner",
       "Business Analyst"
     ],
-    "icon file": "PSPO Logo.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/Professional Scrum Product Owner.png",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -204,7 +204,7 @@
       "UI/UX",
       "Content Writer"
     ],
-    "icon file": "PSD Logo.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/Professional Scrum Developer.png",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -248,7 +248,7 @@
       "UI/UX",
       "Content Writer"
     ],
-    "icon file": "Implementing-SAFe-5-Courseware-Thumbnails-SPC-1.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/Safe Fro Teams.png",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -286,7 +286,7 @@
     "roles": [
       "Scrum Master"
     ],
-    "icon file": "SAFe-5-Courseware-Thumbnails-SSM-1.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/SAFe Scrum Master.png",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -325,7 +325,7 @@
       "Product Owner",
       "Business Analyst"
     ],
-    "icon file": "SAFe-5-Courseware-Thumbnails-POPM.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/POPM.png",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -365,7 +365,7 @@
       "Product Owner",
       "Business Analyst"
     ],
-    "icon file": "SAFe-5-Courseware-Thumbnails-SGP-1.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/SGP.svg",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -409,7 +409,7 @@
       "UI/UX",
       "Content Writer"
     ],
-    "icon file": "SAFe-5-Courseware-Thumbnails-SA-1.png",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FLeading%20Safe.png?alt=media&token=035ce256-3a4d-4401-89c4-30cd02ceb36f",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -447,7 +447,7 @@
     "roles": [
       "Scrum Master"
     ],
-    "icon file": "SAFe-5-Courseware-Thumbnails-SASM.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/SASM.png",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -487,7 +487,7 @@
       "QA",
       "UI/UX"
     ],
-    "icon file": "SAFe-5-Courseware-Thumbnails-SDP-343x400-2.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/SDP.png",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -526,7 +526,7 @@
       "Scrum Master",
       "Product Owner"
     ],
-    "icon file": "SAFe-5-Courseware-Thumbnails-ARCH.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/ARCH.svg",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -570,7 +570,7 @@
       "UI/UX",
       "Content Writer"
     ],
-    "icon file": "SAFe-5-Courseware-Thumbnails-SP-1.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/Safe Fro Teams.png",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -612,7 +612,7 @@
       "Developer",
       "QA"
     ],
-    "icon file": "SAFe-5-Courseware-Thumbnails-RTE.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/RTE.svg",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -652,7 +652,7 @@
       "QA",
       "UI/UX"
     ],
-    "icon file": "ASE_cover_rev.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/ASE.svg",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -692,7 +692,7 @@
       "Product Owner",
       "Business Analyst"
     ],
-    "icon file": "SAFe-5-Courseware-Thumbnails-LPM-1.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/LEan Portfolio Management.png",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -732,7 +732,7 @@
       "Product Owner",
       "Business Analyst"
     ],
-    "icon file": "SAFe-5-Courseware-Thumbnails-APM.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/APM.png",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -776,7 +776,7 @@
       "UI/UX",
       "Content Writer"
     ],
-    "icon file": "SAI_Certification_CAL1_RGB.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/SAI_Certification_CAL1_RGB.png",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -816,7 +816,7 @@
       "Product Owner",
       "Business Analyst"
     ],
-    "icon file": "pmi-pmp-new.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/Project Management Professional.png",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -860,7 +860,7 @@
       "UI/UX",
       "Content Writer"
     ],
-    "icon file": "pmi-acp-new.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/pmi-acp-600px.png",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -904,7 +904,7 @@
       "UI/UX",
       "Content Writer"
     ],
-    "icon file": "custom-logo-value-stream.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/VSELogo.jpg",
     "details": {
       "cost": "5000",
       "class hours": "16",
@@ -944,7 +944,7 @@
       "Product Owner",
       "Business Analyst"
     ],
-    "icon file": "custom-logo-safe-portfolio-management.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/SPMLogo.jpg",
     "details": {
       "cost": "5000",
       "class hours": "16",
@@ -984,7 +984,7 @@
       "Product Owner",
       "Business Analyst"
     ],
-    "icon file": "custom-logo-program-increment.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/PIW Logo.png",
     "details": {
       "cost": "6000",
       "class hours": "24",
@@ -1028,7 +1028,7 @@
       "UI/UX",
       "Content Writer"
     ],
-    "icon file": "custom-logo-inspect-and-adapt.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/I&A Logo.jpg",
     "details": {
       "cost": "5000",
       "class hours": "20",
@@ -1068,7 +1068,7 @@
       "Product Owner",
       "Business Analyst"
     ],
-    "icon file": "custom-logo-product-management.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/PMV Logo.jpg",
     "details": {
       "cost": "5000",
       "class hours": "8",
@@ -1107,7 +1107,7 @@
       "Scrum Master",
       "Product Owner"
     ],
-    "icon file": "custom-logo-team-building.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/PMV Logo.png",
     "details": {
       "cost": "5000",
       "class hours": "12",
@@ -1151,7 +1151,7 @@
       "UI/UX",
       "Content Writer"
     ],
-    "icon file": "custom-logo-scrum-kanban.png",
+    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/CSCW Logo.jpg",
     "details": {
       "cost": "5000",
       "class hours": "24",
