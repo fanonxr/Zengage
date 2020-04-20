@@ -43,7 +43,7 @@ class _HomePageState extends State<HomePage> {
       final decoded = jsonDecode(value) as List;
       decoded.forEach((element) {
         Course test = new Course.fromJson(element);
-        print(test.toString());
+        print(test);
       });
     });
   }
