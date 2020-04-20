@@ -32,7 +32,6 @@ class TrainingBadgeItem extends StatelessWidget {
             SizedBox(
               height: 15.0,
             ),
-<<<<<<< HEAD
             FlatButton(
               onPressed: () {
                 Navigator.push(
@@ -48,11 +47,9 @@ class TrainingBadgeItem extends StatelessWidget {
                 backgroundImage: AssetImage(imagePath),
               ),
             ),
-=======
             PartnerAssetLogo(
               imagePath: imagePath,
             )
->>>>>>> b82e4f078b09bfa9fe563c715c7ca42502597347
           ],
         ));
   }
