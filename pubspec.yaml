@@ -73,3 +73,4 @@ flutter:
     - assets/images/upcomingpage/
     - assets/images/aboutpage/
     - assets/images/contactus/
+    - assets/content/courses.json
