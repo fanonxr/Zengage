@@ -112,70 +112,112 @@ List<CourseItem> allCourses = [
   ),
   CourseItem(
     courseImage: "assets/images/trainingpage/course-logos/safe-for-teams.png",
-    nameOfCourse: "Leading SAFe 5.0 with Agile Certification",
+    nameOfCourse: "SAFe For Teams",
     city: "Los Angeles",
     dateOfCourse: "March 28th, 2021",
   ),
   CourseItem(
     courseImage:
         "assets/images/trainingpage/course-logos/lean-portfolio-management.png",
-    nameOfCourse: "Leading SAFe 5.0 with Agile Certification",
+    nameOfCourse: "Lean Portfolio Management",
     city: "San Francisco",
     dateOfCourse: "June 24th, 2020",
   ),
   CourseItem(
     courseImage:
         "assets/images/trainingpage/course-logos/prof-scrum-master.png",
-    nameOfCourse: "Leading SAFe 5.0 with Agile Certification",
+    nameOfCourse: "Professional Scrum Master",
     city: "Hamden",
     dateOfCourse: "August 18th, 2020",
   ),
   CourseItem(
     courseImage:
         "assets/images/trainingpage/course-logos/prof-scrum-product-owner.png",
-    nameOfCourse: "Leading SAFe 5.0 with Agile Certification",
+    nameOfCourse: "Professional Scrum Product Owner",
     city: "New York City",
     dateOfCourse: "April 12th, 2020",
   ),
   CourseItem(
     courseImage:
         "assets/images/trainingpage/course-logos/prof-scrum-developer.png",
-    nameOfCourse: "Leading SAFe 5.0 with Agile Certification",
+    nameOfCourse: "Professional Scrum Developer",
     city: "Chicago",
     dateOfCourse: "July 6th, 2020",
   ),
   CourseItem(
     courseImage:
         "assets/images/trainingpage/course-logos/certified-scrum-master.png",
-    nameOfCourse: "Leading SAFe 5.0 with Agile Certification",
+    nameOfCourse: "Certified Scrum Master",
     city: "Compton",
     dateOfCourse: "September 19th, 2020",
   ),
   CourseItem(
     courseImage:
         "assets/images/trainingpage/course-logos/certified-scrum-product-owner.png",
-    nameOfCourse: "Leading SAFe 5.0 with Agile Certification",
+    nameOfCourse: "Certified Scrum Product Owner",
     city: "Palm Dale",
     dateOfCourse: "November 18th, 2020",
   ),
   CourseItem(
     courseImage:
         "assets/images/trainingpage/course-logos/certified-scrum-developer.png",
-    nameOfCourse: "Leading SAFe 5.0 with Agile Certification",
+    nameOfCourse: "Certified Scrum Developer",
     city: "Hollywood",
     dateOfCourse: "October 12th, 2020",
   ),
   CourseItem(
     courseImage:
         "assets/images/trainingpage/course-logos/proj-management-proposal.png",
-    nameOfCourse: "Leading SAFe 5.0 with Agile Certification",
+    nameOfCourse: "Project Management Professional",
     city: "Salt Lake City",
     dateOfCourse: "Decemeber 15th, 2020",
   ),
   CourseItem(
     courseImage: "assets/images/trainingpage/course-logos/pmi-acp.png",
-    nameOfCourse: "Customized Scrum/Kanban Workshop",
+    nameOfCourse: "Agile Certified Practicioner",
     city: "Seattle",
+    dateOfCourse: "May 13th, 2020",
+  ),
+  CourseItem(
+    courseImage: "assets/images/trainingpage/course-logos/vse-logo.jpg",
+    nameOfCourse: "Value Stream Workshop",
+    city: "Denver",
+    dateOfCourse: "May 13th, 2020",
+  ),
+  CourseItem(
+    courseImage: "assets/images/trainingpage/course-logos/spm-logo.jpg",
+    nameOfCourse: "SAFe Portfolio Management",
+    city: "Los Angeles",
+    dateOfCourse: "May 13th, 2020",
+  ),
+  CourseItem(
+    courseImage: "assets/images/trainingpage/course-logos/piw-logo.png",
+    nameOfCourse: "Program Increment Workshop",
+    city: "Los Angeles",
+    dateOfCourse: "May 13th, 2020",
+  ),
+  CourseItem(
+    courseImage: "assets/images/trainingpage/course-logos/i&a-logo.jpg",
+    nameOfCourse: "Inspect & Adapt",
+    city: "San Diego",
+    dateOfCourse: "May 13th, 2020",
+  ),
+  CourseItem(
+    courseImage: "assets/images/trainingpage/course-logos/pmv-logo.jpg",
+    nameOfCourse: "Product Management Workshop",
+    city: "San Diego",
+    dateOfCourse: "May 13th, 2020",
+  ),
+  CourseItem(
+    courseImage: "assets/images/trainingpage/course-logos/team-building.png",
+    nameOfCourse: "Team Building",
+    city: "San Diego",
+    dateOfCourse: "May 13th, 2020",
+  ),
+  CourseItem(
+    courseImage: "assets/images/trainingpage/course-logos/cscw-logojpg.jpg",
+    nameOfCourse: "Customized Scrum Kanban Workshop",
+    city: "San Diego",
     dateOfCourse: "May 13th, 2020",
   ),
 ];
@@ -187,9 +229,7 @@ List<CourseItem> publicCourses = [
   allCourses[3],
 ];
 
-List<CourseItem> privateCourses = [];
-
-List<CourseItem> corporateCourses = [
+List<CourseItem> privateCourses = [
   allCourses[4],
   allCourses[5],
   allCourses[6],
@@ -197,4 +237,14 @@ List<CourseItem> corporateCourses = [
   allCourses[8],
   allCourses[9],
   allCourses[10],
+];
+
+List<CourseItem> corporateCourses = [
+  allCourses[11],
+  allCourses[12],
+  allCourses[13],
+  allCourses[14],
+  allCourses[15],
+  allCourses[16],
+  allCourses[17],
 ];
