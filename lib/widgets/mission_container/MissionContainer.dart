@@ -96,7 +96,7 @@ class MissionContainer extends StatelessWidget {
         textColor: Colors.black,
         padding: EdgeInsets.all(8.0),
         onPressed: () {
-          Navigator.pushNamed(context, route);
+          Navigator.of(context).pushNamed(route);
         },
         child: Text(
           "Colloborate".toUpperCase(),

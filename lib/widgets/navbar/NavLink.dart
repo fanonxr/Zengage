@@ -33,8 +33,7 @@ class NavLink extends StatelessWidget {
                   fontWeight: isBold ? FontWeight.bold : FontWeight.normal),
             ),
             onPressed: () {
-              Navigator.popAndPushNamed(context,
-                  navigateToPage); // TODO: implement the route it should navigate to
+              Navigator.of(context).pushNamed(navigateToPage);
             }),
       ),
     );

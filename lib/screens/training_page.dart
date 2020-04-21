@@ -16,14 +16,15 @@ class TrainingPage extends StatefulWidget {
 }
 
 Future<List<Course>> loadCourses() async {
-  List<Course> futureCourses = new List();
+//  List<Course> futureCourses = new List();
   String data = await rootBundle.loadString("assets/content/courses.json");
   final json = jsonDecode(data) as List;
-  json.forEach((value) {
+  return json.map((e) => Course.fromJson(e)).toList();
+  /*json.forEach((value) {
     Course course = new Course.fromJson(value);
     futureCourses.add(course);
   });
-  return futureCourses;
+  return futureCourses;*/
 }
 
 class _TrainingPageState extends State<TrainingPage> {

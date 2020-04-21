@@ -51,17 +51,17 @@ class _NavLinkDropDownState extends State<NavLinkDropDown> {
             // refractor this to switch statement
             if (value == 'public') {
               // navigate to the training page
-              Navigator.pushNamed(context, RouteGenerator.TRAINING_ROUTE);
+              Navigator.of(context).pushNamed(RouteGenerator.TRAINING_ROUTE);
             } else if (value == 'training') {
-              Navigator.pushNamed(context, RouteGenerator.COURSE_DETAILS_ROUTE);
+              Navigator.of(context).pushNamed(RouteGenerator.TRAINING_ROUTE);
             } else if (value == 'upcoming courses') {
               // navigate to the upcoming courses page
-              Navigator.pushNamed(
-                  context, RouteGenerator.UPCOMING_COURSE_ROUTE);
+              Navigator.of(context)
+                  .pushNamed(RouteGenerator.UPCOMING_COURSE_ROUTE);
             } else if (value == 'about us') {
-              Navigator.pushNamed(context, RouteGenerator.ABOUT_US_ROUTE);
+              Navigator.of(context).pushNamed(RouteGenerator.ABOUT_US_ROUTE);
             } else if (value == 'contact us') {
-              Navigator.pushNamed(context, RouteGenerator.CONTACT_US_ROUTE);
+              Navigator.of(context).pushNamed(RouteGenerator.CONTACT_US_ROUTE);
             }
 
             setState(() {
