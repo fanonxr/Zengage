@@ -44,9 +44,6 @@ class TrainingBadgeItem extends StatelessWidget {
                 backgroundImage: AssetImage(imagePath),
               ),
             ),
-            PartnerAssetLogo(
-              imagePath: imagePath,
-            )
           ],
         ));
   }
