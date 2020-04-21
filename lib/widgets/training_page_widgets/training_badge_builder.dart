@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/models/Course.dart';
-import 'package:zengage_learning_platform/screens/course_page.dart';
+import 'package:zengage_learning_platform/routes/route_generator.dart';
 
 class TrainingBadgeItem extends StatelessWidget {
   final String badgeTile;
@@ -34,12 +34,9 @@ class TrainingBadgeItem extends StatelessWidget {
             ),
             FlatButton(
               onPressed: () {
-                Navigator.push(
-                    context,
-                    new MaterialPageRoute(
-                        builder: (_) => new CoursePage(
-                              course: course,
-                            )));
+                Navigator.of(context).pushNamed(
+                    RouteGenerator.COURSE_DETAILS_ROUTE,
+                    arguments: course);
               },
               child: CircleAvatar(
                 radius: MediaQuery.of(context).size.width / 20,

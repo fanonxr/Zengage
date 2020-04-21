@@ -14,8 +14,7 @@ class SignInSignUp extends StatelessWidget {
           text: signUp,
           onPressed: () {
             print("$signUp clicked");
-            Navigator.popAndPushNamed(
-                context, RouteGenerator.REGISTRATION_ROUTE);
+            Navigator.of(context).pushNamed(RouteGenerator.REGISTRATION_ROUTE);
           },
         ),
         Padding(

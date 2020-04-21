@@ -37,7 +37,7 @@ class _NavBarState extends State<NavBar> {
         children: <Widget>[
           GestureDetector(
             onTap: () {
-              Navigator.pushNamed(context, RouteGenerator.HOME_ROUTE);
+              Navigator.of(context).pushNamed(RouteGenerator.HOME_ROUTE);
             },
             child: HandCursor(
               child: Row(

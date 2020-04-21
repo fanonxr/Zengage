@@ -1,7 +1,4 @@
-import 'dart:convert';
-
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
 import 'package:zengage_learning_platform/constants/app_colors.dart';
 import 'package:zengage_learning_platform/models/Course.dart';
 import 'package:zengage_learning_platform/screens/register_page.dart';
@@ -12,37 +9,22 @@ import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
 import 'home/contact_us_page.dart';
 
 class CourseDetailsPage extends StatefulWidget {
-//  final int courseIndex;
   final Course course;
 
-  CourseDetailsPage({/*@required*/ this.course});
+  CourseDetailsPage({@required this.course});
 
   @override
   _CourseDetailsPageState createState() => _CourseDetailsPageState();
 }
 
-Future<String> readFileContents(String filePath) async {
-  return rootBundle.loadString(filePath);
-}
-
 class _CourseDetailsPageState extends State<CourseDetailsPage> {
-  Course course = Course();
-
-  @override
-  void initState() {
-    super.initState();
-    readFileContents("assets/content/courses.json").then((value) {
-      print("Data read from the file is:");
-      final decoded = jsonDecode(value) as List;
-      setState(() {
-        course = new Course.fromJson(decoded[1]);
-        print(course.toString());
-      });
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
+    if (widget.course != null) {
+      print("Course is not null ${widget.course.toString()}");
+    } else {
+      print("Course is null");
+    }
     return SafeArea(
       child: Scaffold(
         appBar: NavBar(),
@@ -52,7 +34,9 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
               Transform.translate(
                 offset: Offset(48.0, 64.0),
                 child: GreyBoldText(
-                  text: course.partner.toUpperCase(),
+                  text: widget.course != null
+                      ? widget.course.partner.toUpperCase()
+                      : "Coming Soon",
                 ),
               ),
               getCourseDetailHeader(),
@@ -82,11 +66,11 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
                                 _getBoldValueText('Length:',
-                                    '${course.details != null ? course.details.length : ""}'),
+                                    '${widget.course != null && widget.course.details != null ? widget.course.details.length : ""}'),
                                 _getBoldValueText('Effort: ',
-                                    '${course.details != null ? course.details.effort : ""}'),
+                                    '${widget.course != null && widget.course.details != null ? widget.course.details.effort : ""}'),
                                 _getBoldValueText('Price: ',
-                                    '\$${course.details != null ? course.details.cost : ""}'),
+                                    '\$${widget.course != null && widget.course.details != null ? widget.course.details.cost : ""}'),
                               ],
                             ),
                           ),
@@ -132,7 +116,8 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
               shape: BoxShape.circle,
               image: new DecorationImage(
                   fit: BoxFit.contain,
-                  image: new NetworkImage(course.iconFile))),
+                  image: NetworkImage(
+                      widget.course != null ? widget.course.iconFile : ""))),
         ),
         Expanded(
           child: Container(
@@ -141,7 +126,9 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
             height: 80.0,
             color: bgGreyColor,
             child: GreyBoldText(
-              text: course.courseTitle.toUpperCase(),
+              text: widget.course != null
+                  ? widget.course.courseTitle.toUpperCase()
+                  : "Coming soon",
             ),
           ),
         ),
@@ -168,17 +155,19 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
         children: <Widget>[
           TextSection(
               sectionName: 'About This Course',
-              sectionText: course.details != null
-                  ? course.details.aboutThisCourse
-                  : "Coming soon"),
+              sectionText:
+                  widget.course != null && widget.course.details != null
+                      ? widget.course.details.aboutThisCourse
+                      : "Coming soon"),
           SizedBox(
             height: 64.0,
           ),
           TextSection(
               sectionName: 'What You Will Learn',
-              sectionText: course.details != null
-                  ? course.details.whatYoullLearn
-                  : "Coming soon"),
+              sectionText:
+                  widget.course != null && widget.course.details != null
+                      ? widget.course.details.whatYoullLearn
+                      : "Coming soon"),
           _getInstructorsSection(),
           Expanded(
             child: Container(),
@@ -202,8 +191,8 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           SectionName('Reviews'),
-          if (course.details != null)
-            for (String reviewText in course.details.reviews)
+          if (widget.course != null && widget.course.details != null)
+            for (String reviewText in widget.course.details.reviews)
               ReviewAndInstructor(text: reviewText)
         ],
       ),
@@ -216,7 +205,9 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
       children: <Widget>[
         SectionName("Meet the Instructors"),
         ReviewAndInstructor(
-          text: course.classes != null ? course.classes[0].instructor : "",
+          text: widget.course != null && widget.course.classes != null
+              ? widget.course.classes[0].instructor
+              : "",
         )
       ],
     );

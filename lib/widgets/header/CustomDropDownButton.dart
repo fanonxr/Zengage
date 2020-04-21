@@ -156,8 +156,7 @@ class _DropdownMenuState<T> extends State<_DropdownMenu<T>> {
             padding: widget.padding,
             child: route.items[itemIndex],
           ),
-          onTap: () => Navigator.pop(
-            context,
+          onTap: () => Navigator.of(context).pop(
             new _DropdownRouteResult<T>(route.items[itemIndex].value),
           ),
         ),
@@ -531,7 +530,8 @@ class _DropdownButtonState<T> extends State<CustomDropdownButton<T>>
       barrierLabel: MaterialLocalizations.of(context).modalBarrierDismissLabel,
     );
 
-    Navigator.push(context, _dropdownRoute)
+    Navigator.of(context)
+        .push(_dropdownRoute)
         .then<void>((_DropdownRouteResult<T> newValue) {
       _dropdownRoute = null;
       if (!mounted || newValue == null) return;
