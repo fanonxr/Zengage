@@ -10,6 +10,8 @@ import 'package:zengage_learning_platform/screens/home_page.dart';
 import 'package:zengage_learning_platform/screens/register_page.dart';
 import 'package:zengage_learning_platform/screens/training_page.dart';
 import 'package:zengage_learning_platform/screens/upcoming_courses_page.dart';
+import 'package:zengage_learning_platform/widgets/footer/footer.dart';
+import 'package:zengage_learning_platform/widgets/navbar/navbar.dart';
 
 class RouteGenerator {
   static const HOME_ROUTE = '/';
@@ -76,30 +78,37 @@ class RouteGenerator {
             builder: (_) => ContactUsPage(), settings: settings);
         break;
       default:
-        return _errorRoute();
+        return _errorRoute(settings);
         break;
     }
   }
 
-  static Route<dynamic> _errorRoute() {
+  static Route<dynamic> _errorRoute([RouteSettings settings]) {
     return MaterialPageRoute(
         builder: (_) {
           return Scaffold(
-            appBar: AppBar(
-              title: Text(routeErrorTitle),
-              backgroundColor: Colors.amber,
+            appBar: NavBar(),
+            body: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+                Expanded(
+                  child: Container(
+                    child: Center(
+                      child: Text(
+                        '404 Page not Found',
+                        style: TextStyle(
+//                  color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 40),
+                      ),
+                    ),
+                  ),
+                ),
+                Footer(),
+              ],
             ),
-            backgroundColor: Colors.red,
-            body: Center(
-                child: Text(
-              'Error Occured',
-              style: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontSize: 40),
-            )),
           );
         },
-        settings: RouteSettings(name: "Error"));
+        settings: settings);
   }
 }
