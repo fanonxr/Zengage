@@ -168,6 +168,9 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
                   widget.course != null && widget.course.details != null
                       ? widget.course.details.whatYoullLearn
                       : "Coming soon"),
+          SizedBox(
+            height: 64.0,
+          ),
           _getInstructorsSection(),
           Expanded(
             child: Container(),
@@ -206,8 +209,8 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
         SectionName("Meet the Instructors"),
         ReviewAndInstructor(
           text: widget.course != null && widget.course.classes != null
-              ? widget.course.classes[0].instructor
-              : "",
+              ? /*widget.course.classes[0].instructor*/ "Raj Heda ia an energetic, accomplished and seasoned technology consultant with core competency in scaling software agility at large enterprises using SAFe/LeSS/SOS framework.  With over 22 years of proven experience in Fortune 500 companies across various industries (Education, Finance, Insurance, Healthcare, Energy, Retail and Manufacturing), Raj has demonstrated his ability to lead, motivate and mentor multi-functional and global teams.  His strong communication and facilitation skills have helped clients succeed across all levels of their organization.  He's an Enterprise Agile transformation coach, a DevOps coach, a Delivery lead and Trainer."
+              : "Raj Heda ia an energetic, accomplished and seasoned technology consultant with core competency in scaling software agility at large enterprises using SAFe/LeSS/SOS framework.  With over 22 years of proven experience in Fortune 500 companies across various industries (Education, Finance, Insurance, Healthcare, Energy, Retail and Manufacturing), Raj has demonstrated his ability to lead, motivate and mentor multi-functional and global teams.  His strong communication and facilitation skills have helped clients succeed across all levels of their organization.  He's an Enterprise Agile transformation coach, a DevOps coach, a Delivery lead and Trainer.",
         )
       ],
     );
@@ -229,14 +232,14 @@ class ReviewAndInstructor extends StatelessWidget {
           radius: 80.0,
           backgroundColor: Colors.transparent,
           child: FlutterLogo(
-            size: 80.0,
+            size: 60.0,
           ),
         ),
         Expanded(
           flex: 1,
           child: Container(
-            padding: EdgeInsets.all(16.0),
-            margin: EdgeInsets.only(top: 32.0, right: 64.0),
+            padding: EdgeInsets.all(32.0),
+            margin: EdgeInsets.only(top: 16.0, right: 64.0),
 //                  height: 160.0,
             decoration: BoxDecoration(
               border: Border.all(color: bgGreyColor, width: 2.0),
