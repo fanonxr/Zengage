@@ -103,14 +103,17 @@ class Details {
 
 class Classes {
   String startDate;
+  String endDate;
   String instructor;
   String city;
   String country;
 
-  Classes({this.startDate, this.instructor, this.city, this.country});
+  Classes(
+      {this.startDate, this.endDate, this.instructor, this.city, this.country});
 
   Classes.fromJson(Map<String, dynamic> json) {
     startDate = json['start date'];
+    endDate = json['end date'];
     instructor = json['instructor'];
     city = json['city'];
     country = json['country'];
@@ -119,6 +122,7 @@ class Classes {
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['start date'] = this.startDate;
+    data['end date'] = this.endDate;
     data['instructor'] = this.instructor;
     data['city'] = this.city;
     data['country'] = this.country;
