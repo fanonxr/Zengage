@@ -25,12 +25,14 @@
     "classes": [
       {
         "start date": "2020-06-10",
+				"end date": "2020-06-11",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-07-14",
+				"end date": "2020-07-15",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -64,12 +66,14 @@
     "classes": [
       {
         "start date": "2020-08-18",
+				"end date": "2020-08-19",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-09-08",
+				"end date": "2020-09-09",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -104,12 +108,14 @@
     "classes": [
       {
         "start date": "2020-06-17",
+				"end date": "2020-06-18",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-07-21",
+				"end date": "2020-07-22",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -142,12 +148,14 @@
     "classes": [
       {
         "start date": "2020-10-15",
+				"end date": "2020-10-16",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-10-21",
+				"end date": "2020-10-22",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -181,12 +189,14 @@
     "classes": [
       {
         "start date": "2020-05-02",
+				"end date": "2020-05-03",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-05-30",
+				"end date": "2020-06-01",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -222,12 +232,14 @@
     "classes": [
       {
         "start date": "2020-04-22",
+				"end date": "2020-04-23",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-04-05",
+				"end date": "2020-04-06",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -266,12 +278,14 @@
     "classes": [
       {
         "start date": "2020-04-25",
+				"end date": "2020-04-28",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-10-06",
+				"end date": "2020-10-09",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -304,12 +318,14 @@
     "classes": [
       {
         "start date": "2020-12-07",
+				"end date": "2020-12-08",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-11-22",
+				"end date": "2020-11-23",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -343,12 +359,14 @@
     "classes": [
       {
         "start date": "2021-01-10",
+				"end date": "2021-01-11",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2021-02-13",
+				"end date": "2021-02-14",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -383,12 +401,14 @@
     "classes": [
       {
         "start date": "2020-08-22",
+				"end date": "2020-08-23",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-08-27",
+				"end date": "2020-08-28",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -427,12 +447,14 @@
     "classes": [
       {
         "start date": "2020-05-24",
+				"end date": "2020-05-25",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-07-29",
+				"end date": "2020-07-30",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -465,12 +487,14 @@
     "classes": [
       {
         "start date": "2020-06-20",
+				"end date": "2020-06-21",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-07-24",
+				"end date": "2020-07-25",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -505,12 +529,14 @@
     "classes": [
       {
         "start date": "2020-12-09",
+				"end date": "2020-12-10",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-09-14",
+				"end date": "2020-09-15",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -544,12 +570,14 @@
     "classes": [
       {
         "start date": "2020-10-12",
+				"end date": "2020-10-13",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-10-21",
+				"end date": "2020-10-22",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -588,12 +616,14 @@
     "classes": [
       {
         "start date": "2020-05-21",
+				"end date": "2020-05-22",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-06-11",
+				"end date": "2020-06-12",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -630,12 +660,14 @@
     "classes": [
       {
         "start date": "2020-04-20",
+				"end date": "2020-04-21",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-07-24",
+				"end date": "2020-07-25",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -670,12 +702,14 @@
     "classes": [
       {
         "start date": "2020-06-02",
+				"end date": "2020-06-04",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-07-05",
+				"end date": "2020-07-07",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -710,12 +744,14 @@
     "classes": [
       {
         "start date": "2020-09-22",
+				"end date": "2020-09-23",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-09-28",
+				"end date": "2020-09-29",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -750,12 +786,14 @@
     "classes": [
       {
         "start date": "2020-04-28",
+				"end date": "2020-04-30",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-07-12",
+				"end date": "2020-07-14",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -794,12 +832,14 @@
     "classes": [
       {
         "start date": "2021-01-10",
+				"end date": "2021-01-11",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-11-11",
+				"end date": "2020-11-12",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -834,12 +874,14 @@
     "classes": [
       {
         "start date": "2020-05-11",
+				"end date": "2020-05-14",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-07-20",
+				"end date": "2020-07-23",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -878,12 +920,14 @@
     "classes": [
       {
         "start date": "2020-08-18",
+				"end date": "2020-08-19",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-07-01",
+				"end date": "2020-07-02",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -922,12 +966,14 @@
     "classes": [
       {
         "start date": "2020-11-03",
+				"end date": "2020-11-04",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-11-12",
+				"end date": "2020-11-13",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -962,12 +1008,14 @@
     "classes": [
       {
         "start date": "2020-08-17",
+				"end date": "2020-08-18",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-09-12",
+				"end date": "2020-09-13",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -1002,12 +1050,14 @@
     "classes": [
       {
         "start date": "2020-05-16",
+				"end date": "2020-05-18",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-06-14",
+				"end date": "2020-06-16",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -1046,12 +1096,14 @@
     "classes": [
       {
         "start date": "2020-12-08",
+				"end date": "2020-12-09",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-12-07",
+				"end date": "2020-12-08",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -1086,12 +1138,14 @@
     "classes": [
       {
         "start date": "2020-09-21",
+				"end date": "2020-09-22",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-08-30",
+				"end date": "2020-08-31",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -1125,12 +1179,14 @@
     "classes": [
       {
         "start date": "2020-07-29",
+				"end date": "2020-07-29",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-06-29",
+				"end date": "2020-06-29",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
@@ -1169,12 +1225,14 @@
     "classes": [
       {
         "start date": "2020-08-17",
+				"end date": "2020-08-17",
         "instructor": "Heda",
         "city": "London",
         "country": "UK"
       },
       {
         "start date": "2020-08-12",
+				"end date": "2020-08-12",
         "instructor": "Heda",
         "city": "Boston",
         "country": "US"
