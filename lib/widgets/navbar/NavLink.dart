@@ -13,7 +13,7 @@ class NavLink extends StatelessWidget {
 
   NavLink(
       {@required this.navText,
-      this.navigateToPage,
+      this.navigateToPage = "/error",
       this.textColor = textGreyColor,
       this.bgColor = Colors.transparent,
       this.isBold = false,
