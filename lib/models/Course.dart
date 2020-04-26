@@ -7,16 +7,18 @@ class Course {
   String iconFile;
   Details details;
   List<Classes> classes;
+  String headerImage;
 
   Course(
-      {this.courseCode = "",
-      this.courseTitle = "",
-      this.partner = "",
-      this.courseType = "",
+      {this.courseCode,
+      this.courseTitle,
+      this.partner,
+      this.courseType,
       this.roles,
-      this.iconFile = "",
+      this.iconFile,
       this.details,
-      this.classes});
+      this.classes,
+      this.headerImage});
 
   Course.fromJson(Map<String, dynamic> json) {
     courseCode = json['course code'];
@@ -33,13 +35,7 @@ class Course {
         classes.add(new Classes.fromJson(v));
       });
     }
-  }
-
-  @override
-  String toString() {
-    return "Course( name: $courseTitle, partner: $partner, about this course: ${details.aboutThisCourse},"
-        " what you'll learn: ${details.whatYoullLearn},  course type: $courseType, cost: ${details.cost}, "
-        "class hours: ${details.classHours} , efforts: ${details.effort} length: ${details.length} )";
+    headerImage = json['headerImage'];
   }
 
   Map<String, dynamic> toJson() {
@@ -56,18 +52,19 @@ class Course {
     if (this.classes != null) {
       data['classes'] = this.classes.map((v) => v.toJson()).toList();
     }
+    data['headerImage'] = this.headerImage;
     return data;
   }
 }
 
 class Details {
-  String cost = "";
-  String classHours = "";
-  String aboutThisCourse = "";
-  String whatYoullLearn = "";
-  String length = "";
-  String effort = "";
-  List<String> reviews;
+  String cost;
+  String classHours;
+  String aboutThisCourse;
+  String whatYoullLearn;
+  String length;
+  String effort;
+  List<Reviews> reviews;
 
   Details(
       {this.cost,
@@ -85,7 +82,12 @@ class Details {
     whatYoullLearn = json['what youll learn'];
     length = json['length'];
     effort = json['effort'];
-    reviews = json['reviews'].cast<String>();
+    if (json['reviews'] != null) {
+      reviews = new List<Reviews>();
+      json['reviews'].forEach((v) {
+        reviews.add(new Reviews.fromJson(v));
+      });
+    }
   }
 
   Map<String, dynamic> toJson() {
@@ -96,21 +98,45 @@ class Details {
     data['what youll learn'] = this.whatYoullLearn;
     data['length'] = this.length;
     data['effort'] = this.effort;
-    data['reviews'] = this.reviews;
+    if (this.reviews != null) {
+      data['reviews'] = this.reviews.map((v) => v.toJson()).toList();
+    }
+    return data;
+  }
+}
+
+class Reviews {
+  String reviewText;
+  String reviewImage;
+
+  Reviews({this.reviewText, this.reviewImage});
+
+  Reviews.fromJson(Map<String, dynamic> json) {
+    reviewText = json['reviewText'];
+    reviewImage = json['reviewImage'];
+  }
+
+  Map<String, dynamic> toJson() {
+    final Map<String, dynamic> data = new Map<String, dynamic>();
+    data['reviewText'] = this.reviewText;
+    data['reviewImage'] = this.reviewImage;
     return data;
   }
 }
 
 class Classes {
   String startDate;
+  String endDate;
   String instructor;
   String city;
   String country;
 
-  Classes({this.startDate, this.instructor, this.city, this.country});
+  Classes(
+      {this.startDate, this.endDate, this.instructor, this.city, this.country});
 
   Classes.fromJson(Map<String, dynamic> json) {
     startDate = json['start date'];
+    endDate = json['end date'];
     instructor = json['instructor'];
     city = json['city'];
     country = json['country'];
@@ -119,6 +145,7 @@ class Classes {
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['start date'] = this.startDate;
+    data['end date'] = this.endDate;
     data['instructor'] = this.instructor;
     data['city'] = this.city;
     data['country'] = this.country;
