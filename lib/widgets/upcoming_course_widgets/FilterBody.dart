@@ -2,88 +2,20 @@ import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/routes/route_generator.dart';
 
 class FilterBody extends StatelessWidget {
+  final List<CourseItem> courseItems;
+
+  FilterBody({this.courseItems});
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Column(
-        children: <Widget>[
-          CourseItem(
-            courseImage:
-                "assets/images/trainingpage/course-logos/leading-safe.png",
-            nameOfCourse: "Leading SAFe 5.0 with Agile Certification",
-            city: "Boston",
-            dateOfCourse: "November 8th, 2020",
-          ),
-          CourseItem(
-            courseImage:
-                "assets/images/trainingpage/course-logos/safe-for-teams.png",
-            nameOfCourse: "Leading SAFe 5.0 with Agile Certification",
-            city: "Los Angeles",
-            dateOfCourse: "March 28th, 2021",
-          ),
-          CourseItem(
-            courseImage:
-                "assets/images/trainingpage/course-logos/lean-portfolio-management.png",
-            nameOfCourse: "Leading SAFe 5.0 with Agile Certification",
-            city: "San Francisco",
-            dateOfCourse: "June 24th, 2020",
-          ),
-          CourseItem(
-            courseImage:
-                "assets/images/trainingpage/course-logos/prof-scrum-master.png",
-            nameOfCourse: "Leading SAFe 5.0 with Agile Certification",
-            city: "Hamden",
-            dateOfCourse: "August 18th, 2020",
-          ),
-          CourseItem(
-            courseImage:
-                "assets/images/trainingpage/course-logos/prof-scrum-product-owner.png",
-            nameOfCourse: "Leading SAFe 5.0 with Agile Certification",
-            city: "New York City",
-            dateOfCourse: "April 12th, 2020",
-          ),
-          CourseItem(
-            courseImage:
-                "assets/images/trainingpage/course-logos/prof-scrum-developer.png",
-            nameOfCourse: "Leading SAFe 5.0 with Agile Certification",
-            city: "Chicago",
-            dateOfCourse: "July 6th, 2020",
-          ),
-          CourseItem(
-            courseImage:
-                "assets/images/trainingpage/course-logos/certified-scrum-master.png",
-            nameOfCourse: "Leading SAFe 5.0 with Agile Certification",
-            city: "Compton",
-            dateOfCourse: "September 19th, 2020",
-          ),
-          CourseItem(
-            courseImage:
-                "assets/images/trainingpage/course-logos/certified-scrum-product-owner.png",
-            nameOfCourse: "Leading SAFe 5.0 with Agile Certification",
-            city: "Palm Dale",
-            dateOfCourse: "November 18th, 2020",
-          ),
-          CourseItem(
-            courseImage:
-                "assets/images/trainingpage/course-logos/certified-scrum-developer.png",
-            nameOfCourse: "Leading SAFe 5.0 with Agile Certification",
-            city: "Hollywood",
-            dateOfCourse: "October 12th, 2020",
-          ),
-          CourseItem(
-            courseImage:
-                "assets/images/trainingpage/course-logos/proj-management-proposal.png",
-            nameOfCourse: "Leading SAFe 5.0 with Agile Certification",
-            city: "Salt Lake City",
-            dateOfCourse: "Decemeber 15th, 2020",
-          ),
-          CourseItem(
-            courseImage: "assets/images/trainingpage/course-logos/pmi-acp.png",
-            nameOfCourse: "Leading SAFe 5.0 with Agile Certification",
-            city: "Seattle",
-            dateOfCourse: "May 13th, 2020",
-          ),
-        ],
+      child: ListView.builder(
+        itemBuilder: (context, index) {
+          return Container(
+            child: courseItems[index],
+          );
+        },
+        itemCount: courseItems.length,
       ),
     );
   }
@@ -154,6 +86,9 @@ class CourseItem extends StatelessWidget {
                     textColor: Colors.white,
                     color: Colors.blue,
                     onPressed: () {
+                      Navigator.pushNamed(
+                          context, RouteGenerator.REGISTRATION_ROUTE);
+
                       Navigator.of(context)
                           .pushNamed(RouteGenerator.REGISTRATION_ROUTE);
                     },

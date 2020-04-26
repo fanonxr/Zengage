@@ -47,6 +47,11 @@ dev_dependencies:
     sdk: flutter
 
 
+analyzer:
+  enable-experiment:
+    - spread-collections
+
+
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
