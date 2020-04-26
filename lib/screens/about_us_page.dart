@@ -212,22 +212,7 @@ class MeetTheTeamDetail extends StatelessWidget {
                   width: MediaQuery.of(context).size.width / 1.8,
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    """Rej Heda is an energtic, accomplished and seasoned technology consultant with core compentency in scaling software agility at
-                    large enterprises using SAFe/LeSS/SOS framework. With over 22 years of proven experience in Fortune 500 companies across
-                    various industries (Eductaion, Finance, Insurance, healthcare, Energy, Retail and Manufracturing), Raj has demonstrated his ability to lead, motivate
-                    and mentor multi-functional and global teams. His strong communication and faciltation skills have helped clients succeed across all levels of their organziation
-                    He's an Enterprise Agile transofrmation coach, a DevOps coach, a Delivery lead and Trainer.
-                    Raj's expertise includes:
-                    * Scaled Agile Framework implementation -SAFe, Less, SOSO
-                    * Enterprise Agile Transformation - Scrum, Kanban
-                    * Enteprise Agile/DevOps Coach and Trainer
-                    * Lead Agile Management Office and Project Management Office
-                    * Agile Program/Project Management
-                    * Change Management
-                    * Client Relationships
-                    * Resource Management
-                    * Release Management
-                    * Software Development""",
+                    "Raj Heda ia an energetic, accomplished and seasoned technology consultant with core competency in scaling software agility at large enterprises using SAFe/LeSS/SOS framework.  With over 22 years of proven experience in Fortune 500 companies across various industries (Education, Finance, Insurance, Healthcare, Energy, Retail and Manufacturing), Raj has demonstrated his ability to lead, motivate and mentor multi-functional and global teams.  His strong communication and facilitation skills have helped clients succeed across all levels of their organization.  He's an Enterprise Agile transformation coach, a DevOps coach, a Delivery lead and Trainer.",
                     style: TextStyle(
                       color: Colors.black54,
                       fontWeight: FontWeight.w800,
