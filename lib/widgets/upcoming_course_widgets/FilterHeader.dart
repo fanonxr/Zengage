@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:zengage_learning_platform/widgets/stay_connected_section/stay_connected.dart';
 
 class FilterHeader extends StatefulWidget {
   @override
@@ -42,6 +43,8 @@ class _FilterHeaderState extends State<FilterHeader> {
                             ],
                           ),
                         ),
+                        buildSearchInputField(context, "Search for a course...",
+                            MediaQuery.of(context).size.width / 2),
                         SizedBox(
                           width: 50.0,
                         ),
@@ -98,10 +101,10 @@ class _FilterHeaderState extends State<FilterHeader> {
   }
 }
 
-buildInputField(context, String displayText) {
+buildSearchInputField(context, String displayText, width) {
   TextEditingController inputController = TextEditingController();
   return Container(
-    width: MediaQuery.of(context).size.width / 2,
+    width: width,
     child: TextFormField(
       controller: inputController,
       decoration: InputDecoration(

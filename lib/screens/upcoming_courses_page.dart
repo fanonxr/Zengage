@@ -14,7 +14,6 @@ class _UpcomingCoursesPageState extends State<UpcomingCoursesPage> {
   List<Widget> homePageWidgets = [
     HeaderBanner(
       imagePath: "assets/images/upcomingpage/upcoming-courses-banner.jpg",
-      imageCoverText: "",
     ),
     FilterHeader(),
     CourseTabBar(),

@@ -88,6 +88,9 @@ class CourseItem extends StatelessWidget {
                     onPressed: () {
                       Navigator.pushNamed(
                           context, RouteGenerator.REGISTRATION_ROUTE);
+
+                      Navigator.of(context)
+                          .pushNamed(RouteGenerator.REGISTRATION_ROUTE);
                     },
                     child: Text("REGISTER"),
                   ),
