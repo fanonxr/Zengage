@@ -7,19 +7,31 @@
     "roles": [
       "Scrum Master"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/Certified Scrum Master.png",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FCertified%20Scrum%20Master.png?alt=media&token=046b30c5-0e01-4d6b-b32e-330f4e6f42df",
     "details": {
       "cost": "1000",
       "class hours": "16",
-      "about this course": "A Certified ScrumMaster® is able to assist a scrum team to perform at their optimum level, as well as buffering the team from distractions.  The certification process teaches the Scrum framework and enables CSMs to expand their career opportunities using Agile practices.",
+      "about this course": "A Certified ScrumMaster\u00ae is able to assist a scrum team to perform at their optimum level, as well as buffering the team from distractions.  The certification process teaches the Scrum framework and enables CSMs to expand their career opportunities using Agile practices.",
       "what youll learn": "After successfully completing the course, participants will have an understanding of team roles, events and artifacts.  They will be eligible to take CSM test, and upon passing the test, will be asked to accept the CSM License Agreement and complete their Scrum Alliance profile.",
       "length": "Length: 16 hours (2 days) in-person class, or 25 hours in-person coaching",
       "effort": "5 hrs/week",
       "reviews": [
-        "This class gave me the exposure to agile and the scrum process that I needed. Thanks!",
-        "I started with very little knowledge about how agile actually works, but the class provided more than enough to start implementing the techniques at my company.",
-        "When I began my training I thought that a scrum master was just a project manager.  The class showed me how the roles are different and how to get a team to work toward a common goal.",
-        "My instructor was great. They kept the energy level high, and everyone in the class passed the CSM certification on their first try.  Highly recommended."
+        {
+          "reviewText": "This class gave me the exposure to agile and the scrum process that I needed. Thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F9f96e42418c72dd5e185b9f31ff7dd94.png?alt=media&token=fa1007e0-aa5e-4901-8e2a-64aaf126de64"
+        },
+        {
+          "reviewText": "I started with very little knowledge about how agile actually works, but the class provided more than enough to start implementing the techniques at my company.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent1.jpeg?alt=media&token=7aa59d6e-29bf-41d4-96cc-aea436f6ad01"
+        },
+        {
+          "reviewText": "When I began my training I thought that a scrum master was just a project manager.  The class showed me how the roles are different and how to get a team to work toward a common goal.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F10db8b48c5997ce9078495343ee353ad.png?alt=media&token=c1b6378f-58d1-4aac-a247-ecfe15da63b8"
+        },
+        {
+          "reviewText": "My instructor was great. They kept the energy level high, and everyone in the class passed the CSM certification on their first try.  Highly recommended.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2Fa31fc3e4921ee1412b047563bd9729a6.png?alt=media&token=7b975935-a5ba-40fa-8c87-07c103d4c540"
+        }
       ]
     },
     "classes": [
@@ -37,7 +49,8 @@
         "city": "Boston",
         "country": "US"
       }
-    ]
+    ],
+    "headerImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Header%20Images%2FScrum%20Alliance%20Category%20Assets%2FCertified%20Scrum%20MAster.jpg?alt=media&token=e83cf032-cf33-4c76-ac51-7088cbd4eeeb"
   },
   {
     "course code": "CSPO",
@@ -48,19 +61,31 @@
       "Product Owner",
       "Business Analyst"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/Certified Scrum Product Owner.png",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FCertified%20Scrum%20Product%20Owner.png?alt=media&token=de1fee17-3ca0-4b61-b37c-15bcdd65f9a9",
     "details": {
       "cost": "1000",
       "class hours": "16",
       "about this course": "A Scrum Product Owner generally comes from the business side of the organization.  In the agile world, the product owner not only manages the vision and backlog, they also help focus the team on providing the outcomes that will delight the customers.",
-      "what youll learn": "After successfully completing the course, product owners will have experience as the conduit between the business and the rest of the scrum team.  They’ll learn the skill set that will help them direct the backlog and impart their vision to the team. They will be asked to accept the CSPO License Agreement and complete their Scrum Alliance profile.",
+      "what youll learn": "After successfully completing the course, product owners will have experience as the conduit between the business and the rest of the scrum team.  They\u2019ll learn the skill set that will help them direct the backlog and impart their vision to the team. They will be asked to accept the CSPO License Agreement and complete their Scrum Alliance profile.",
       "length": "16 hours (2 days) in-person class, or 25 hours in-person coaching",
       "effort": "5 hrs/week",
       "reviews": [
-        "I got a lot from this class.  I’m now able to better manage my team’s backlog, and our outcomes have really improved.",
-        "I started with very little knowledge about how agile actually works, but the class provided more than enough to start implementing the techniques at my company.",
-        "The class showed me how the product manager role guides a team to work toward a common goal.",
-        "My instructor was great. He kept the energy level high, and made it easy to learn the material.  Highly recommended."
+        {
+          "reviewText": "I got a lot from this class.  I\u2019m now able to better manage my team\u2019s backlog, and our outcomes have really improved.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_GirlStudent1.jpeg?alt=media&token=8529de77-203f-468e-bc2d-b1344ef3ee5d"
+        },
+        {
+          "reviewText": "I started with very little knowledge about how agile actually works, but the class provided more than enough to start implementing the techniques at my company.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_Girls2.jpeg?alt=media&token=36fa3df6-c5aa-4e8d-acd6-628a76721ab4"
+        },
+        {
+          "reviewText": "The class showed me how the product manager role guides a team to work toward a common goal.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent1.jpeg?alt=media&token=7aa59d6e-29bf-41d4-96cc-aea436f6ad01"
+        },
+        {
+          "reviewText": "My instructor was great. He kept the energy level high, and made it easy to learn the material.  Highly recommended.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2Fa31fc3e4921ee1412b047563bd9729a6.png?alt=media&token=7b975935-a5ba-40fa-8c87-07c103d4c540"
+        }
       ]
     },
     "classes": [
@@ -78,7 +103,8 @@
         "city": "Boston",
         "country": "US"
       }
-    ]
+    ],
+    "headerImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Header%20Images%2FScrum%20Alliance%20Category%20Assets%2FCertified%20Scrum%20Product%20Owner.jpg?alt=media&token=3f5003f0-6a97-4a2e-97ac-e79c70d28e9d"
   },
   {
     "course code": "CSD",
@@ -90,19 +116,31 @@
       "QA",
       "UI/UX"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/Certified Scrum Developer.png",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FCertified%20Scrum%20Developer.png?alt=media&token=acc27c18-0ffd-41aa-81c6-a30a36688083",
     "details": {
       "cost": "1000",
       "class hours": "16",
-      "about this course": "Designed for developers, this course will hone your agile skills.  Through both formal training and an assessment of your technical skills, you’ll obtain a working knowledge of Scrum and Agile principles.  In addition, you’ll learn the engineering skills used by Agile developers.  The course instructs developers in the tools and techniques for delivering code in an iterative process, key to Agile software development.",
-      "what youll learn": "Upon completing this course, you will have mastered the skill set required to engage in an Agile development environment.  You’ll become proficient with the tools and techniques used to contribute to an agile team.  Certification as a Certified Scrum Developer demonstrates your commitment to the Agile principles.",
+      "about this course": "Designed for developers, this course will hone your agile skills.  Through both formal training and an assessment of your technical skills, you\u2019ll obtain a working knowledge of Scrum and Agile principles.  In addition, you\u2019ll learn the engineering skills used by Agile developers.  The course instructs developers in the tools and techniques for delivering code in an iterative process, key to Agile software development.",
+      "what youll learn": "Upon completing this course, you will have mastered the skill set required to engage in an Agile development environment.  You\u2019ll become proficient with the tools and techniques used to contribute to an agile team.  Certification as a Certified Scrum Developer demonstrates your commitment to the Agile principles.",
       "length": "40 hours (5 days) in-person class, or 50 hours in-person coaching",
       "effort": "5 hrs/week",
       "reviews": [
-        "This class gave me the exposure to agile and the scrum process that I needed. Thanks!",
-        "I started with very little knowledge about how agile actually works, but the class provided more than enough to start implementing the techniques at my company.",
-        "Developing in an Agile environment is different than I had expected.  The class showed me the iterative approach and the tools used to deliver good code.",
-        "My instructor was great. Five days of training seemed like it would be tough, but the time was well spent.  Highly recommended."
+        {
+          "reviewText": "This class gave me the exposure to agile and the scrum process that I needed. Thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_GirlStudent1.jpeg?alt=media&token=8529de77-203f-468e-bc2d-b1344ef3ee5d"
+        },
+        {
+          "reviewText": "I started with very little knowledge about how agile actually works, but the class provided more than enough to start implementing the techniques at my company.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F9f96e42418c72dd5e185b9f31ff7dd94.png?alt=media&token=fa1007e0-aa5e-4901-8e2a-64aaf126de64"
+        },
+        {
+          "reviewText": "Developing in an Agile environment is different than I had expected.  The class showed me the iterative approach and the tools used to deliver good code.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent2.jpeg?alt=media&token=a115d4e0-4404-4a19-bf4e-4abb20a19716"
+        },
+        {
+          "reviewText": "My instructor was great. Five days of training seemed like it would be tough, but the time was well spent.  Highly recommended.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2Fa31fc3e4921ee1412b047563bd9729a6.png?alt=media&token=7b975935-a5ba-40fa-8c87-07c103d4c540"
+        }
       ]
     },
     "classes": [
@@ -120,7 +158,8 @@
         "city": "Boston",
         "country": "US"
       }
-    ]
+    ],
+    "headerImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Header%20Images%2FScrum%20Alliance%20Category%20Assets%2FCertified%20Scrum%20Developer.jpg?alt=media&token=566597f3-eb9a-47e8-ad6d-ada2212f0db2"
   },
   {
     "course code": "PSM",
@@ -130,19 +169,31 @@
     "roles": [
       "Scrum Master"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/Professional Scrum Master logo.png",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FProfessional%20Scrum%20Master%20logo.png?alt=media&token=890d8622-c687-4aec-9fb8-e15bebf51303",
     "details": {
       "cost": "1000",
       "class hours": "16",
-      "about this course": "This two-day course covers the principles and theory that provide the foundation for the Scrum framework, as well as the Scrum Master’s role in that process.  In this team learning approach, students not only learn the tools for success as a Scrum Master, they also hone their new skills with their classmates to better prepare them to return to their workplaces with a new outlook.\nThe PSM course goes beyond presenting slides and charts.  It includes interactive discussions, hands-on exercises based on real world experience, and incorporates these to reinforce scrum values.",
+      "about this course": "This two-day course covers the principles and theory that provide the foundation for the Scrum framework, as well as the Scrum Master\u2019s role in that process.  In this team learning approach, students not only learn the tools for success as a Scrum Master, they also hone their new skills with their classmates to better prepare them to return to their workplaces with a new outlook.\nThe PSM course goes beyond presenting slides and charts.  It includes interactive discussions, hands-on exercises based on real world experience, and incorporates these to reinforce scrum values.",
       "what youll learn": "After completing the course, participants will have gained a background in the various components of the Scrum framework.  They will also be provided a password to attempt the Professional Scrum Master I (PSM-I) certification assessment.",
       "length": "16 hours (2 days) in-person class, or 25 hours in-person coaching",
       "effort": "5 hrs/week",
       "reviews": [
-        "This class gave me the exposure to agile and the scrum process that I needed. Thanks!",
-        "I started with very little knowledge about how agile actually works, but the class provided more than enough to start implementing the techniques at my company.",
-        "When I began my training I thought that a scrum master was just a project manager.  The class showed me how the roles are different and how to get a team to work toward a common goal.",
-        "My instructor was great. They kept the energy level high, and everyone in the class passed the PSM I assessment on their first try.  Highly recommended."
+        {
+          "reviewText": "This class gave me the exposure to agile and the scrum process that I needed. Thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_GirlStudent1.jpeg?alt=media&token=8529de77-203f-468e-bc2d-b1344ef3ee5d"
+        },
+        {
+          "reviewText": "I started with very little knowledge about how agile actually works, but the class provided more than enough to start implementing the techniques at my company.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent2.jpeg?alt=media&token=a115d4e0-4404-4a19-bf4e-4abb20a19716"
+        },
+        {
+          "reviewText": "When I began my training I thought that a scrum master was just a project manager.  The class showed me how the roles are different and how to get a team to work toward a common goal.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F62c04f82ef927d9ceb7421a6bbb53fcb.png?alt=media&token=34b358ce-f846-4bea-9b68-b2b52d1fb654"
+        },
+        {
+          "reviewText": "My instructor was great. They kept the energy level high, and everyone in the class passed the PSM I assessment on their first try.  Highly recommended.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent1.jpeg?alt=media&token=7aa59d6e-29bf-41d4-96cc-aea436f6ad01"
+        }
       ]
     },
     "classes": [
@@ -160,7 +211,8 @@
         "city": "Boston",
         "country": "US"
       }
-    ]
+    ],
+    "headerImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Header%20Images%2FScrum.Org%20Category%20Assets%2FProfessional%20Scrum%20Master.jpg?alt=media&token=18bc25a7-3c7c-45ec-892b-b58b490d555a"
   },
   {
     "course code": "PSPO",
@@ -171,19 +223,31 @@
       "Product Owner",
       "Business Analyst"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/Professional Scrum Product Owner.png",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FProfessional%20Scrum%20Product%20Owner.png?alt=media&token=2f5e3207-5cf8-4396-8da5-681410de1049",
     "details": {
       "cost": "1000",
       "class hours": "16",
       "about this course": "A course to prepare for Professional Scrum Product Owner Certification",
-      "what youll learn": "This two-day course is intended for those with a background in the software industry, whether or not you have previous experience as a product owner. From the product owner’s perspective we examine the key concepts behind iterative software development in an Agile Scrum environment. Our instructors provide real examples from industry that demonstrate the product owner’s roles and responsibilities. From creating user stories to managing product backlogs, to demonstrating value and incremental and iterative delivery, the product owner’s role is clearly explained Our instructors also cover the daily responsibilities of Agile team members and their use of Scrum, Kanban, and Extreme Programming.",
+      "what youll learn": "This two-day course is intended for those with a background in the software industry, whether or not you have previous experience as a product owner. From the product owner\u2019s perspective we examine the key concepts behind iterative software development in an Agile Scrum environment. Our instructors provide real examples from industry that demonstrate the product owner\u2019s roles and responsibilities. From creating user stories to managing product backlogs, to demonstrating value and incremental and iterative delivery, the product owner\u2019s role is clearly explained Our instructors also cover the daily responsibilities of Agile team members and their use of Scrum, Kanban, and Extreme Programming.",
       "length": "2 days",
       "effort": "2 days",
       "reviews": [
-        "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
-        "Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise.",
-        "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
-        "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+        {
+          "reviewText": "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_GirlStudent1.jpeg?alt=media&token=8529de77-203f-468e-bc2d-b1344ef3ee5d"
+        },
+        {
+          "reviewText": "Fantastic experience! Highly recommended! I am looking forward to sharing what I\u2019ve learned with my enterprise.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_Girls2.jpeg?alt=media&token=36fa3df6-c5aa-4e8d-acd6-628a76721ab4"
+        },
+        {
+          "reviewText": "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent2.jpeg?alt=media&token=a115d4e0-4404-4a19-bf4e-4abb20a19716"
+        },
+        {
+          "reviewText": "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent1.jpeg?alt=media&token=7aa59d6e-29bf-41d4-96cc-aea436f6ad01"
+        }
       ]
     },
     "classes": [
@@ -201,7 +265,8 @@
         "city": "Boston",
         "country": "US"
       }
-    ]
+    ],
+    "headerImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Header%20Images%2FScrum.Org%20Category%20Assets%2FProfessional%20Product%20Owner.jpg?alt=media&token=b097ac6d-0ac9-4ff5-aae2-720e7403e745"
   },
   {
     "course code": "PSD",
@@ -214,19 +279,31 @@
       "UI/UX",
       "Content Writer"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/Professional Scrum Developer.png",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FProfessional%20Scrum%20Developer.png?alt=media&token=3b18d95f-37c5-435d-afb0-204055ca36e7",
     "details": {
       "cost": "1000",
       "class hours": "16",
-      "about this course": "Preparation for Scrum.org’s certification as a Professional Scrum Developer ",
+      "about this course": "Preparation for Scrum.org\u2019s certification as a Professional Scrum Developer ",
       "what youll learn": "The Professional Scrum Developer training provides an in-depth understanding of the most important Scrum lessons, drawing from classic texts like the Agile Manifesto and the Scrum Guide, by Ken Schwaber and Jeff Sutherland. The course is hands-on, with activities drawn from real-world situations. You will be a member of an Agile team, face real-world challenges, and participate in an actual iterative development effort. All the while, our expert trainers will be there to demonstrate proper technique and to guide you to prepare for the certification exam.",
       "length": "3 days",
       "effort": "8 hrs/week",
       "reviews": [
-        "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
-        "Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise.",
-        "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
-        "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+        {
+          "reviewText": "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F9f96e42418c72dd5e185b9f31ff7dd94.png?alt=media&token=fa1007e0-aa5e-4901-8e2a-64aaf126de64"
+        },
+        {
+          "reviewText": "Fantastic experience! Highly recommended! I am looking forward to sharing what I\u2019ve learned with my enterprise.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent2.jpeg?alt=media&token=a115d4e0-4404-4a19-bf4e-4abb20a19716"
+        },
+        {
+          "reviewText": "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F62c04f82ef927d9ceb7421a6bbb53fcb.png?alt=media&token=34b358ce-f846-4bea-9b68-b2b52d1fb654"
+        },
+        {
+          "reviewText": "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2Fa31fc3e4921ee1412b047563bd9729a6.png?alt=media&token=7b975935-a5ba-40fa-8c87-07c103d4c540"
+        }
       ]
     },
     "classes": [
@@ -244,7 +321,8 @@
         "city": "Boston",
         "country": "US"
       }
-    ]
+    ],
+    "headerImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Header%20Images%2FScrum.Org%20Category%20Assets%2FProfessional%20Scrum%20Developer.jpg?alt=media&token=04f7f45a-3948-4f0c-90a8-518dedb0ed42"
   },
   {
     "course code": "SPC",
@@ -260,19 +338,31 @@
       "UI/UX",
       "Content Writer"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/Safe Fro Teams.png",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FSafe%20Fro%20Teams.png?alt=media&token=7740c467-8f5e-4e12-8b87-7857555235ea",
     "details": {
       "cost": "1000",
       "class hours": "16",
-      "about this course": " If you are looking to learn the skills needed in order to lead a Lean-Agile transformation in an organization at any level, this course is for you. In four days, you will learn how to best use and incorporate the Scaled Agile Framework® (SAFe®) in order to lead any organization through  the Lean-Agile transformative process. You will learn about seven different core competencies that have been identified within any Lean Enterprise. Trainers will provide you not only with knowledge and skills, but with hands-on practice on coaching programs, constructing a Continuous Delivery Pipeline, strengthening a Lean Portfolio in an organization, and leading the start of Agile Release Trains.",
-      "what youll learn": "The course is divided into two sections. The first section will take place on the first two days. During this time, you will gain a thorough understanding of what Leading SAFe® is all about and why it is important in a Lean organization. The last two days of the course will be an intensive time looking at how to implement the SAFe® concepts. You will learn exactly what needs to taken place and what you will need to do in order to implement these concepts as you lead an organization into a Lean transformation. After this course, you will be fully equipped to coach and direct an enterprise at any level to success in the Lean transformative process.",
+      "about this course": " If you are looking to learn the skills needed in order to lead a Lean-Agile transformation in an organization at any level, this course is for you. In four days, you will learn how to best use and incorporate the Scaled Agile Framework\u00ae (SAFe\u00ae) in order to lead any organization through  the Lean-Agile transformative process. You will learn about seven different core competencies that have been identified within any Lean Enterprise. Trainers will provide you not only with knowledge and skills, but with hands-on practice on coaching programs, constructing a Continuous Delivery Pipeline, strengthening a Lean Portfolio in an organization, and leading the start of Agile Release Trains.",
+      "what youll learn": "The course is divided into two sections. The first section will take place on the first two days. During this time, you will gain a thorough understanding of what Leading SAFe\u00ae is all about and why it is important in a Lean organization. The last two days of the course will be an intensive time looking at how to implement the SAFe\u00ae concepts. You will learn exactly what needs to taken place and what you will need to do in order to implement these concepts as you lead an organization into a Lean transformation. After this course, you will be fully equipped to coach and direct an enterprise at any level to success in the Lean transformative process.",
       "length": "4 days",
       "effort": "32 hrs/week",
       "reviews": [
-        "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
-        "Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise.",
-        "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
-        "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+        {
+          "reviewText": "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_GirlStudent1.jpeg?alt=media&token=8529de77-203f-468e-bc2d-b1344ef3ee5d"
+        },
+        {
+          "reviewText": "Fantastic experience! Highly recommended! I am looking forward to sharing what I\u2019ve learned with my enterprise.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_Girls2.jpeg?alt=media&token=36fa3df6-c5aa-4e8d-acd6-628a76721ab4"
+        },
+        {
+          "reviewText": "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent2.jpeg?alt=media&token=a115d4e0-4404-4a19-bf4e-4abb20a19716"
+        },
+        {
+          "reviewText": "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F62c04f82ef927d9ceb7421a6bbb53fcb.png?alt=media&token=34b358ce-f846-4bea-9b68-b2b52d1fb654"
+        }
       ]
     },
     "classes": [
@@ -300,19 +390,31 @@
     "roles": [
       "Scrum Master"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/SAFe Scrum Master.png",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FSAFe%20Scrum%20Master.png?alt=media&token=8f70ed88-6b04-464e-9a43-48c26397e3b7",
     "details": {
       "cost": "1000",
       "class hours": "16",
       "about this course": "During this course, you will learn about the Scrum Master role within an enterprise operating in the SAFe environment. This course will delve into the specifics of what a Scrum Master role looks like at an enterprise level, not just in the context of a Scrum team. You will step away from this course enabled to plan and implement the Program Increment (PI), which is essential to align every level of an organization operating in a SAFe environment. Because this course is focused on how a Scrum Master fits into an organization at an enterprise level, you will learn how to apply Scrum in every part of your organization, as well as how to use iterative planning in your organization.",
-      "what youll learn": "In addition to learning about the role of Scrum Master at an enterprise level, you will also discover how acting as a coach and using servant leadership methods will enable you to create successful Agile teams. Trainers will also demonstrate how the formation of these Agile teams can help your organization reach goals and thrive as they seek to met business goals.\nWhen you complete this course and gain the Certified SAFe® Scrum Master certificate, this certification will demonstrate to companies that you are equipped and ready to lead Agile teams in a SAFe environment, and that your servant leadership and coaching skills will bring tremendous growth and value to their organizations.",
+      "what youll learn": "In addition to learning about the role of Scrum Master at an enterprise level, you will also discover how acting as a coach and using servant leadership methods will enable you to create successful Agile teams. Trainers will also demonstrate how the formation of these Agile teams can help your organization reach goals and thrive as they seek to met business goals.\nWhen you complete this course and gain the Certified SAFe\u00ae Scrum Master certificate, this certification will demonstrate to companies that you are equipped and ready to lead Agile teams in a SAFe environment, and that your servant leadership and coaching skills will bring tremendous growth and value to their organizations.",
       "length": "2 days",
       "effort": "16 hrs/week",
       "reviews": [
-        "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
-        "Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise.",
-        "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
-        "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+        {
+          "reviewText": "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_GirlStudent1.jpeg?alt=media&token=8529de77-203f-468e-bc2d-b1344ef3ee5d"
+        },
+        {
+          "reviewText": "Fantastic experience! Highly recommended! I am looking forward to sharing what I\u2019ve learned with my enterprise.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent2.jpeg?alt=media&token=a115d4e0-4404-4a19-bf4e-4abb20a19716"
+        },
+        {
+          "reviewText": "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F62c04f82ef927d9ceb7421a6bbb53fcb.png?alt=media&token=34b358ce-f846-4bea-9b68-b2b52d1fb654"
+        },
+        {
+          "reviewText": "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2Fa31fc3e4921ee1412b047563bd9729a6.png?alt=media&token=7b975935-a5ba-40fa-8c87-07c103d4c540"
+        }
       ]
     },
     "classes": [
@@ -341,7 +443,7 @@
       "Product Owner",
       "Business Analyst"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/POPM.png",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FPOPM.png?alt=media&token=714503ab-8958-4465-9a98-9bb8eadb0d41",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -350,10 +452,22 @@
       "length": "2 days",
       "effort": "16 hrs/week",
       "reviews": [
-        "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
-        "Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise.",
-        "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
-        "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+        {
+          "reviewText": "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_Girls2.jpeg?alt=media&token=36fa3df6-c5aa-4e8d-acd6-628a76721ab4"
+        },
+        {
+          "reviewText": "Fantastic experience! Highly recommended! I am looking forward to sharing what I\u2019ve learned with my enterprise.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F62c04f82ef927d9ceb7421a6bbb53fcb.png?alt=media&token=34b358ce-f846-4bea-9b68-b2b52d1fb654"
+        },
+        {
+          "reviewText": "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent1.jpeg?alt=media&token=7aa59d6e-29bf-41d4-96cc-aea436f6ad01"
+        },
+        {
+          "reviewText": "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F10db8b48c5997ce9078495343ee353ad.png?alt=media&token=c1b6378f-58d1-4aac-a247-ecfe15da63b8"
+        }
       ]
     },
     "classes": [
@@ -383,19 +497,31 @@
       "Product Owner",
       "Business Analyst"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/SGP.svg",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FSGP.svg?alt=media&token=2428d954-7c9b-430c-a7e5-dd408aa91edd",
     "details": {
       "cost": "1000",
       "class hours": "16",
-      "about this course": "This course is designed to enable you to be prepared and ready to be at the forefront of a Lean-Agile transformation initiative within a program operating in an agency run by the government. Attendees will learn how to utilize the Scaled Agile Framework® in their government agency in order to provide maximum value through the Lean-Agile transformation.",
+      "about this course": "This course is designed to enable you to be prepared and ready to be at the forefront of a Lean-Agile transformation initiative within a program operating in an agency run by the government. Attendees will learn how to utilize the Scaled Agile Framework\u00ae in their government agency in order to provide maximum value through the Lean-Agile transformation.",
       "what youll learn": "During this course you will learn how and why Lean-Agile is a mindset, and the reasons it is essential to bring this mindset as a foundation in a government agency before beginning the transformation. Additionally, you will learn about Agile Release Trains (ART) and how to best utilize them once transformation begins. You will also learn about tailor-made leadership skills and strategies that are best suited to delivering successful transformation and change in the government sector. Trainers will provide best practices and advice on how to best create successful Agile teams, programs, and how to best manage the technology investments that take place in government agencies within the Lean mindset and flow. Finally, you will learn about how to contract in an Agile environment, how to launch your program, and how to ensure you are using SAFe to plan in such a way that ensures you will deliver value to your government agency.",
       "length": "2 days",
       "effort": "16 hrs/week",
       "reviews": [
-        "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
-        "Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise.",
-        "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
-        "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+        {
+          "reviewText": "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F9f96e42418c72dd5e185b9f31ff7dd94.png?alt=media&token=fa1007e0-aa5e-4901-8e2a-64aaf126de64"
+        },
+        {
+          "reviewText": "Fantastic experience! Highly recommended! I am looking forward to sharing what I\u2019ve learned with my enterprise.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent2.jpeg?alt=media&token=a115d4e0-4404-4a19-bf4e-4abb20a19716"
+        },
+        {
+          "reviewText": "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent1.jpeg?alt=media&token=7aa59d6e-29bf-41d4-96cc-aea436f6ad01"
+        },
+        {
+          "reviewText": "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2Fa31fc3e4921ee1412b047563bd9729a6.png?alt=media&token=7b975935-a5ba-40fa-8c87-07c103d4c540"
+        }
       ]
     },
     "classes": [
@@ -433,15 +559,27 @@
     "details": {
       "cost": "1000",
       "class hours": "16",
-      "about this course": "The goal of this two day course is to equip you with the knowledge that is needed in order to be at the forefront of a Lean-Agile enterprise. Leading a Lean-Agile enterprise is a demanding task, and this course will provide you with a deep understanding of the Scaled Agile Framework® (SAFe®), so that you can take that framework and apply it to an enterprise.",
+      "about this course": "The goal of this two day course is to equip you with the knowledge that is needed in order to be at the forefront of a Lean-Agile enterprise. Leading a Lean-Agile enterprise is a demanding task, and this course will provide you with a deep understanding of the Scaled Agile Framework\u00ae (SAFe\u00ae), so that you can take that framework and apply it to an enterprise.",
       "what youll learn": "During the course, attendees will learn about how to become masters of Business Agility so that they can use that expertise to rise to the top in the market. Discussions will be centered around how to develop agility within teams and in the technical space, and how to use that agility to reorient how value flows in the organization. Additional discussions and sessions will provide attendees with training on how to embrace a mindset centered around the customer, as well as how to implement design thinking, as they deliver products within an agile methodology. Attendees will also be instructed on how to orchestrate and use PI Planning events, as well as how to manage and direct different Agile Release Trains (ARTs) that run concurrently. Finally, attendees will learn how to execute a Lean Portfolio Management function within their enterprises.",
       "length": "2 days",
       "effort": "16 hrs/week",
       "reviews": [
-        "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
-        "Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise.",
-        "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
-        "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+        {
+          "reviewText": "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F9f96e42418c72dd5e185b9f31ff7dd94.png?alt=media&token=fa1007e0-aa5e-4901-8e2a-64aaf126de64"
+        },
+        {
+          "reviewText": "Fantastic experience! Highly recommended! I am looking forward to sharing what I\u2019ve learned with my enterprise.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F62c04f82ef927d9ceb7421a6bbb53fcb.png?alt=media&token=34b358ce-f846-4bea-9b68-b2b52d1fb654"
+        },
+        {
+          "reviewText": "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent1.jpeg?alt=media&token=7aa59d6e-29bf-41d4-96cc-aea436f6ad01"
+        },
+        {
+          "reviewText": "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F10db8b48c5997ce9078495343ee353ad.png?alt=media&token=c1b6378f-58d1-4aac-a247-ecfe15da63b8"
+        }
       ]
     },
     "classes": [
@@ -459,7 +597,8 @@
         "city": "Boston",
         "country": "US"
       }
-    ]
+    ],
+    "headerImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Header%20Images%2FScaled%20Agile_Category%20Assets%2FLeading%20Safe%20Banner.jpg?alt=media&token=0e48d3db-53b1-4375-9e2b-c422691cfac5"
   },
   {
     "course code": "SASM",
@@ -469,19 +608,31 @@
     "roles": [
       "Scrum Master"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/SASM.png",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FSASM.png?alt=media&token=6172be49-728e-4466-9d20-992041564e03",
     "details": {
       "cost": "1000",
       "class hours": "16",
-      "about this course": "Are you a current Scrum Master looking to sharpen your skills and move up in your career? This course is designed with you in mind. In this two day course, you will learn how to use your leadership skills to utilize Agile skills and principles in order to lead teams, programs, and whole enterprises to great success as they seek to implement a Scaled Agile Framework (SAFe®).",
+      "about this course": "Are you a current Scrum Master looking to sharpen your skills and move up in your career? This course is designed with you in mind. In this two day course, you will learn how to use your leadership skills to utilize Agile skills and principles in order to lead teams, programs, and whole enterprises to great success as they seek to implement a Scaled Agile Framework (SAFe\u00ae).",
       "what youll learn": "As a Scrum Master you are focused on leading your teams, and this course will help take you to the next step by providing instruction on how to facilitate communication and interaction across multiple teams as they work in unison to support and encourage program goals. Trainers will show you how to improve your current Scrum mindset by introducing you to the concept of scalable engineering and the practices of DevOps. In addition, trainers will demonstrate how you can use Kanban principles to create value that maintains a constant flow of improvement, and how you can best support the interactions of key stakeholders involved at both the program and enterprise levels. Finally, you will be equipped with knowledge and tools that will enable you to create teams who perform at the highest levels.",
       "length": "2 days",
       "effort": "16 hrs/week",
       "reviews": [
-        "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
-        "Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise.",
-        "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
-        "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+        {
+          "reviewText": "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F9f96e42418c72dd5e185b9f31ff7dd94.png?alt=media&token=fa1007e0-aa5e-4901-8e2a-64aaf126de64"
+        },
+        {
+          "reviewText": "Fantastic experience! Highly recommended! I am looking forward to sharing what I\u2019ve learned with my enterprise.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent2.jpeg?alt=media&token=a115d4e0-4404-4a19-bf4e-4abb20a19716"
+        },
+        {
+          "reviewText": "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F62c04f82ef927d9ceb7421a6bbb53fcb.png?alt=media&token=34b358ce-f846-4bea-9b68-b2b52d1fb654"
+        },
+        {
+          "reviewText": "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent1.jpeg?alt=media&token=7aa59d6e-29bf-41d4-96cc-aea436f6ad01"
+        }
       ]
     },
     "classes": [
@@ -511,19 +662,31 @@
       "QA",
       "UI/UX"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/SDP.png",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FSDP.png?alt=media&token=06de05c5-a443-4ae4-93b0-5fac8e855af1",
     "details": {
       "cost": "1000",
       "class hours": "16",
       "about this course": "This is a two-day course focused on highlighting the DevOps mindset to enable Agile team members to deliver solutions in a rapidly changing world.  Encompassing problem definition, development, testing, deployment and support, DevOps is crucial to success in the current fast-paced environment.  This course will furnish a strong background in DevOps, not only to developers but also to every member of an agile team.",
-      "what youll learn": "After this two-day intensive course, participants will learn the basics of DevOps, how it fits into the Agile development process, and how to build a customized development/deployment pipeline that works for their organization.  You’ll learn a CALMR approach to DevOps which will enable you to recognize broken processes and not merely automate them.  In addition, you’ll learn a set of tools and practices that will speed and secure your develop/deploy pipeline.  Upon completing the course, you will be eligible to take the Certified SAFe® DevOps Practitioner exam.",
+      "what youll learn": "After this two-day intensive course, participants will learn the basics of DevOps, how it fits into the Agile development process, and how to build a customized development/deployment pipeline that works for their organization.  You\u2019ll learn a CALMR approach to DevOps which will enable you to recognize broken processes and not merely automate them.  In addition, you\u2019ll learn a set of tools and practices that will speed and secure your develop/deploy pipeline.  Upon completing the course, you will be eligible to take the Certified SAFe\u00ae DevOps Practitioner exam.",
       "length": "16 hours (2 days) in-person class",
       "effort": "5 hrs/week",
       "reviews": [
-        "There’s a lot more to DevOps than learning how to program – this class highlights the areas in the pipeline that really matter.",
-        "I was able to pass the certification exam and implement better DevOps after taking this class.",
-        "I'm not a developer, but I found this course invaluable in understanding the DevOps process.  It really helped my career progression.",
-        "My instructor was great. The interactivity helped to drive home the information, and I was able to put it to use quickly.  Highly recommended."
+        {
+          "reviewText": "There\u2019s a lot more to DevOps than learning how to program \u2013 this class highlights the areas in the pipeline that really matter.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F9f96e42418c72dd5e185b9f31ff7dd94.png?alt=media&token=fa1007e0-aa5e-4901-8e2a-64aaf126de64"
+        },
+        {
+          "reviewText": "I was able to pass the certification exam and implement better DevOps after taking this class.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent2.jpeg?alt=media&token=a115d4e0-4404-4a19-bf4e-4abb20a19716"
+        },
+        {
+          "reviewText": "I'm not a developer, but I found this course invaluable in understanding the DevOps process.  It really helped my career progression.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_Girls2.jpeg?alt=media&token=36fa3df6-c5aa-4e8d-acd6-628a76721ab4"
+        },
+        {
+          "reviewText": "My instructor was great. The interactivity helped to drive home the information, and I was able to put it to use quickly.  Highly recommended.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2Fa31fc3e4921ee1412b047563bd9729a6.png?alt=media&token=7b975935-a5ba-40fa-8c87-07c103d4c540"
+        }
       ]
     },
     "classes": [
@@ -552,19 +715,31 @@
       "Scrum Master",
       "Product Owner"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/ARCH.svg",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FARCH.svg?alt=media&token=d151c94d-e90d-420f-a387-fd52c8822225",
     "details": {
       "cost": "1000",
       "class hours": "16",
-      "about this course": "Architects in an Agile environment need to understand how to engage their entire organization to improve value flow.  Senior System, Solution and Enterprise Architects will learn how to architect in a way that enables DevOps and Release on Demand.  They’ll understand how to incorporate vision, intent and roadmaps in their designs, and will obtain a deeper appreciation for how architects contribute to an Agile/Lean organization.",
-      "what youll learn": "The SAFe for Architects course will give senior technical contributors the skills and understanding to align their designs with the business value, and to steer toward the continuous system-of-systems flow.  Completion of the course allows the participant to take the Certified SAFe® Architect exam.",
+      "about this course": "Architects in an Agile environment need to understand how to engage their entire organization to improve value flow.  Senior System, Solution and Enterprise Architects will learn how to architect in a way that enables DevOps and Release on Demand.  They\u2019ll understand how to incorporate vision, intent and roadmaps in their designs, and will obtain a deeper appreciation for how architects contribute to an Agile/Lean organization.",
+      "what youll learn": "The SAFe for Architects course will give senior technical contributors the skills and understanding to align their designs with the business value, and to steer toward the continuous system-of-systems flow.  Completion of the course allows the participant to take the Certified SAFe\u00ae Architect exam.",
       "length": "24 hours (3 days) in-person class",
       "effort": "5 hrs/week",
       "reviews": [
-        "I’ve been a system architect for years – this class enabled me to integrate my experience with the principles of Agile/Lean. Thanks!",
-        "I started with very little knowledge about how agile actually works, but the class provided more than enough to start implementing the techniques in my architecture.",
-        "Wow – three days was like drinking from a fire hose, and at the end we could understand how to align architecture with business value.",
-        "My instructor was great. They kept the energy level high, and we were all engaged.  A must for any architect looking to employ Agile principles. "
+        {
+          "reviewText": "I\u2019ve been a system architect for years \u2013 this class enabled me to integrate my experience with the principles of Agile/Lean. Thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F9f96e42418c72dd5e185b9f31ff7dd94.png?alt=media&token=fa1007e0-aa5e-4901-8e2a-64aaf126de64"
+        },
+        {
+          "reviewText": "I started with very little knowledge about how agile actually works, but the class provided more than enough to start implementing the techniques in my architecture.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_Girls2.jpeg?alt=media&token=36fa3df6-c5aa-4e8d-acd6-628a76721ab4"
+        },
+        {
+          "reviewText": "Wow \u2013 three days was like drinking from a fire hose, and at the end we could understand how to align architecture with business value.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent2.jpeg?alt=media&token=a115d4e0-4404-4a19-bf4e-4abb20a19716"
+        },
+        {
+          "reviewText": "My instructor was great. They kept the energy level high, and we were all engaged.  A must for any architect looking to employ Agile principles. ",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2Fa31fc3e4921ee1412b047563bd9729a6.png?alt=media&token=7b975935-a5ba-40fa-8c87-07c103d4c540"
+        }
       ]
     },
     "classes": [
@@ -598,19 +773,31 @@
       "UI/UX",
       "Content Writer"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/Safe Fro Teams.png",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FSafe%20Fro%20Teams.png?alt=media&token=7740c467-8f5e-4e12-8b87-7857555235ea",
     "details": {
       "cost": "1000",
       "class hours": "16",
-      "about this course": "This two-day course provides attendees with intermediate-level information about using the Scaled Agile Framework® (SAFe®) as a team member Lean-Agile enterprise.  We first review the key concepts behind iterative software development in a SAFe environment, which include managing product backlogs from user stories and requirements, demonstrating value, and incremental and iterative delivery.  We then cover the daily responsibilities of an Agile practitioner and their use of Scrum, Kanban, and Extreme Programming.",
-      "what youll learn": "After completing the course, participants will be able to demonstrate their knowledge of the theory and practice needed for participating as a SAFe practitioner in their enterprise.  All students who successfully complete the course will be prepared to take the Certified SAFe® Practitioner (SP) exam.",
+      "about this course": "This two-day course provides attendees with intermediate-level information about using the Scaled Agile Framework\u00ae (SAFe\u00ae) as a team member Lean-Agile enterprise.  We first review the key concepts behind iterative software development in a SAFe environment, which include managing product backlogs from user stories and requirements, demonstrating value, and incremental and iterative delivery.  We then cover the daily responsibilities of an Agile practitioner and their use of Scrum, Kanban, and Extreme Programming.",
+      "what youll learn": "After completing the course, participants will be able to demonstrate their knowledge of the theory and practice needed for participating as a SAFe practitioner in their enterprise.  All students who successfully complete the course will be prepared to take the Certified SAFe\u00ae Practitioner (SP) exam.",
       "length": "2 days",
       "effort": "16 hrs/week",
       "reviews": [
-        "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
-        "Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise.",
-        "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
-        "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+        {
+          "reviewText": "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_GirlStudent1.jpeg?alt=media&token=8529de77-203f-468e-bc2d-b1344ef3ee5d"
+        },
+        {
+          "reviewText": "Fantastic experience! Highly recommended! I am looking forward to sharing what I\u2019ve learned with my enterprise.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F9f96e42418c72dd5e185b9f31ff7dd94.png?alt=media&token=fa1007e0-aa5e-4901-8e2a-64aaf126de64"
+        },
+        {
+          "reviewText": "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent2.jpeg?alt=media&token=a115d4e0-4404-4a19-bf4e-4abb20a19716"
+        },
+        {
+          "reviewText": "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2Fa31fc3e4921ee1412b047563bd9729a6.png?alt=media&token=7b975935-a5ba-40fa-8c87-07c103d4c540"
+        }
       ]
     },
     "classes": [
@@ -628,7 +815,8 @@
         "city": "Boston",
         "country": "US"
       }
-    ]
+    ],
+    "headerImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Header%20Images%2FScaled%20Agile_Category%20Assets%2FSAFe%20For%20Teams%20Banner.jpg?alt=media&token=bb57433e-3603-48a1-abef-48f664ec1667"
   },
   {
     "course code": "RTE",
@@ -642,19 +830,31 @@
       "Developer",
       "QA"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/RTE.svg",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FRTE.svg?alt=media&token=84db2bc6-1195-4723-b98e-0d9ea6c00928",
     "details": {
       "cost": "1000",
       "class hours": "16",
-      "about this course": "This intermediate- to advanced-level three-day course provides attendees the knowledge to implement Agile Release Trains (ARTs) using the Scaled Agile Framework® (SAFe®) in a Lean-Agile enterprise.  The training is oriented towards Agile leaders, coaches, and Scrum Masters. Starting with a review of Lean-Agile principles, you will be guided through the intricacies of Agile Release Trains and the challenges for implementing these principles in an enterprise setting.",
+      "about this course": "This intermediate- to advanced-level three-day course provides attendees the knowledge to implement Agile Release Trains (ARTs) using the Scaled Agile Framework\u00ae (SAFe\u00ae) in a Lean-Agile enterprise.  The training is oriented towards Agile leaders, coaches, and Scrum Masters. Starting with a review of Lean-Agile principles, you will be guided through the intricacies of Agile Release Trains and the challenges for implementing these principles in an enterprise setting.",
       "what youll learn": "A Certified SAFe Release Train Engineer certificate holder will be expected to have a thorough understanding of the key Lean-Agile concepts and practices. From the perspective of an already expert SAFe practitioner, the course prepares the student for advanced leadership, coaching and Scrum Master responsibilities in a enterprise SAFe environment.  Instructors draw from their own real-life experience to immerse the student in actual business scenarios.  From there, instructors guide students to create, manage and deploy ARTs. As this is intermediate- to advanced-level training, students gain an appreciation both for the power, as well as the shortcomings, of ARTs in an enterprise setting.",
       "length": "3 days",
       "effort": "24 hrs/week",
       "reviews": [
-        "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
-        "Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise.",
-        "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
-        "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+        {
+          "reviewText": "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_GirlStudent1.jpeg?alt=media&token=8529de77-203f-468e-bc2d-b1344ef3ee5d"
+        },
+        {
+          "reviewText": "Fantastic experience! Highly recommended! I am looking forward to sharing what I\u2019ve learned with my enterprise.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F9f96e42418c72dd5e185b9f31ff7dd94.png?alt=media&token=fa1007e0-aa5e-4901-8e2a-64aaf126de64"
+        },
+        {
+          "reviewText": "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent1.jpeg?alt=media&token=7aa59d6e-29bf-41d4-96cc-aea436f6ad01"
+        },
+        {
+          "reviewText": "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2Fa31fc3e4921ee1412b047563bd9729a6.png?alt=media&token=7b975935-a5ba-40fa-8c87-07c103d4c540"
+        }
       ]
     },
     "classes": [
@@ -684,19 +884,31 @@
       "QA",
       "UI/UX"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/ASE.svg",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FASE.svg?alt=media&token=b8904a72-2ca2-4f75-8736-5a8ac2704c38",
     "details": {
       "cost": "1000",
       "class hours": "16",
-      "about this course": "This three-day course provides attendees with the foundational knowledge required to establish their credentials as a Certified Scaled Agile Framework® (SAFe®) Agile Software Engineer. We start with principles behind iterative software development in a SAFe environment, which include the key concepts of managing product backlogs from user stories and requirements, demonstrating value, and incremental and iterative delivery.  An Agile Software Engineer must be equally knowledgeable in DevOps as well as in Lean-Agile, and our expert faculty provide a comprehensive overview.",
-      "what youll learn": "A Certified Agile Software Developer certificate holder will be expected to show competency in all aspects of an Agile iterative software development environment.  From the SAFe software developer’s perspective, the course prepares the student in all aspects of the Agile software development process.  Instructors use real-life examples to show students key SAFe skills and then students are given an opportunity to practice the same skills.  As in other SAFe certificate programs, participants in the class explore the importance of adopting a customer-centric mindset and design thinking approach to agile product delivery.",
+      "about this course": "This three-day course provides attendees with the foundational knowledge required to establish their credentials as a Certified Scaled Agile Framework\u00ae (SAFe\u00ae) Agile Software Engineer. We start with principles behind iterative software development in a SAFe environment, which include the key concepts of managing product backlogs from user stories and requirements, demonstrating value, and incremental and iterative delivery.  An Agile Software Engineer must be equally knowledgeable in DevOps as well as in Lean-Agile, and our expert faculty provide a comprehensive overview.",
+      "what youll learn": "A Certified Agile Software Developer certificate holder will be expected to show competency in all aspects of an Agile iterative software development environment.  From the SAFe software developer\u2019s perspective, the course prepares the student in all aspects of the Agile software development process.  Instructors use real-life examples to show students key SAFe skills and then students are given an opportunity to practice the same skills.  As in other SAFe certificate programs, participants in the class explore the importance of adopting a customer-centric mindset and design thinking approach to agile product delivery.",
       "length": "3 days",
       "effort": "24 hrs/week",
       "reviews": [
-        "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
-        "Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise.",
-        "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
-        "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+        {
+          "reviewText": "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_GirlStudent1.jpeg?alt=media&token=8529de77-203f-468e-bc2d-b1344ef3ee5d"
+        },
+        {
+          "reviewText": "Fantastic experience! Highly recommended! I am looking forward to sharing what I\u2019ve learned with my enterprise.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F9f96e42418c72dd5e185b9f31ff7dd94.png?alt=media&token=fa1007e0-aa5e-4901-8e2a-64aaf126de64"
+        },
+        {
+          "reviewText": "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent1.jpeg?alt=media&token=7aa59d6e-29bf-41d4-96cc-aea436f6ad01"
+        },
+        {
+          "reviewText": "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2Fa31fc3e4921ee1412b047563bd9729a6.png?alt=media&token=7b975935-a5ba-40fa-8c87-07c103d4c540"
+        }
       ]
     },
     "classes": [
@@ -726,7 +938,7 @@
       "Product Owner",
       "Business Analyst"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/LEan Portfolio Management.png",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FLEan%20Portfolio%20Management.png?alt=media&token=937f6036-01a9-4e5e-92b7-411ec450cb40",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -735,10 +947,22 @@
       "length": "3 days",
       "effort": "24 hrs/week",
       "reviews": [
-        "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
-        "Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise.",
-        "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
-        "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+        {
+          "reviewText": "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_Girls2.jpeg?alt=media&token=36fa3df6-c5aa-4e8d-acd6-628a76721ab4"
+        },
+        {
+          "reviewText": "Fantastic experience! Highly recommended! I am looking forward to sharing what I\u2019ve learned with my enterprise.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent2.jpeg?alt=media&token=a115d4e0-4404-4a19-bf4e-4abb20a19716"
+        },
+        {
+          "reviewText": "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F10db8b48c5997ce9078495343ee353ad.png?alt=media&token=c1b6378f-58d1-4aac-a247-ecfe15da63b8"
+        },
+        {
+          "reviewText": "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2Fa31fc3e4921ee1412b047563bd9729a6.png?alt=media&token=7b975935-a5ba-40fa-8c87-07c103d4c540"
+        }
       ]
     },
     "classes": [
@@ -756,7 +980,8 @@
         "city": "Boston",
         "country": "US"
       }
-    ]
+    ],
+    "headerImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Header%20Images%2FScaled%20Agile_Category%20Assets%2FLean%20Portfolio%20Management.jpg?alt=media&token=5ca0229a-4494-4759-8f49-cb0ab86fa9e5"
   },
   {
     "course code": "APM",
@@ -768,19 +993,31 @@
       "Product Owner",
       "Business Analyst"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/APM.png",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FAPM.png?alt=media&token=e8c869cf-ab0b-4e9f-84c2-f443e6dd8677",
     "details": {
       "cost": "1000",
       "class hours": "16",
-      "about this course": "This foundational three-day course provides attendees the background required to achieve the Certified SAFe® Agile Product Manager certification. The training is oriented towards product managers, leaders and coaches. Starting with a review of Lean-Agile principles, you will be guided through the intricacies of Agile product management and the challenges for implementing these principles in an enterprise setting. ",
-      "what youll learn": "A Certified SAFe® Agile Product Manager certificate holder will be expected to have a thorough understanding of key Lean-Agile concepts and practices for both software development as well as product management. From the perspective of an Agile product manager, the course prepares the student for advanced leadership and management responsibilities in a enterprise SAFe environment. Course instructors draw from their own real-life experience to immerse the student in actual business scenarios.  From there, instructors guide students to create, manage and deploy ARTs.",
+      "about this course": "This foundational three-day course provides attendees the background required to achieve the Certified SAFe\u00ae Agile Product Manager certification. The training is oriented towards product managers, leaders and coaches. Starting with a review of Lean-Agile principles, you will be guided through the intricacies of Agile product management and the challenges for implementing these principles in an enterprise setting. ",
+      "what youll learn": "A Certified SAFe\u00ae Agile Product Manager certificate holder will be expected to have a thorough understanding of key Lean-Agile concepts and practices for both software development as well as product management. From the perspective of an Agile product manager, the course prepares the student for advanced leadership and management responsibilities in a enterprise SAFe environment. Course instructors draw from their own real-life experience to immerse the student in actual business scenarios.  From there, instructors guide students to create, manage and deploy ARTs.",
       "length": "3 days",
       "effort": "24 hrs/week",
       "reviews": [
-        "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
-        "Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise.",
-        "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
-        "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+        {
+          "reviewText": "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_GirlStudent1.jpeg?alt=media&token=8529de77-203f-468e-bc2d-b1344ef3ee5d"
+        },
+        {
+          "reviewText": "Fantastic experience! Highly recommended! I am looking forward to sharing what I\u2019ve learned with my enterprise.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent2.jpeg?alt=media&token=a115d4e0-4404-4a19-bf4e-4abb20a19716"
+        },
+        {
+          "reviewText": "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent1.jpeg?alt=media&token=7aa59d6e-29bf-41d4-96cc-aea436f6ad01"
+        },
+        {
+          "reviewText": "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2Fa31fc3e4921ee1412b047563bd9729a6.png?alt=media&token=7b975935-a5ba-40fa-8c87-07c103d4c540"
+        }
       ]
     },
     "classes": [
@@ -814,19 +1051,31 @@
       "UI/UX",
       "Content Writer"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/SAI_Certification_CAL1_RGB.png",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FSAI_Certification_CAL1_RGB.png?alt=media&token=da8c1ce3-e52b-4d43-8283-f1f1c98995a9",
     "details": {
       "cost": "1000",
       "class hours": "16",
       "about this course": "This foundational two-day course provides attendees the background required to achieve the Certified Agile Leadership 1 certification from the Scrum Alliance. The training is oriented towards information technology (IT) product managers, supervisors, directors, leaders, coaches, or anyone in a managerial position who is interested in learning to apply Agile principles to their leadership.",
-      "what youll learn": "The applicability of Agile management techniques extends throughout the IT industry and beyond. This course will demonstrate many of those techniques that prove useful for common organizational and management challenges, such as, effective leadership of distributed and diverse teams, delivering value, and promoting the Scrum values of courage, focus, commitment, respect and openness. From their experience in both the Agile and non-Agile worlds, Apex’s instructors will show you how to value: individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan.\nA Certified Agile Leadership 1 certificate holder will be expected to have an understanding of management practices, particularly those found in IT organizations. From the perspective of an experienced IT manager, the course prepares the student to apply Agile techniques to attain advanced leadership and management responsibilities in a enterprise environment. Course instructors draw from their own real-life experience to immerse the student in actual business scenarios.  From there, instructors provide guidance in the application of Agile techniques.",
+      "what youll learn": "The applicability of Agile management techniques extends throughout the IT industry and beyond. This course will demonstrate many of those techniques that prove useful for common organizational and management challenges, such as, effective leadership of distributed and diverse teams, delivering value, and promoting the Scrum values of courage, focus, commitment, respect and openness. From their experience in both the Agile and non-Agile worlds, Apex\u2019s instructors will show you how to value: individuals and interactions over processes and tools, working software over comprehensive documentation, customer collaboration over contract negotiation, and responding to change over following a plan.\nA Certified Agile Leadership 1 certificate holder will be expected to have an understanding of management practices, particularly those found in IT organizations. From the perspective of an experienced IT manager, the course prepares the student to apply Agile techniques to attain advanced leadership and management responsibilities in a enterprise environment. Course instructors draw from their own real-life experience to immerse the student in actual business scenarios.  From there, instructors provide guidance in the application of Agile techniques.",
       "length": "2 days",
       "effort": "16 hrs/week",
       "reviews": [
-        "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
-        "Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise.",
-        "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
-        "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+        {
+          "reviewText": "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_GirlStudent1.jpeg?alt=media&token=8529de77-203f-468e-bc2d-b1344ef3ee5d"
+        },
+        {
+          "reviewText": "Fantastic experience! Highly recommended! I am looking forward to sharing what I\u2019ve learned with my enterprise.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_Girls2.jpeg?alt=media&token=36fa3df6-c5aa-4e8d-acd6-628a76721ab4"
+        },
+        {
+          "reviewText": "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent1.jpeg?alt=media&token=7aa59d6e-29bf-41d4-96cc-aea436f6ad01"
+        },
+        {
+          "reviewText": "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F10db8b48c5997ce9078495343ee353ad.png?alt=media&token=c1b6378f-58d1-4aac-a247-ecfe15da63b8"
+        }
       ]
     },
     "classes": [
@@ -844,7 +1093,8 @@
         "city": "Boston",
         "country": "US"
       }
-    ]
+    ],
+    "headerImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Header%20Images%2FLeadership_CAL%20Assets%2Fjehyun-sung-6U5AEmQIajg-unsplash.jpg?alt=media&token=98d40df6-ea69-492c-abb6-51e2e19eae2f"
   },
   {
     "course code": "PMP",
@@ -856,7 +1106,7 @@
       "Product Owner",
       "Business Analyst"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/Project Management Professional.png",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FProject%20Management%20Professional.png?alt=media&token=839f62da-8995-4e5f-ac4c-996c5ca8dc1e",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -865,10 +1115,22 @@
       "length": "4 days",
       "effort": "32 hrs/week",
       "reviews": [
-        "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
-        "Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise.",
-        "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
-        "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+        {
+          "reviewText": "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_Girls2.jpeg?alt=media&token=36fa3df6-c5aa-4e8d-acd6-628a76721ab4"
+        },
+        {
+          "reviewText": "Fantastic experience! Highly recommended! I am looking forward to sharing what I\u2019ve learned with my enterprise.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F62c04f82ef927d9ceb7421a6bbb53fcb.png?alt=media&token=34b358ce-f846-4bea-9b68-b2b52d1fb654"
+        },
+        {
+          "reviewText": "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent1.jpeg?alt=media&token=7aa59d6e-29bf-41d4-96cc-aea436f6ad01"
+        },
+        {
+          "reviewText": "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2Fa31fc3e4921ee1412b047563bd9729a6.png?alt=media&token=7b975935-a5ba-40fa-8c87-07c103d4c540"
+        }
       ]
     },
     "classes": [
@@ -886,7 +1148,8 @@
         "city": "Boston",
         "country": "US"
       }
-    ]
+    ],
+    "headerImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Header%20Images%2FPMI%20Category%20Assets%2FProject%20Management%20Professional.jpg?alt=media&token=b982250a-f6b3-42a7-867d-6cb04d0e8331"
   },
   {
     "course code": "ACP",
@@ -902,7 +1165,7 @@
       "UI/UX",
       "Content Writer"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/pmi-acp-600px.png",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2Fpmi-acp-600px.png?alt=media&token=7d6152dc-5e66-483d-ab08-0935e0bf4ce8",
     "details": {
       "cost": "1000",
       "class hours": "16",
@@ -911,10 +1174,22 @@
       "length": "2 days",
       "effort": "16 hrs/week",
       "reviews": [
-        "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
-        "Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise.",
-        "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
-        "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+        {
+          "reviewText": "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_GirlStudent1.jpeg?alt=media&token=8529de77-203f-468e-bc2d-b1344ef3ee5d"
+        },
+        {
+          "reviewText": "Fantastic experience! Highly recommended! I am looking forward to sharing what I\u2019ve learned with my enterprise.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_Girls2.jpeg?alt=media&token=36fa3df6-c5aa-4e8d-acd6-628a76721ab4"
+        },
+        {
+          "reviewText": "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F62c04f82ef927d9ceb7421a6bbb53fcb.png?alt=media&token=34b358ce-f846-4bea-9b68-b2b52d1fb654"
+        },
+        {
+          "reviewText": "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F9f96e42418c72dd5e185b9f31ff7dd94.png?alt=media&token=fa1007e0-aa5e-4901-8e2a-64aaf126de64"
+        }
       ]
     },
     "classes": [
@@ -932,7 +1207,8 @@
         "city": "Boston",
         "country": "US"
       }
-    ]
+    ],
+    "headerImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Header%20Images%2FPMI%20Category%20Assets%2FAgile%20Certified%20Practitioner.jpg?alt=media&token=1e85ab38-19af-422e-88aa-a98d9d257a71"
   },
   {
     "course code": "VSW",
@@ -948,19 +1224,31 @@
       "UI/UX",
       "Content Writer"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/VSELogo.jpg",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FVSELogo.jpg?alt=media&token=ff841609-3bcd-4c94-9b99-fc851e683eb6",
     "details": {
       "cost": "5000",
       "class hours": "16",
-      "about this course": "Value Streams are all about implementing practices and optimizing an organization so that it can provide a continuous flow of value to its customers. We find that today’s businesses are too often focused on delivering products and specific product features without taking into consideration their ultimate value to the customer. Value streams start with and focus specifically on business value provided to the customer.",
+      "about this course": "Value Streams are all about implementing practices and optimizing an organization so that it can provide a continuous flow of value to its customers. We find that today\u2019s businesses are too often focused on delivering products and specific product features without taking into consideration their ultimate value to the customer. Value streams start with and focus specifically on business value provided to the customer.",
       "what youll learn": "Understanding value streams becomes increasingly important as the complexity of your organization grows. Drawing upon parallels from the Scaled Agile Framework (SAFe), many of the techniques that help with coordination and interconnection between Agile processes will also be shown effective at coordinating and delivering value at scale.\nIn this workshop you will partner and collaborate with other students representing a broad swath of your corporate know-how. Under the expert guidance of experienced facilitators, you will have the opportunity to immerse yourself in several actual business challenges and then learn how value stream coordination can help you manage the many competing requirements that may interfere with delivering value. You will have the opportunity to experience, practice, and apply new ways of thinking about delivering customer value. In demonstrations of complex organizations, you will see how these practices scale to meet your challenges.",
       "length": "2 days",
       "effort": "16 hrs/week",
       "reviews": [
-        "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
-        "Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise.",
-        "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
-        "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+        {
+          "reviewText": "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F9f96e42418c72dd5e185b9f31ff7dd94.png?alt=media&token=fa1007e0-aa5e-4901-8e2a-64aaf126de64"
+        },
+        {
+          "reviewText": "Fantastic experience! Highly recommended! I am looking forward to sharing what I\u2019ve learned with my enterprise.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent2.jpeg?alt=media&token=a115d4e0-4404-4a19-bf4e-4abb20a19716"
+        },
+        {
+          "reviewText": "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent1.jpeg?alt=media&token=7aa59d6e-29bf-41d4-96cc-aea436f6ad01"
+        },
+        {
+          "reviewText": "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2Fa31fc3e4921ee1412b047563bd9729a6.png?alt=media&token=7b975935-a5ba-40fa-8c87-07c103d4c540"
+        }
       ]
     },
     "classes": [
@@ -978,7 +1266,8 @@
         "city": "Boston",
         "country": "US"
       }
-    ]
+    ],
+    "headerImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Header%20Images%2FCorporate%20Training%2FValue%20Stream%20Workshop.jpg?alt=media&token=e859563b-ee04-4d97-812b-e94e9daf265a"
   },
   {
     "course code": "SPM",
@@ -990,19 +1279,31 @@
       "Product Owner",
       "Business Analyst"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/SPMLogo.jpg",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FSPMLogo.jpg?alt=media&token=58fa21d1-d79d-43fd-97e9-36b1670cb2af",
     "details": {
       "cost": "5000",
       "class hours": "16",
-      "about this course": "The SAFe® Portfolio Management corporate training fits hand in glove with our SAFe Lean Portfolio Manager certificate training. Similar to the certificate training, the course prepares the student to demonstrate their expertise in managing an enterprise-wide portfolio of Agile projects. Instructors draw from their own real-life industry experience to show students key SAFe techniques for establishing a portfolio vision, for performing Lean portfolio budgeting, port and for using portfolio tools like Portfolio Kanban. Students are given an opportunity to practice and apply these same skills with scenarios drawn from actual industry problems. Whereas the certificate training is a foundational level course, the corporate training is far more detailed and specifically targeted for the user’s business challenges.",
+      "about this course": "The SAFe\u00ae Portfolio Management corporate training fits hand in glove with our SAFe Lean Portfolio Manager certificate training. Similar to the certificate training, the course prepares the student to demonstrate their expertise in managing an enterprise-wide portfolio of Agile projects. Instructors draw from their own real-life industry experience to show students key SAFe techniques for establishing a portfolio vision, for performing Lean portfolio budgeting, port and for using portfolio tools like Portfolio Kanban. Students are given an opportunity to practice and apply these same skills with scenarios drawn from actual industry problems. Whereas the certificate training is a foundational level course, the corporate training is far more detailed and specifically targeted for the user\u2019s business challenges.",
       "what youll learn": "In this workshop you will partner and collaborate with other students representing a broad swath of your corporate know-how. Under the expert guidance of experienced facilitators, you will have the opportunity to immerse yourself in several actual business challenges and then learn how SAFE portfolio management techniques can help you manage the many competing requirements that may interfere with delivering value. Alongside a deep dive into the complexities of your organization, you will have the opportunity to see and experience how organizations like yours apply SAFe practices to meet their business challenges.",
       "length": "2 days",
       "effort": "16 hrs/week",
       "reviews": [
-        "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
-        "Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise.",
-        "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
-        "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+        {
+          "reviewText": "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_GirlStudent1.jpeg?alt=media&token=8529de77-203f-468e-bc2d-b1344ef3ee5d"
+        },
+        {
+          "reviewText": "Fantastic experience! Highly recommended! I am looking forward to sharing what I\u2019ve learned with my enterprise.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent2.jpeg?alt=media&token=a115d4e0-4404-4a19-bf4e-4abb20a19716"
+        },
+        {
+          "reviewText": "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F62c04f82ef927d9ceb7421a6bbb53fcb.png?alt=media&token=34b358ce-f846-4bea-9b68-b2b52d1fb654"
+        },
+        {
+          "reviewText": "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2Fa31fc3e4921ee1412b047563bd9729a6.png?alt=media&token=7b975935-a5ba-40fa-8c87-07c103d4c540"
+        }
       ]
     },
     "classes": [
@@ -1020,7 +1321,8 @@
         "city": "Boston",
         "country": "US"
       }
-    ]
+    ],
+    "headerImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Header%20Images%2FCorporate%20Training%2FSAFe%20Portfolio%20Management.jpg?alt=media&token=cd6a5ff9-c4c0-4d08-b135-d298cea11ace"
   },
   {
     "course code": "PIW",
@@ -1032,19 +1334,31 @@
       "Product Owner",
       "Business Analyst"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/PIW Logo.png",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FPIW%20Logo.png?alt=media&token=9e235f56-3dab-4ceb-add3-2774c618389d",
     "details": {
       "cost": "6000",
       "class hours": "24",
       "about this course": "In an Agile development environment, a program increment (PI) is a timebox during which the Agile Release Train incrementally delivers value through deploying new systems and software.  It is the summation of a set of sprints, and usually lasts 8-12 weeks.  The PI is the final artifact of the scrum framework, and represents a usable solution\nThis workshop guides participants through the process of defining the program increment, guiding its development cycle, and realizing its functionality through deployment.  Practicing Scrum without a program increment is merely wasted effort and a lost opportunity.  This customized workshop shows your team how to successfully define and deliver the PI.",
-      "what youll learn": "Everyone in the Agile team will benefit from this workshop.  You’ll learn how to set realistic goals for the program increment, how to ensure sprints will deliver the PI, and how to utilize program increments to continuously improve the outcomes of your agile development process.",
+      "what youll learn": "Everyone in the Agile team will benefit from this workshop.  You\u2019ll learn how to set realistic goals for the program increment, how to ensure sprints will deliver the PI, and how to utilize program increments to continuously improve the outcomes of your agile development process.",
       "length": "Customized for each engagement; typically 3-6 working days",
       "effort": "6 hrs/day",
       "reviews": [
-        "We didn’t know the difference between a sprint and a program increment.  Now we do, and it has really improved our value flow. Thanks!",
-        "My company was getting stuck between sprints, so this workshop helped us to keep the train on the track.",
-        "Every day we learned something new.  It was a great benefit to our team.",
-        "Highly recommended – Raj showed us how to define program increments that make sense, enabling us to succeed."
+        {
+          "reviewText": "We didn\u2019t know the difference between a sprint and a program increment.  Now we do, and it has really improved our value flow. Thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_GirlStudent1.jpeg?alt=media&token=8529de77-203f-468e-bc2d-b1344ef3ee5d"
+        },
+        {
+          "reviewText": "My company was getting stuck between sprints, so this workshop helped us to keep the train on the track.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_Girls2.jpeg?alt=media&token=36fa3df6-c5aa-4e8d-acd6-628a76721ab4"
+        },
+        {
+          "reviewText": "Every day we learned something new.  It was a great benefit to our team.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F9f96e42418c72dd5e185b9f31ff7dd94.png?alt=media&token=fa1007e0-aa5e-4901-8e2a-64aaf126de64"
+        },
+        {
+          "reviewText": "Highly recommended \u2013 Raj showed us how to define program increments that make sense, enabling us to succeed.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent1.jpeg?alt=media&token=7aa59d6e-29bf-41d4-96cc-aea436f6ad01"
+        }
       ]
     },
     "classes": [
@@ -1062,7 +1376,8 @@
         "city": "Boston",
         "country": "US"
       }
-    ]
+    ],
+    "headerImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Header%20Images%2FCorporate%20Training%2FProgram%20Increment%20Workshop.jpg?alt=media&token=c3493a62-aae1-49e0-8ae5-578b2978e57c"
   },
   {
     "course code": "IA",
@@ -1078,19 +1393,31 @@
       "UI/UX",
       "Content Writer"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/I&A Logo.jpg",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FI%26A%20Logo.jpg?alt=media&token=71675be2-8429-4052-a1a5-526b00bfa79c",
     "details": {
       "cost": "5000",
       "class hours": "20",
       "about this course": "At the core of the Agile principles is the concept of regular reflection and tuning.  Inspect & Adapt takes place at the end of each Program Increment.  All of the stakeholders participate in the event, identifying backlog items for improvement and bolstering the culture of continuous learning.\nThe Inspect & Adapt workshop will demonstrate how this Agile principle can be implemented in your environment.  From the workshop, you will gain the skills needed to be introspective about your successes and areas needing more focus.",
-      "what youll learn": "The Inspect & Adapt workshop allows you to release the potential of compounding your triumphs using Agile.  You’ll see how to demonstrate the program increment, how to measure its benefits both qualitatively and quantitatively, and how to master the complicated process of reflection and continuous improvement.",
+      "what youll learn": "The Inspect & Adapt workshop allows you to release the potential of compounding your triumphs using Agile.  You\u2019ll see how to demonstrate the program increment, how to measure its benefits both qualitatively and quantitatively, and how to master the complicated process of reflection and continuous improvement.",
       "length": "Customized for each engagement; typically 2-3 working days",
       "effort": "3 hrs/day",
       "reviews": [
-        "We didn’t know the difference between a sprint and a program increment.  Now we do, and it has really improved our value flow. Thanks!",
-        "My company was getting stuck between sprints, so this workshop helped us to keep the train on the track.",
-        "Every day we learned something new.  It was a great benefit to our team.",
-        "Highly recommended – Raj showed us how to define program increments that make sense, enabling us to succeed."
+        {
+          "reviewText": "We didn\u2019t know the difference between a sprint and a program increment.  Now we do, and it has really improved our value flow. Thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_Girls2.jpeg?alt=media&token=36fa3df6-c5aa-4e8d-acd6-628a76721ab4"
+        },
+        {
+          "reviewText": "My company was getting stuck between sprints, so this workshop helped us to keep the train on the track.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent2.jpeg?alt=media&token=a115d4e0-4404-4a19-bf4e-4abb20a19716"
+        },
+        {
+          "reviewText": "Every day we learned something new.  It was a great benefit to our team.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent1.jpeg?alt=media&token=7aa59d6e-29bf-41d4-96cc-aea436f6ad01"
+        },
+        {
+          "reviewText": "Highly recommended \u2013 Raj showed us how to define program increments that make sense, enabling us to succeed.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2Fa31fc3e4921ee1412b047563bd9729a6.png?alt=media&token=7b975935-a5ba-40fa-8c87-07c103d4c540"
+        }
       ]
     },
     "classes": [
@@ -1108,7 +1435,8 @@
         "city": "Boston",
         "country": "US"
       }
-    ]
+    ],
+    "headerImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Header%20Images%2FCorporate%20Training%2FInspect%20and%20Adapt.jpg?alt=media&token=ba4f8ce4-80c1-4062-9fc6-12bbd567870c"
   },
   {
     "course code": "PMW",
@@ -1120,7 +1448,7 @@
       "Product Owner",
       "Business Analyst"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/PMV Logo.jpg",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FPMV%20Logo.jpg?alt=media&token=0d6caee0-e49e-4691-a33e-98e77876ccf3",
     "details": {
       "cost": "5000",
       "class hours": "8",
@@ -1129,10 +1457,22 @@
       "length": "Customized for each engagement; typically 2-4 working days",
       "effort": "3 hrs/day",
       "reviews": [
-        "This was great – I now understand how to incorporate the Agile principles with product management. Thanks!",
-        "Well worth the time.  Our product management has improved and will continue to do so as we continue our implementation.",
-        "We got a lot out of the workshop – I was glad to have been invited to participate.",
-        "This was the best use of my time in a long while.  Implement Agile requires a new way to do our jobs, and this workshop has opened my eyes.  Just great."
+        {
+          "reviewText": "This was great \u2013 I now understand how to incorporate the Agile principles with product management. Thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_Girls2.jpeg?alt=media&token=36fa3df6-c5aa-4e8d-acd6-628a76721ab4"
+        },
+        {
+          "reviewText": "Well worth the time.  Our product management has improved and will continue to do so as we continue our implementation.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F62c04f82ef927d9ceb7421a6bbb53fcb.png?alt=media&token=34b358ce-f846-4bea-9b68-b2b52d1fb654"
+        },
+        {
+          "reviewText": "We got a lot out of the workshop \u2013 I was glad to have been invited to participate.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent1.jpeg?alt=media&token=7aa59d6e-29bf-41d4-96cc-aea436f6ad01"
+        },
+        {
+          "reviewText": "This was the best use of my time in a long while.  Implement Agile requires a new way to do our jobs, and this workshop has opened my eyes.  Just great.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F10db8b48c5997ce9078495343ee353ad.png?alt=media&token=c1b6378f-58d1-4aac-a247-ecfe15da63b8"
+        }
       ]
     },
     "classes": [
@@ -1150,7 +1490,8 @@
         "city": "Boston",
         "country": "US"
       }
-    ]
+    ],
+    "headerImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Header%20Images%2FCorporate%20Training%2FProduct%20Management%20Workshop.jpg?alt=media&token=151f8558-fc52-49ed-89d9-371b08526452"
   },
   {
     "course code": "TB",
@@ -1161,19 +1502,31 @@
       "Scrum Master",
       "Product Owner"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/PMV Logo.png",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FPMV%20Logo.png?alt=media&token=81c39868-7070-4af0-bd60-7e0a3b8bacb2",
     "details": {
       "cost": "5000",
       "class hours": "12",
-      "about this course": "Are your teams suffering from lack of cohesion and connectedness? Are you and they feeling disconnected and frustrated because they just can’t seem to work well together? If these questions describe your teams, then this team building workshop is the perfect fit for you.",
-      "what youll learn": "Our professional team building trainers have years of experience helping teams connect and form bonds, which enable them to be happier, more effective, and increase their performance. During this one day workshop, your team will participate in multiple team-building activities, from games to interactive discussions with one another, all of which will help them discover how to better connect and work with one another.\nOur trainers design these activities based on your team’s individual needs, so you can rest assured that this workshop will be tailor made for your team. Through these activities and reflective discussions, every member of your team will learn how to appreciate the unique contributions brought to the table by each member, and how they can all work together to maximize their effectiveness by recognizing their individual strengths and contributions. By the end of this workshop, we guarantee that your team members will have formed bonds, identified how to continue and strengthen their ties to each other, and be ready and excited to work together. ",
+      "about this course": "Are your teams suffering from lack of cohesion and connectedness? Are you and they feeling disconnected and frustrated because they just can\u2019t seem to work well together? If these questions describe your teams, then this team building workshop is the perfect fit for you.",
+      "what youll learn": "Our professional team building trainers have years of experience helping teams connect and form bonds, which enable them to be happier, more effective, and increase their performance. During this one day workshop, your team will participate in multiple team-building activities, from games to interactive discussions with one another, all of which will help them discover how to better connect and work with one another.\nOur trainers design these activities based on your team\u2019s individual needs, so you can rest assured that this workshop will be tailor made for your team. Through these activities and reflective discussions, every member of your team will learn how to appreciate the unique contributions brought to the table by each member, and how they can all work together to maximize their effectiveness by recognizing their individual strengths and contributions. By the end of this workshop, we guarantee that your team members will have formed bonds, identified how to continue and strengthen their ties to each other, and be ready and excited to work together. ",
       "length": "1 day",
       "effort": "8 hrs/day",
       "reviews": [
-        "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
-        "Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise.",
-        "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
-        "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+        {
+          "reviewText": "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_Girls2.jpeg?alt=media&token=36fa3df6-c5aa-4e8d-acd6-628a76721ab4"
+        },
+        {
+          "reviewText": "Fantastic experience! Highly recommended! I am looking forward to sharing what I\u2019ve learned with my enterprise.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F62c04f82ef927d9ceb7421a6bbb53fcb.png?alt=media&token=34b358ce-f846-4bea-9b68-b2b52d1fb654"
+        },
+        {
+          "reviewText": "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F10db8b48c5997ce9078495343ee353ad.png?alt=media&token=c1b6378f-58d1-4aac-a247-ecfe15da63b8"
+        },
+        {
+          "reviewText": "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2Fa31fc3e4921ee1412b047563bd9729a6.png?alt=media&token=7b975935-a5ba-40fa-8c87-07c103d4c540"
+        }
       ]
     },
     "classes": [
@@ -1191,7 +1544,8 @@
         "city": "Boston",
         "country": "US"
       }
-    ]
+    ],
+    "headerImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Header%20Images%2FCorporate%20Training%2FTeam%20Building.jpg?alt=media&token=ba730806-029e-4e91-84cd-fe6aff22c911"
   },
   {
     "course code": "CSKW",
@@ -1207,7 +1561,7 @@
       "UI/UX",
       "Content Writer"
     ],
-    "icon file": "gs://zengage-learning.appspot.com/trainingpage/Course Logos/CSCW Logo.jpg",
+    "icon file": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Logos%2FCSCW%20Logo.jpg?alt=media&token=ad5bd875-20b9-44c5-b9ea-f1a95b451690",
     "details": {
       "cost": "5000",
       "class hours": "24",
@@ -1216,10 +1570,22 @@
       "length": "1 day",
       "effort": "8 hrs/day",
       "reviews": [
-        "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
-        "Fantastic experience! Highly recommended! I am looking forward to sharing what I’ve learned with my enterprise.",
-        "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
-        "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!"
+        {
+          "reviewText": "Great course; I learned everything I needed and more! I am excited to implement these skills into my role in my organization.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F9f96e42418c72dd5e185b9f31ff7dd94.png?alt=media&token=fa1007e0-aa5e-4901-8e2a-64aaf126de64"
+        },
+        {
+          "reviewText": "Fantastic experience! Highly recommended! I am looking forward to sharing what I\u2019ve learned with my enterprise.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FHomePage_BoyStudent2.jpeg?alt=media&token=a115d4e0-4404-4a19-bf4e-4abb20a19716"
+        },
+        {
+          "reviewText": "Raj is an excellent instructor, always willing to help and great at explaining concepts.",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2F62c04f82ef927d9ceb7421a6bbb53fcb.png?alt=media&token=34b358ce-f846-4bea-9b68-b2b52d1fb654"
+        },
+        {
+          "reviewText": "This course equipped me with the skills I needed to grow and advance in my career. Many thanks!",
+          "reviewImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2Fa31fc3e4921ee1412b047563bd9729a6.png?alt=media&token=7b975935-a5ba-40fa-8c87-07c103d4c540"
+        }
       ]
     },
     "classes": [
@@ -1237,6 +1603,7 @@
         "city": "Boston",
         "country": "US"
       }
-    ]
+    ],
+    "headerImage": "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCourse%20Header%20Images%2FCorporate%20Training%2FCustomized%20Scrum%20Kanban%20Workshop.jpg?alt=media&token=c0f6a157-5bef-45d1-9a5d-450bedf1b68d"
   }
 ]
