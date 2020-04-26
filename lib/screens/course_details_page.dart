@@ -110,6 +110,7 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         Container(
+          margin: EdgeInsets.only(left: 16.0),
           width: 190.0,
           height: 190.0,
           decoration: new BoxDecoration(
@@ -139,8 +140,9 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
           padding: EdgeInsets.only(top: 100.0),
           decoration: BoxDecoration(
               image: DecorationImage(
-                  image: NetworkImage(
-                      'https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2Ftraining-page-banner.jpeg?alt=media&token=391d1137-4bfb-4955-86a2-6d89fdab16a5'),
+                  image: NetworkImage(widget.course.headerImage != null
+                      ? widget.course.headerImage
+                      : ""),
                   fit: BoxFit.cover)),
         )
       ],
@@ -195,8 +197,9 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
         children: <Widget>[
           SectionName('Reviews'),
           if (widget.course != null && widget.course.details != null)
-            for (String reviewText in widget.course.details.reviews)
-              ReviewAndInstructor(text: reviewText)
+            for (Reviews review in widget.course.details.reviews)
+              ReviewAndInstructor(
+                  imageUrl: review.reviewImage, text: review.reviewText)
         ],
       ),
     );
@@ -208,6 +211,8 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
       children: <Widget>[
         SectionName("Meet the Instructors"),
         ReviewAndInstructor(
+          imageUrl:
+              "https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2FCommon%20Assets%2FInstructor.png?alt=media&token=5de2a54c-c15f-4f9f-b297-e4b03d895848",
           text: widget.course != null && widget.course.classes != null
               ? /*widget.course.classes[0].instructor*/ "Raj Heda ia an energetic, accomplished and seasoned technology consultant with core competency in scaling software agility at large enterprises using SAFe/LeSS/SOS framework.  With over 22 years of proven experience in Fortune 500 companies across various industries (Education, Finance, Insurance, Healthcare, Energy, Retail and Manufacturing), Raj has demonstrated his ability to lead, motivate and mentor multi-functional and global teams.  His strong communication and facilitation skills have helped clients succeed across all levels of their organization.  He's an Enterprise Agile transformation coach, a DevOps coach, a Delivery lead and Trainer."
               : "Raj Heda ia an energetic, accomplished and seasoned technology consultant with core competency in scaling software agility at large enterprises using SAFe/LeSS/SOS framework.  With over 22 years of proven experience in Fortune 500 companies across various industries (Education, Finance, Insurance, Healthcare, Energy, Retail and Manufacturing), Raj has demonstrated his ability to lead, motivate and mentor multi-functional and global teams.  His strong communication and facilitation skills have helped clients succeed across all levels of their organization.  He's an Enterprise Agile transformation coach, a DevOps coach, a Delivery lead and Trainer.",
@@ -221,33 +226,38 @@ class ReviewAndInstructor extends StatelessWidget {
   final String text;
   final String imageUrl;
 
-  const ReviewAndInstructor({Key key, @required this.text, this.imageUrl})
+  const ReviewAndInstructor(
+      {Key key, @required this.text, @required this.imageUrl})
       : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: <Widget>[
-        CircleAvatar(
-          radius: 80.0,
-          backgroundColor: Colors.transparent,
-          child: FlutterLogo(
-            size: 60.0,
-          ),
-        ),
-        Expanded(
-          flex: 1,
-          child: Container(
-            padding: EdgeInsets.all(32.0),
-            margin: EdgeInsets.only(top: 16.0, right: 64.0),
-//                  height: 160.0,
-            decoration: BoxDecoration(
-              border: Border.all(color: bgGreyColor, width: 2.0),
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: Row(
+        children: <Widget>[
+          ClipOval(
+            child: Image(
+              height: 120.0,
+              width: 120.0,
+              fit: BoxFit.fitWidth,
+              image: NetworkImage(imageUrl),
             ),
-            child: Text(text),
           ),
-        ),
-      ],
+          Expanded(
+            flex: 1,
+            child: Container(
+              padding: EdgeInsets.all(32.0),
+              margin: EdgeInsets.only(top: 16.0, right: 64.0),
+//                  height: 160.0,
+              decoration: BoxDecoration(
+                border: Border.all(color: bgGreyColor, width: 2.0),
+              ),
+              child: Text(text),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
