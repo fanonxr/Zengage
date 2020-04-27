@@ -10,7 +10,13 @@ class ServiceContainer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Text("Our Services"),
+          Text(
+            "Our Services",
+            style: TextStyle(
+                color: Colors.black87,
+                fontSize: 28.0,
+                fontWeight: FontWeight.w900),
+          ),
           SizedBox(
             height: 10.0,
           ),
@@ -20,9 +26,6 @@ class ServiceContainer extends StatelessWidget {
               color: Colors.blue,
               thickness: 10.0,
             ),
-          ),
-          SizedBox(
-            height: 35.0,
           ),
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -97,7 +100,7 @@ class ServiceItem extends StatelessWidget {
           Container(
             height: MediaQuery.of(context).size.height / 5.5,
             width: MediaQuery.of(context).size.width / 5.5,
-            color: Colors.grey,
+            color: Colors.grey[200],
             padding: EdgeInsets.all(20.0),
             constraints: BoxConstraints(minWidth: 150.0, minHeight: 150.0),
             child: Column(
@@ -114,9 +117,6 @@ class ServiceItem extends StatelessWidget {
                 )
               ],
             ),
-          ),
-          SizedBox(
-            height: 25.0,
           ),
         ],
       ),
