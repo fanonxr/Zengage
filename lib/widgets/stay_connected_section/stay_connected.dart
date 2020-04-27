@@ -12,26 +12,28 @@ class StayConnected extends StatefulWidget {
 
 class _StayConnectedState extends State<StayConnected> {
   bool checkValue = false;
+  TextEditingController inputController = TextEditingController();
+  TextEditingController inputController2 = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width / 1,
-      height: MediaQuery.of(context).size.height / 2.5,
+      height: MediaQuery.of(context).size.height / 2,
       decoration: BoxDecoration(
         image: DecorationImage(
             image: AssetImage(widget.backgroundImagePath), fit: BoxFit.cover),
       ),
       child: Container(
-        width: MediaQuery.of(context).size.width / 4.5,
-        height: MediaQuery.of(context).size.height / 4.5,
+        width: MediaQuery.of(context).size.width / 4.2,
+        height: MediaQuery.of(context).size.height / 4.2,
         margin: EdgeInsets.all(75.0),
         color: Colors.white,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
             CircleAvatar(
-              radius: MediaQuery.of(context).size.width / 16,
+              radius: MediaQuery.of(context).size.width / 13,
               backgroundColor: Colors.white,
               backgroundImage: AssetImage(widget.avatarImagePath),
             ),
@@ -43,11 +45,47 @@ class _StayConnectedState extends State<StayConnected> {
                 Text("Recieve information on upcoming workshops and classes"),
                 Row(
                   children: <Widget>[
-                    buildInputField(context, "Name"),
+                    Container(
+                      width: MediaQuery.of(context).size.width / 10,
+                      child: TextFormField(
+                        controller: inputController,
+                        decoration: InputDecoration(
+                          hintText: 'Full Name',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          fillColor: Colors.grey[200],
+                          filled: true,
+                          prefixIcon: Icon(
+                            Icons.contact_mail,
+                            color: Colors.black,
+                          ),
+                        ),
+                        onFieldSubmitted: (value) {},
+                      ),
+                    ),
                     SizedBox(
                       width: 40.0,
                     ),
-                    buildInputField(context, "Email")
+                    Container(
+                      width: MediaQuery.of(context).size.width / 10,
+                      child: TextFormField(
+                        controller: inputController2,
+                        decoration: InputDecoration(
+                          hintText: 'Email',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          fillColor: Colors.grey[200],
+                          filled: true,
+                          prefixIcon: Icon(
+                            Icons.mail,
+                            color: Colors.black,
+                          ),
+                        ),
+                        onFieldSubmitted: (value) {},
+                      ),
+                    )
                   ],
                 ),
                 Row(
@@ -62,12 +100,23 @@ class _StayConnectedState extends State<StayConnected> {
                     Text("I permit you to email me")
                   ],
                 ),
-                ButtonWithOutline(
-                  buttonText: "Sign Up",
-                  buttonBackgroundColor: Colors.grey,
-                  buttonBorderColor: Colors.blue,
-                  buttonHeight: MediaQuery.of(context).size.height / 20,
-                  buttonWidth: MediaQuery.of(context).size.width / 3.5,
+                Container(
+                  width: MediaQuery.of(context).size.width / 3.5,
+                  height: MediaQuery.of(context).size.height / 20,
+                  child: OutlineButton(
+                      borderSide: BorderSide(
+                          color: Colors.blue,
+                          style: BorderStyle.solid,
+                          width: 3.0),
+                      child: Text("Sign Up"),
+                      color: Colors.grey,
+                      onPressed: () {
+                        setState(() {
+                          inputController.clear();
+                          inputController2.clear();
+                          checkValue = false;
+                        });
+                      }),
                 ),
               ],
             ),

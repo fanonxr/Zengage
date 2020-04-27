@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:zengage_learning_platform/widgets/stay_connected_section/stay_connected.dart';
 
 class FilterHeader extends StatefulWidget {
   @override
@@ -28,28 +27,14 @@ class _FilterHeaderState extends State<FilterHeader> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: <Widget>[
-                        SizedBox(
-                          width: 50.0,
-                        ),
-                        Container(
-                          child: Row(
-                            children: <Widget>[
-                              buildInputField(
-                                  context, "Search for a course..."),
-                              SizedBox(
-                                width: 10.0,
-                              ),
-                              Icon(Icons.search),
-                            ],
-                          ),
-                        ),
                         buildSearchInputField(context, "Search for a course...",
                             MediaQuery.of(context).size.width / 2),
-                        SizedBox(
-                          width: 50.0,
-                        ),
                         Row(
                           children: <Widget>[
+                            Icon(Icons.calendar_today),
+                            SizedBox(
+                              width: 10.0,
+                            ),
                             RaisedButton(
                               color: Colors.white,
                               hoverColor: Colors.grey,
@@ -77,10 +62,6 @@ class _FilterHeaderState extends State<FilterHeader> {
                                 });
                               },
                             ),
-                            SizedBox(
-                              width: 10.0,
-                            ),
-                            Icon(Icons.calendar_today),
                           ],
                         )
                       ],
@@ -90,11 +71,6 @@ class _FilterHeaderState extends State<FilterHeader> {
               ),
             ),
           ),
-          Container(
-            child: Row(
-              children: <Widget>[],
-            ),
-          )
         ],
       ),
     );
@@ -103,19 +79,27 @@ class _FilterHeaderState extends State<FilterHeader> {
 
 buildSearchInputField(context, String displayText, width) {
   TextEditingController inputController = TextEditingController();
-  return Container(
-    width: width,
-    child: TextFormField(
-      controller: inputController,
-      decoration: InputDecoration(
-          hintText: displayText,
-          filled: true,
-          fillColor: Colors.white,
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(20.0),
-            borderSide: BorderSide(color: Colors.blue),
-          )),
-      onFieldSubmitted: (value) {},
-    ),
+  return Row(
+    children: <Widget>[
+      Icon(Icons.search),
+      SizedBox(
+        width: 10.0,
+      ),
+      Container(
+        width: width,
+        child: TextFormField(
+          controller: inputController,
+          decoration: InputDecoration(
+              hintText: displayText,
+              filled: true,
+              fillColor: Colors.white,
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(20.0),
+                borderSide: BorderSide(color: Colors.blue),
+              )),
+          onFieldSubmitted: (value) {},
+        ),
+      ),
+    ],
   );
 }
