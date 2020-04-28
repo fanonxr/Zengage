@@ -33,9 +33,11 @@ class MissionContainer extends StatelessWidget {
                   children: <Widget>[
                     MissionButton(
                       buttonText: "Who We are",
+                      route: RouteGenerator.ABOUT_US_ROUTE,
                     ),
                     MissionButton(
                       buttonText: "What We do",
+                      route: RouteGenerator.ABOUT_US_ROUTE,
                     ),
                   ],
                 ),
@@ -128,6 +130,7 @@ class MissionButton extends StatelessWidget {
             child: MaterialButton(
               onPressed: () {
                 // Implement login functionality.
+                Navigator.of(context).pushNamed(RouteGenerator.ABOUT_US_ROUTE);
               },
               minWidth: 200.0,
               height: 72.0,
