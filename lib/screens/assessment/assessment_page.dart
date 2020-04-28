@@ -62,7 +62,7 @@ class _AssessmentPageState extends State<AssessmentPage> {
                   ),
                   WhyBodyHeader(
                     topImageLink:
-                        "assets/images/assessment/assessment-page-logo.png",
+                        'https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/assessment%2Fassessment-page-logo.png?alt=media&token=4d23af4d-b65a-49c6-8dfd-2aa4f52efe7c',
                     bodyText: bodyText,
                   ),
                   BodyDropdownItemsList(

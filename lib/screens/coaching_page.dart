@@ -40,11 +40,12 @@ class _CoachingPageState extends State<CoachingPage> {
               Column(
                 children: <Widget>[
                   ContactUsImageBanner(
-                    imageLink: 'assets/images/coaching/contact-us-coaching.jpg',
+                    imageLink:
+                        'https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/coaching%2Fcontact-us-coaching.jpg?alt=media&token=bea21be9-2f55-4653-a7c2-b92e390dbc9d',
                   ),
                   WhyBodyHeader(
                     topImageLink:
-                        'assets/images/coaching/coaching-page-image.jpg',
+                        'https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/coaching%2Fcoaching-page-image.jpg?alt=media&token=87e83f25-4c86-4c31-ba92-c8bd0b09225a',
                     headerText: 'Why Coaching',
                     bodyText: coachingBodyText,
                   ),

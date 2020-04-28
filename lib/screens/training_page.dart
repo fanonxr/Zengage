@@ -41,7 +41,8 @@ class _TrainingPageState extends State<TrainingPage> {
 
   List<Widget> contentViews = [
     TrainingHeaderBanner(
-      imagePath: 'assets/images/trainingpage/training-page-banner.jpeg',
+      imagePath:
+          'https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/trainingpage%2Ftraining-page-banner.jpeg?alt=media&token=391d1137-4bfb-4955-86a2-6d89fdab16a5',
     ),
     DropdownContainer(),
     WhyTrainingSection(),

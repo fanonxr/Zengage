@@ -66,8 +66,8 @@ class WhyBodyHeader extends StatelessWidget {
               alignment: Alignment(0.0, 0.0),
               children: <Widget>[
                 Container(
-                  child: Image.asset(
-                    'assets/images/assessment/why-assessment-header-bg.png',
+                  child: Image.network(
+                    'https://firebasestorage.googleapis.com/v0/b/zengage-learning.appspot.com/o/assessment%2Fwhy-assessment-header-bg.png?alt=media&token=7c2e9fd3-5200-446f-8ca3-3d9d20239d40',
                     height: imageHeight + 125.0,
                     fit: BoxFit.fill,
                     width: imageWidth + 125.0,
@@ -79,7 +79,8 @@ class WhyBodyHeader extends StatelessWidget {
                   decoration: BoxDecoration(
                       shape: BoxShape.circle,
                       image: new DecorationImage(
-                          fit: BoxFit.cover, image: AssetImage(topImageLink))),
+                          fit: BoxFit.cover,
+                          image: NetworkImage(topImageLink))),
                 ),
               ],
             ),
