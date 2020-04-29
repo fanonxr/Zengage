@@ -10,16 +10,29 @@ class ServiceContainer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Text("Our Services"),
+          Text(
+            "Our Services",
+            style: TextStyle(
+                color: Colors.black87,
+                fontSize: 28.0,
+                fontWeight: FontWeight.w900),
+          ),
           SizedBox(
-            height: 35.0,
+            height: 10.0,
+          ),
+          Container(
+            width: MediaQuery.of(context).size.width / 2,
+            child: Divider(
+              color: Colors.blue,
+              thickness: 10.0,
+            ),
           ),
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
               ServiceItem(
-                serviceInfoTitle: "Assesments",
+                serviceInfoTitle: "Assessments",
                 imagePath: "assets/images/homepage/light-bulb-img.png",
                 serviceItemInfo:
                     "Embedded in the Agile principles is the concept of reflection, feedback and continuous improvement."
@@ -56,21 +69,28 @@ class ServiceItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: MediaQuery.of(context).size.height / 1.5,
+      width: MediaQuery.of(context).size.width / 3,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Text(serviceInfoTitle),
+          Text(
+            serviceInfoTitle,
+            style: TextStyle(
+                color: Colors.black,
+                fontSize: 18.0,
+                fontWeight: FontWeight.w800),
+          ),
           SizedBox(
             height: 25.0,
           ),
           Container(
-            width: MediaQuery.of(context).size.width / 6,
-            height: MediaQuery.of(context).size.height / 6,
+            // color: Colors.white,
             child: CircleAvatar(
+              radius: MediaQuery.of(context).size.width / 20,
               backgroundColor: Colors.white,
-              // backgroundImage: AssetImage(imagePath),
-              child: Image.asset(imagePath),
+              backgroundImage: AssetImage(imagePath),
               // child: Image.asset(imagePath),
             ),
           ),
@@ -78,24 +98,25 @@ class ServiceItem extends StatelessWidget {
             height: 25.0,
           ),
           Container(
-            height: MediaQuery.of(context).size.height / 5,
-            width: MediaQuery.of(context).size.width / 5,
-            color: Colors.grey,
+            height: MediaQuery.of(context).size.height / 5.5,
+            width: MediaQuery.of(context).size.width / 5.5,
+            color: Colors.grey[200],
             padding: EdgeInsets.all(20.0),
             constraints: BoxConstraints(minWidth: 150.0, minHeight: 150.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Text(
-                  serviceItemInfo,
-                  textAlign: TextAlign.center,
-                ),
+                Container(
+                  height: MediaQuery.of(context).size.height / 7.5,
+                  width: MediaQuery.of(context).size.width / 7.5,
+                  child: Text(
+                    serviceItemInfo,
+                    textAlign: TextAlign.center,
+                  ),
+                )
               ],
             ),
-          ),
-          SizedBox(
-            height: 25.0,
           ),
         ],
       ),
