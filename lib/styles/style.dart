@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:zengage_learning_platform/constants/app_colors.dart';
 
 ///Contains all the information related to styling of the app
 ///
@@ -15,7 +14,7 @@ const AppBarStyle = TextStyle(
     fontWeight: FontWeight.w300,
     fontSize: MediumTextSize,
     backgroundColor: Colors.white,
-    color: blueThemeColor);
+    color: Colors.blue);
 
 const TextTitleStyle = TextStyle(
     fontFamily: FontNameDefault,
