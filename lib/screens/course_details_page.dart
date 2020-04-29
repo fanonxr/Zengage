@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:zengage_learning_platform/constants/app_colors.dart';
 import 'package:zengage_learning_platform/models/Course.dart';
+import 'package:zengage_learning_platform/routes/route_generator.dart';
 import 'package:zengage_learning_platform/screens/register_page.dart';
 import 'package:zengage_learning_platform/widgets/footer/footer.dart';
 import 'package:zengage_learning_platform/widgets/header/custom_clipper.dart';
@@ -140,9 +141,10 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
           padding: EdgeInsets.only(top: 100.0),
           decoration: BoxDecoration(
               image: DecorationImage(
-                  image: NetworkImage(widget.course.headerImage != null
-                      ? widget.course.headerImage
-                      : ""),
+                  image: NetworkImage(
+                      widget.course != null && widget.course.headerImage != null
+                          ? widget.course.headerImage
+                          : ""),
                   fit: BoxFit.cover)),
         )
       ],
@@ -181,7 +183,10 @@ class _CourseDetailsPageState extends State<CourseDetailsPage> {
             margin: EdgeInsets.only(bottom: 16.0),
             child: GreyButton(
               text: "REGISTER",
-//            TODO: On Pressed
+              onPressed: () {
+                Navigator.of(context)
+                    .pushNamed(RouteGenerator.REGISTRATION_ROUTE);
+              },
             ),
           )
         ],
