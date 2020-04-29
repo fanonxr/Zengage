@@ -14,7 +14,7 @@ description: A learning platform application for both web and mobile
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.6.0 <3.0.0"
+  sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -28,9 +28,7 @@ dependencies:
   firebase_storage: ^2.1.0+1
   firebase_auth: ^0.8.3
   firebase_messaging: ^4.0.0+1
-  #  google_sign_in: ^4.0.1+1
-  #  Carousel
-  carousel_slider: ^1.3.0
+#  google_sign_in: ^4.0.1+1
   geolocator: 5.0.1
   uuid: ^2.0.0
   image: ^2.0.7
@@ -39,17 +37,10 @@ dependencies:
   timeago: 2.0.17
   cached_network_image:
   flutter_svg:
-  getflutter: ^1.0.11
-  universal_html: ^1.1.4
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
-
-analyzer:
-  enable-experiment:
-    - spread-collections
 
 
 # For information on the generic Dart part of this file, see the
@@ -66,16 +57,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
-    - assets/content/
     - assets/images/homepage/
     - assets/images/assessment/
-    - assets/images/coaching/
-    - assets/images/register/
     - assets/images/logos/
     - assets/images/logos/social/
-    - assets/images/trainingpage/
-    - assets/images/trainingpage/course-logos/
-    - assets/images/upcomingpage/
-    - assets/images/aboutpage/
-    - assets/images/contactus/
-    - assets/content/courses.json

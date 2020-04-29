@@ -1,17 +1,5 @@
 {
   "projects": {
     "default": "zengage-learning"
-  },
-  "targets": {
-    "zengage-learning": {
-      "hosting": {
-        "dev": [
-          "dev-20dad"
-        ],
-        "prod": [
-          "zengage-learning"
-        ]
-      }
-    }
   }
 }

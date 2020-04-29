@@ -1,19 +1,15 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:zengage_learning_platform/constants/app_colors.dart';
-import 'package:zengage_learning_platform/constants/app_constants.dart';
-import 'package:zengage_learning_platform/extensions/hover_extensions.dart';
 import 'package:zengage_learning_platform/models/DropDownValueItems.dart';
 import 'package:zengage_learning_platform/routes/route_generator.dart';
 import 'package:zengage_learning_platform/screens/home/widgets/social_banner.dart';
-import 'package:zengage_learning_platform/widgets/header/custom_clipper.dart';
 import 'package:zengage_learning_platform/widgets/header/sign_in_sign_up.dart';
 import 'package:zengage_learning_platform/widgets/navbar/NavLink.dart';
 import 'package:zengage_learning_platform/widgets/navbar/NavLinkDropDown.dart';
+import 'package:zengage_learning_platform/widgets/navbar/SearchNavigation.dart';
 
 class NavBar extends StatefulWidget implements PreferredSizeWidget {
   NavBar({Key key})
-      : preferredSize = Size.fromHeight(kToolbarHeight * 2.7),
+      : preferredSize = Size.fromHeight(kToolbarHeight),
         super(key: key);
 
   @override
@@ -32,96 +28,73 @@ class _NavBarState extends State<NavBar> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Row(
-        children: <Widget>[
-          GestureDetector(
-            onTap: () {
-              Navigator.of(context).pushNamed(RouteGenerator.HOME_ROUTE);
-            },
-            child: HandCursor(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.center,
-                children: <Widget>[
-                  Container(
-                    height: 80.0,
-                    width: 80.0,
-                    alignment: Alignment.topCenter,
-//            padding: EdgeInsets.only(top: 100.0),
-                    decoration: BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage(
-                                "assets/images/logos/company-logo.png"),
-                            fit: BoxFit.fill)),
-                  ),
-                  Container(
-                    margin: EdgeInsets.only(left: 16.0),
-                    child: ClipPath(
-                      clipper: CustomBottomLeftTriangleClipper(),
-                      child: Text(
-                        appName,
-                        style: TextStyle(
-                            color: blueThemeColor,
-                            fontSize: 28.0,
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ),
-                  )
-                ],
-              ),
-            ),
+    return AppBar(
+        leading: Container(
+          child: Image.asset("assets/images/logos/logo-1.png"),
+        ),
+        actions: <Widget>[
+          SearchBarNavigation(),
+          NavLink(
+            navText: "Assessments",
+            navigateToPage: RouteGenerator.ASSESSMENT_ROUTE,
+            textColor: Colors.black,
           ),
-          Expanded(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: <Widget>[
-                NavLink(
-                  navText: "Assessments",
-                  navigateToPage: RouteGenerator.ASSESSMENT_ROUTE,
-                  isBold: true,
-                ),
-                NavLinkDropDown(
-                  dropDownValue: "Training",
-                  menuValueItems: trainingMenuValue,
-                ),
-                NavLink(
-                  navText: "Coaching",
-                  navigateToPage: RouteGenerator.COACHING_ROUTE,
-                  isBold: true,
-                ),
-                NavLinkDropDown(
-                  dropDownValue: "Resources",
-                  menuValueItems: resourceMenuValues,
-                ),
-//                NavLink(
-//                  navText: "Resources",
-//                  navigateToPage: RouteGenerator.TRAINING_ROUTE,
-//                  isBold: true,
-//                ),
-              ],
-            ),
+          NavLinkDropDown(
+            dropDownValue: "Training",
+            menuValueItems: trainingMenuValue,
           ),
-          SizedBox(
-            width: 16.0,
+          NavLink(
+            navText: "Coaching",
+            navigateToPage: RouteGenerator.TRAINING_ROUTE,
+            textColor: Colors.black,
           ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              SignInSignUp(),
-//              TODO: Add View Courses between the in Blue bg and White Text
-              NavLink(
-                bgColor: blueThemeColor,
-                textColor: Colors.white,
-                navText: "View Courses",
-                isBold: true,
-                navigateToPage: RouteGenerator.UPCOMING_COURSE_ROUTE,
-              ),
-              SocialBanner(),
-            ],
-          )
+          NavLink(
+            navText: "Resources",
+            navigateToPage: RouteGenerator.TRAINING_ROUTE,
+            textColor: Colors.black,
+          ),
+          SignInSignUp(),
         ],
+        title: NavLink(
+          navText: "Agile TechPrime",
+          navigateToPage: RouteGenerator.HOME_ROUTE,
+        ));
+  }
+
+// method to build the navbar on each page, each page
+  Widget buildNavBar(BuildContext context, String pageText) {
+    return AppBar(
+      leading: Icon(Icons.accessibility_new),
+      bottom: PreferredSize(
+        preferredSize: const Size.fromHeight(48.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.end,
+          children: <Widget>[
+            SocialBanner(),
+          ],
+        ),
+      ),
+      actions: <Widget>[
+        NavLink(
+          navText: "Home",
+          navigateToPage: RouteGenerator.HOME_ROUTE,
+          textColor: Colors.black,
+        ),
+        NavLink(
+          navText: "About",
+          navigateToPage: RouteGenerator.HOME_ROUTE,
+          textColor: Colors.black,
+        ),
+        NavLink(
+          navText: "Contact Us",
+          navigateToPage: RouteGenerator.HOME_ROUTE,
+          textColor: Colors.black,
+        ),
+        SignInSignUp()
+      ],
+      title: Text(
+        pageText,
+        style: Theme.of(context).appBarTheme.textTheme.title,
       ),
     );
   }
